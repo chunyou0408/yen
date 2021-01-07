@@ -1,10 +1,98 @@
 body {
   padding: 0;
   margin: 0;
+  height: auto;
 }
 
-body .container {
-  color: red;
-  font-size: 40px;
+body nav {
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  body nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+body nav .box {
+  margin: 0 50px;
+  width: 110px;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+body nav .box:hover {
+  background-color: lightpink;
+}
+
+@media (max-width: 1000px) {
+  body nav .box {
+    display: none;
+  }
+}
+
+body nav .box2 {
+  display: none;
+  text-align: center;
+  line-height: 100px;
+}
+
+@media (max-width: 1000px) {
+  body nav .box2 {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+    height: 100px;
+    background-color: lightgreen;
+  }
+}
+
+body nav .box2 p {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+body main {
+  height: 700vh;
+}
+
+body footer {
+  width: calc(100% - 300px);
+  height: 300px;
+  background-color: lightgray;
+  float: right;
+}
+
+@media (max-width: 1000px) {
+  body footer {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=00-template.css.map */
