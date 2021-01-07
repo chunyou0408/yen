@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CAOV;;AATD,AAIE,IAJE,CAIF,UAAU,CAAC;EACT,KAAK,ECPG,GAAG;EDQX,SAAS,ECPV,IAAI;CDQJ",
+    "sources": [
+        "00-template.scss",
+        "_variable.scss"
+    ],
+    "names": [],
+    "file": "00-template.css"
+}

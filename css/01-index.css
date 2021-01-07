@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body .container {
+  color: red;
+  font-size: 40px;
+}
+/*# sourceMappingURL=01-index.css.map */
