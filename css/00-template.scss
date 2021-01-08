@@ -56,7 +56,7 @@ body {
 
         background-color: lightgreen;
       }
-      p{
+      p {
         padding: 0;
         margin: 0;
         font-size: $title-size;
@@ -78,6 +78,6 @@ body {
     float: right;
     @media (max-width: 1000px) {
       width: 100%;
-     }
+    }
   }
 }
