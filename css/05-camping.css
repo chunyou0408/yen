@@ -1,15 +1,451 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
-main {
+.container {
+  width: 1744px;
+  height: 2569px;
+  background-color: yellow;
+  margin: auto;
+}
+
+.container .icon-box {
   width: 100%;
-  height: auto;
+  height: 100px;
+  background-color: #7fe07f;
 }
 
-main .camping-title span {
+.container .camping-title {
+  width: 150px;
+  height: 100px;
+  background-color: crimson;
+  margin: auto;
+  text-align: center;
+}
+
+.container .camping-title span {
+  font-size: 20px;
   color: #727171;
-  size: 20px;
+  line-height: 100px;
+  letter-spacing: 5px;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.container .camping-photo-box {
+  width: 1617px;
+  height: 1140px;
+  background-color: darkkhaki;
+  margin: auto;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 {
+  width: 100%;
+  height: 349px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box1 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box1 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box1 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box1 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box2 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box2 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box2 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box2 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box3 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box3 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box3 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-1-to-3 .pt-box3 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 {
+  width: 100%;
+  height: 349px;
+  margin-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box4 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box4 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box4 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box4 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box5 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box5 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box5 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box5 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box6 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box6 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box6 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-4-to-6 .pt-box6 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 {
+  width: 1070px;
+  height: 349px;
+  margin: auto;
+  margin-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box7 {
+  width: 503px;
+  height: 349px;
+  background-color: darkolivegreen;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box7 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box7 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box7 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box8 {
+  width: 503px;
+  height: 349px;
+  background-color: darkviolet;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box8 img {
+  width: 503px;
+  height: 302px;
+  --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box8 .pt-box-text {
+  width: 100%;
+  height: 47px;
+  background-color: darkseagreen;
+  font-size: 20px;
+  color: #898989;
+  line-height: 65px;
+  text-align: right;
+  z-index: 1;
+}
+
+.container .camping-photo-box .pt-box-7-to-8 .pt-box8 .pt-box-text .text-line {
+  width: 15mm;
+  height: 4mm;
+  position: relative;
+  top: 10px;
+  left: 53px;
+  z-index: 0;
+}
+
+.container .camping-introduction {
+  width: 1617px;
+  height: 865px;
+  background-color: chartreuse;
+  margin: auto;
+  margin-top: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.container .camping-introduction .camping-notes {
+  width: 913px;
+  height: 402px;
+  background-color: #e2e3df;
+}
+
+.container .camping-introduction .camping-notes .camping-notes-title {
+  width: 160px;
+  height: 65px;
+  font-size: 20px;
+  color: #727171;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 5px;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.container .camping-introduction .camping-notes .camping-notes-content {
+  width: 502px;
+  height: 280px;
+  font-size: 18px;
+  color: #898989;
+  letter-spacing: 3px;
+  margin: auto;
+  margin-top: 30px;
+  margin-right: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .camping-introduction .camping-price {
+  width: 676px;
+  height: 402px;
+  background-color: pink;
+}
+
+.container .camping-introduction .camping-price .camping-price-title {
+  width: 160px;
+  height: 65px;
+  font-size: 20px;
+  color: #727171;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 5px;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+.container .camping-introduction .camping-price .camping-price-content {
+  width: 502px;
+  height: 280px;
+  font-size: 18px;
+  color: #898989;
+  letter-spacing: 3px;
+  margin: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .camping-introduction .camping-reservation {
+  width: 1617px;
+  height: 438px;
+  background-color: blueviolet;
 }
 /*# sourceMappingURL=05-camping.css.map */
