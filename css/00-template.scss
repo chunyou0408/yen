@@ -9,6 +9,7 @@ body {
   height: auto;
 
   nav {
+    margin-top: 0;
     width: 175px;
     height: 100%;
     background-color: white;
@@ -20,7 +21,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     @media (max-width: 1000px) {
       justify-content: space-between;
@@ -31,10 +32,14 @@ body {
 
     .nav_logo_box {
       width: 50%;
-      height: auto;
+      height: 100vh;
 
-      margin:auto;
+      padding-top: 80px;
+      margin: 0 auto;
 
+      @media (max-height: 750px) {
+        padding-top: 0px;
+      }
 
       // background-color: coral;
       .logo_area {
@@ -59,6 +64,7 @@ body {
     ul {
       height: 30%;
       padding: 0;
+      padding-bottom: 200px;
 
       font-size: $h4;
       li {
@@ -70,7 +76,7 @@ body {
 
         border-bottom: 1px solid black;
         margin: 0 15px;
-        a{
+        a {
           color: $text-title-color;
         }
       }
@@ -107,6 +113,26 @@ body {
           -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
         }
+      }
+      .news_box {
+        // display: none;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 175px;
+        height: 100vh;
+        position: fixed;
+        transition: 2s;
+        z-index: 1;
+      }
+      .news_hover:hover .news_box {
+        // display: block;
+        background-color: royalblue;
+
+        left: 175px;
+        top: 0;
+
       }
     }
 
