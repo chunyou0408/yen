@@ -1,0 +1,146 @@
+@import "variable";
+*{
+    box-sizing: border-box;
+}
+body {
+    .all{
+        width: 1750px;
+        width: auto;
+        background-color: rgb(247, 166, 166);
+        margin-left: 175px;
+
+        .page_name{
+            font-size: $h1;
+            color: $text-title-color;
+            letter-spacing: 11px;
+            padding: 1% 0 0 1.5%;
+            .name_underline{
+                width: 260px;
+                border:1px solid $text-line-color;
+                margin-left: 20px;
+            }
+        }
+        .camp_area{
+            width: 100%;
+
+            .camp_area_grass{
+                img{
+                    width: 45vw;
+                }
+                .grass_text_box{
+                    .grass_text_title{
+                        font-size: $h2;
+                        color: $text-title-color;
+                    }
+                    .grass_text_title_underline{
+                        
+                    }
+                    .grass_text_content{
+                        font-size: $h3;
+                        color: $text-content-color;
+                    }
+                }
+            }
+            .camp_area_wooden{
+
+            }
+
+            
+        } 
+        .tent_area{
+            margin: 5vh 0;
+            position: relative;
+            img{
+                width: 76vw;
+                height: 29.65vw;
+            }
+            .tent_text_box_bgcolor{
+                width: 40vw;
+                height: 11vw;
+                background-color: $box-color;
+                opacity: 30%;
+                position: absolute;
+                top: 9vw;
+                left:18vw ;
+            }
+            .tent_text_box{
+                width: 40vw;
+                height: auto;
+                text-align: center;
+                position: absolute;
+                top: 10vw;
+                left:18vw;
+                .tent_text_title{
+                    font-size: $h2;
+                    color:$nav-text-color;
+                    line-height: 70px;
+                }
+                p{
+                    font-size: $h3;
+                    color: $nav-text-color; 
+                    line-height: 20px;
+                }
+            }
+        }
+        .coffee_area{
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin: 5vw 0;
+        
+            .color_box{
+                display: flex;
+                justify-content: flex-end;
+                .background_color_box{
+                    width: 50vw;
+                    height: 33vw;
+                    color:$text-title-color;
+                    font-size:$h1;
+                    background-color: #e2e3df;
+                    padding:1vw;
+
+                    @media (max-width: 1220px){
+                        font-size:26px;
+                    }
+                    @media (max-width: 992px){
+                        font-size:22px;
+                    }
+                    @media (max-width: 768px){
+                        
+                    }
+                    @media (max-width: 576px){
+                        
+                    }
+                }
+            }
+            .coffee{
+                width: 50vw;
+                position: absolute;
+                top:5vw;
+                right: 15vw;
+
+            }
+        }   
+        .segmentation{
+            width: 50%;
+            border:2px solid #898989;
+            margin: 14vw 0 0 0;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 35%;
+                height: 20vw;
+            }
+        }
+        
+    }
+}
+
+
+
+

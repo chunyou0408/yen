@@ -10,12 +10,24 @@ body {
 }
 
 body nav {
+  margin-top: 0;
   width: 175px;
-  height: 100vh;
-  background-color: lightgray;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
+  border-right: 3px solid #727171;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media (max-width: 1000px) {
@@ -32,8 +44,15 @@ body nav {
 
 body nav .nav_logo_box {
   width: 50%;
-  height: auto;
-  margin: auto;
+  height: 100vh;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+@media (max-height: 750px) {
+  body nav .nav_logo_box {
+    padding-top: 0px;
+  }
 }
 
 body nav .nav_logo_box .logo_area {
@@ -56,16 +75,31 @@ body nav .nav_logo_box .logo_text .logo_text_right {
 }
 
 body nav ul {
+  height: auto;
   padding: 0;
+  padding-bottom: 200px;
+  font-size: 22px;
 }
 
 body nav ul li {
-  height: 30px;
+  height: 48px;
   list-style: none;
   text-align: center;
-  line-height: 30px;
+  line-height: 48px;
+}
+
+body nav ul li a {
+  color: #727171;
+}
+
+body nav ul li .line {
+  margin: 0 auto;
+  width: 80%;
   border-bottom: 1px solid black;
-  margin: 0 15px;
+}
+
+body nav ul li .dd {
+  background-color: green;
 }
 
 body nav ul li:last-child {
@@ -95,7 +129,7 @@ body nav ul .nav_hover::before {
   height: 100%;
   z-index: 1;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #b5b5b6;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transform: scale(0.5, 1);
@@ -106,6 +140,41 @@ body nav ul .nav_hover:hover::before {
   opacity: 1;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
+}
+
+body nav ul .news_box {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -175px;
+  width: 175px;
+  height: 100vh;
+  position: fixed;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  z-index: -1;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body nav ul .news_box ul {
+  padding-bottom: 222px;
+}
+
+body nav ul .news_hover:hover .news_box {
+  background-color: #b5b5b6;
+  left: 175px;
+  top: 0;
+  opacity: 1;
 }
 
 body nav .box {
@@ -148,23 +217,84 @@ body nav .box2 {
 body nav .box2 p {
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 body main {
-  height: 700vh;
+  height: 100vh;
+  margin-left: 175px;
 }
 
 body footer {
   width: calc(100% - 175px);
-  height: 370px;
-  background-color: lightgray;
+  height: auto;
+  padding: 30px 0;
+  background-color: #b5b5b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   float: right;
+  font-size: 22px;
+  color: #f7f8f8;
 }
 
 @media (max-width: 1000px) {
   body footer {
     width: 100%;
   }
+}
+
+body footer ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+body footer ul li {
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+}
+
+body footer .footer_left {
+  width: auto;
+}
+
+body footer .footer_left li:first-child {
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .footer_left li:first-child div:nth-child(2) {
+  padding-left: 22px;
+}
+
+body footer .footer_right {
+  width: auto;
+}
+
+body footer .footer_right ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .footer_right ul li div {
+  padding-left: 22px;
+}
+
+main .box {
+  width: 100%;
+  height: 100vh;
+  background-color: lightgoldenrodyellow;
 }
 /*# sourceMappingURL=00-template.css.map */
