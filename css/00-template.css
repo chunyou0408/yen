@@ -11,11 +11,22 @@ body {
 
 body nav {
   width: 175px;
-  height: 100vh;
-  background-color: lightgray;
+  height: 100%;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
+  border-right: 1px solid #727171;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1000px) {
@@ -56,16 +67,22 @@ body nav .nav_logo_box .logo_text .logo_text_right {
 }
 
 body nav ul {
+  height: 30%;
   padding: 0;
+  font-size: 22px;
 }
 
 body nav ul li {
-  height: 30px;
+  height: 48px;
   list-style: none;
   text-align: center;
-  line-height: 30px;
+  line-height: 48px;
   border-bottom: 1px solid black;
   margin: 0 15px;
+}
+
+body nav ul li a {
+  color: #727171;
 }
 
 body nav ul li:last-child {
@@ -148,7 +165,7 @@ body nav .box2 {
 body nav .box2 p {
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 body main {
