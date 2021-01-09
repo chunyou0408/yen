@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;CASd;;AAXD,AAMQ,IANJ,CAIA,cAAc,CAEV,IAAI,CAAC;EACD,KAAK,ECbC,OAAO;EDcb,IAAI,ECAX,IAAI;CDCA",
+    "sources": [
+        "05-camping.scss",
+        "_variable.scss"
+    ],
+    "names": [],
+    "file": "05-camping.css"
+}

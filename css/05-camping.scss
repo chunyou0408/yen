@@ -1,0 +1,18 @@
+@import 'variable';
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width:100%;
+    height:auto;
+
+    .camping-title {
+
+        span {
+            color:$text-title-color;
+            size:$h2;
+        }
+    }
+}

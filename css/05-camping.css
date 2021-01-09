@@ -1,0 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .camping-title span {
+  color: #727171;
+  size: 20px;
+}
+/*# sourceMappingURL=05-camping.css.map */
