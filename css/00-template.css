@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -5,23 +10,12 @@ body {
 }
 
 body nav {
-  width: 300px;
+  width: 175px;
   height: 100vh;
-  background-color: black;
+  background-color: lightgray;
   position: fixed;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {
@@ -34,6 +28,84 @@ body nav {
     width: 100%;
     height: 150px;
   }
+}
+
+body nav .nav_logo_box {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+body nav .nav_logo_box .logo_area {
+  width: 100%;
+}
+
+body nav .nav_logo_box .logo_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body nav .nav_logo_box .logo_text .logo_text_left {
+  width: 30%;
+}
+
+body nav .nav_logo_box .logo_text .logo_text_right {
+  width: 70%;
+}
+
+body nav ul {
+  padding: 0;
+}
+
+body nav ul li {
+  height: 30px;
+  list-style: none;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid black;
+  margin: 0 15px;
+}
+
+body nav ul li:last-child {
+  border-bottom: 0px;
+}
+
+body nav ul .nav_hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+body nav ul .nav_hover span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body nav ul .nav_hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(0.5, 1);
+          transform: scale(0.5, 1);
+}
+
+body nav ul .nav_hover:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 body nav .box {
@@ -76,7 +148,7 @@ body nav .box2 {
 body nav .box2 p {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 body main {
@@ -84,8 +156,8 @@ body main {
 }
 
 body footer {
-  width: calc(100% - 300px);
-  height: 300px;
+  width: calc(100% - 175px);
+  height: 370px;
   background-color: lightgray;
   float: right;
 }
