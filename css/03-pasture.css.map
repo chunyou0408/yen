@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "03-pasture.scss",
+        "_variable.scss"
+    ],
+    "names": [],
+    "file": "03-pasture.css"
+}
