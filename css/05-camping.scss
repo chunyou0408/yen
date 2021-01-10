@@ -10,16 +10,9 @@
     height: 2569px;
     background-color: yellow;
     margin: auto;
-    // 三個icon
-    .icon-box {
-        width: 100%;
-        height: 100px;
-        background-color: rgb(127, 224, 127);
-    }
     .camping-title {
-        width: 150px;
+        width: 200px;
         height: 100px;
-        background-color: crimson;
         margin: auto;
         text-align: center;
         span {
@@ -46,20 +39,43 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            .pt-box1 {
+            .pt-box {
                 width: 503px;
                 height: 349px;
-                // 302+47
                 background-color: darkolivegreen;
+                a {
+                    text-decoration: none;
+                    div {
+                        position: relative;
+                        img {
+                            width: 503px;
+                            height: 302px;
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                        }
+                        .pt-box-img-text {
+                            width: 503px;
+                            height: 302px;
 
-                img {
-                    width: 503px;
-                    height: 302px;
+                            text-align: center;
+                            line-height: 300px;
+                            font-size: $h2;
+                            font-weight: 600;
+                            color: $text-title-color;
+                            background-color: rgba(221, 209, 209, 0.8);
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
 
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            position: absolute;
+                            opacity: 0;
+                            transition: all 200ms ease-in-out;
+                            bottom: 4px;
+                        }
+                        .pt-box-img-text:hover {
+                            opacity: 0.8;
+                        }
+                    }
                 }
-
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
@@ -68,15 +84,16 @@
                     color: $text-content-color;
                     line-height: 65px;
                     text-align: right;
+                    position: relative;
                     z-index: 1;
 
                     .text-line {
-                        width: 15mm;
+                        width: 25mm;
                         height: 4mm;
                         position: relative;
                         top: 10px;
-                        left: 53px;
-                        z-index: 0;
+                        left: 90px;
+                        z-index: -1;
                     }
                 }
             }
@@ -145,58 +162,51 @@
                 }
             }
         }
-        //照片4-6
+        // 照片4-6
         .pt-box-4-to-6 {
             width: 100%;
             height: 349px;
-            margin-top: 43px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            .pt-box4 {
+            margin-top: 30px;
+            .pt-box {
                 width: 503px;
                 height: 349px;
-                // 302+47
                 background-color: darkolivegreen;
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-                    background-color: darkseagreen;
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 15mm;
-                        height: 4mm;
+                a {
+                    text-decoration: none;
+                    div {
                         position: relative;
-                        top: 10px;
-                        left: 53px;
-                        z-index: 0;
+                        img {
+                            width: 503px;
+                            height: 302px;
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                        }
+                        .pt-box-img-text {
+                            width: 503px;
+                            height: 302px;
+
+                            text-align: center;
+                            line-height: 300px;
+                            font-size: $h2;
+                            font-weight: 600;
+                            color: $text-title-color;
+                            background-color: rgba(221, 209, 209, 0.8);
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+
+                            position: absolute;
+                            opacity: 0;
+                            transition: all 200ms ease-in-out;
+                            bottom: 4px;
+                        }
+                        .pt-box-img-text:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
-            }
-            .pt-box5 {
-                width: 503px;
-                height: 349px;
-                // 302+47
-                background-color: darkolivegreen;
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
@@ -205,104 +215,67 @@
                     color: $text-content-color;
                     line-height: 65px;
                     text-align: right;
+                    position: relative;
                     z-index: 1;
 
                     .text-line {
-                        width: 15mm;
+                        width: 25mm;
                         height: 4mm;
                         position: relative;
                         top: 10px;
-                        left: 53px;
-                        z-index: 0;
-                    }
-                }
-            }
-            .pt-box6 {
-                width: 503px;
-                height: 349px;
-                // 302+47
-                background-color: darkolivegreen;
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-                    background-color: darkseagreen;
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 15mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 53px;
-                        z-index: 0;
+                        left: 90px;
+                        z-index: -1;
                     }
                 }
             }
         }
+
         // 照片7-8
         .pt-box-7-to-8 {
-            width: 1070px;
+            width: 1050px;
             height: 349px;
-            margin: auto;
-            margin-top: 43px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            .pt-box7 {
+            margin: auto;
+            margin-top: 30px;
+            .pt-box {
                 width: 503px;
                 height: 349px;
-                // 302+47
                 background-color: darkolivegreen;
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-                    background-color: darkseagreen;
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 15mm;
-                        height: 4mm;
+                a {
+                    text-decoration: none;
+                    div {
                         position: relative;
-                        top: 10px;
-                        left: 53px;
-                        z-index: 0;
+                        img {
+                            width: 503px;
+                            height: 302px;
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                        }
+                        .pt-box-img-text {
+                            width: 503px;
+                            height: 302px;
+
+                            text-align: center;
+                            line-height: 300px;
+                            font-size: $h2;
+                            font-weight: 600;
+                            color: $text-title-color;
+                            background-color: rgba(221, 209, 209, 0.8);
+                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+
+                            position: absolute;
+                            opacity: 0;
+                            transition: all 200ms ease-in-out;
+                            bottom: 4px;
+                        }
+                        .pt-box-img-text:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
-            }
-            .pt-box8 {
-                width: 503px;
-                height: 349px;
-                // 302+47
-                background-color: darkviolet;
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
@@ -311,100 +284,115 @@
                     color: $text-content-color;
                     line-height: 65px;
                     text-align: right;
+                    position: relative;
                     z-index: 1;
 
                     .text-line {
-                        width: 15mm;
+                        width: 25mm;
                         height: 4mm;
                         position: relative;
                         top: 10px;
-                        left: 53px;
-                        z-index: 0;
+                        left: 90px;
+                        z-index: -1;
+                    }
+
+                    .text-line-8 {
+                        width: 40mm;
+                        height: 4mm;
+                        position: relative;
+                        top: 10px;
+                        left: 150px;
+                        z-index: -1;
                     }
                 }
             }
         }
+        // 露營注意事項、預約
     }
-
-    .camping-introduction {
+    // 露營預約、注意事項
+    .camping-introduction-box {
         width: 1617px;
-        height: 865px;
-        background-color: chartreuse;
-        margin: auto;
-        margin-top: 93px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        .camping-notes {
-            width: 913px;
-            height: 402px;
-            background-color: $box-color;
-            .camping-notes-title {
-                width: 160px;
-                height: 65px;
+        height: 858px;
+        background-color:brown;
+        margin:auto;
+        margin-top:100px;
+        .camping-notes-and-price {
+            width:100%;
+            height:400px;
+            background-color:pink;
+            display:flex;
+            justify-content: space-between;
+            .camping-notes-box {
+                width:914px;
+                height:399px;
+                background-color:$box-color;
+                .camping-notes-title {
+                    width:200px;
+                    height:50px;
+                    font-size:$h2;
+                    color:$text-title-color;
+                    text-align:center;
 
-                font-size: $h2;
-                color: $text-title-color;
-                line-height: 80px;
-                text-align:center;
+                    border-bottom: 1px $text-line-color solid;
+                    padding-bottom: 5px;
+                    margin: auto;
+                    margin-top:15px;
+                }
+                .camping-notes-text {
+                    width:500px;
+                    height:300px;
+                   
+                    color:$text-content-color;
+                    font-size:$h3;
+                    line-height:50px;
 
-                letter-spacing: 5px;
-                border-bottom: 1px $text-line-color solid;
-                padding-bottom: 5px;
-                margin:auto;
+                    margin:auto;
+                    margin-top:30px;
+                }
             }
-            .camping-notes-content {
-                width:502px;
-                height:280px;
-                
-                font-size:$h3;
-                color:$text-content-color;
-                letter-spacing: 3px;
-                
-                margin:auto;
-                margin-top:30px;
-                margin-right:133px;
-                display:flex;
-                flex-wrap:wrap;
+            .camping-price {
+                width:672px;
+                height:399px;
+                background-color:$box-color;
+                .camping-price-title {
+                    width:150px;
+                    height:50px;
+                    font-size:$h2;
+                    color:$text-title-color;
+                    text-align:center;
+
+                    border-bottom: 1px $text-line-color solid;
+                    padding-bottom: 5px;
+                    margin: auto;
+                    margin-top:15px;
+                }
+                .camping-price-text {
+                    width:500px;
+                    height:300px;
+                   background-color:green;
+                    color:$text-content-color;
+                    font-size:$h3;
+                    line-height:50px;
+
+                    margin:auto;
+                    margin-top:30px;
+
+                    .text-indent {
+                        text-indent:50em;
+                    }
+                    
+                }
             }
+
         }
-        .camping-price {
-            width: 676px;
-            height: 402px;
-            background-color: pink;
-            .camping-price-title {
-                width: 160px;
-                height: 65px;
 
-                font-size: $h2;
-                color: $text-title-color;
-                line-height: 80px;
-                text-align:center;
-
-                letter-spacing: 5px;
-                border-bottom: 1px $text-line-color solid;
-                padding-bottom: 5px;
-                margin:auto;
-            }
-            .camping-price-content {
-                width:502px;
-                height:280px;
-                
-                font-size:$h3;
-                color:$text-content-color;
-                letter-spacing: 3px;
-                
-                margin:auto;
-                margin-top:30px;
-                display:flex;
-                flex-wrap:wrap;
-            }
-        }
         .camping-reservation {
-            width: 1617px;
-            height: 438px;
-            background-color: blueviolet;
+            width:100%;
+            height:437px;
+            background-color:$box-color;
+            margin-top:35px;
         }
+       
     }
+
 }
