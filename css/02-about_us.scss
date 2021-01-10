@@ -13,19 +13,22 @@ main{
             width: 100%;
         }
     }
-    .contnet{
-        width: 70%;
+    .content{
+        width: 60%;
         margin: auto;
-        
         .title{
             text-align: center;
             color: #727171;
-            
+            font-size: 20px;
         }
         .text{
+            font-size: 18px;
             color: #898989;
+            text-align: center;
             letter-spacing: 3px;
-            line-height: 10px;　
+            line-height: 30px;
+           
         }
+        
     }
 }

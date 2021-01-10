@@ -16,18 +16,22 @@ main .photo img {
   width: 100%;
 }
 
-main .contnet {
-  width: 70%;
+main .content {
+  width: 60%;
   margin: auto;
 }
 
-main .contnet .title {
+main .content .title {
   text-align: center;
   color: #727171;
+  font-size: 20px;
 }
 
-main .contnet .text {
+main .content .text {
+  font-size: 18px;
   color: #898989;
+  text-align: center;
   letter-spacing: 3px;
+  line-height: 30px;
 }
 /*# sourceMappingURL=02-about_us.css.map */
