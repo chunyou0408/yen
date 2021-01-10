@@ -6,7 +6,6 @@
 body .all {
   width: 1750px;
   width: auto;
-  background-color: #f7a6a6;
   margin-left: 175px;
 }
 
@@ -25,10 +24,24 @@ body .all .page_name .name_underline {
 
 body .all .camp_area {
   width: 100%;
+  height: auto;
+}
+
+body .all .camp_area .camp_area_grass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body .all .camp_area .camp_area_grass img {
-  width: 45vw;
+  width: 40vw;
+  height: 23.5vw;
+}
+
+body .all .camp_area .camp_area_grass .grass_text_box {
+  padding-left: 0.5vw;
+  padding-top: 4vw;
+  position: relative;
 }
 
 body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
@@ -36,7 +49,16 @@ body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
   color: #727171;
 }
 
+body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underline {
+  width: 12vw;
+  height: 0.4vw;
+  position: absolute;
+  top: 6vw;
+  left: -2vw;
+}
+
 body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
+  margin-top: 1vw;
   font-size: 28px;
   color: #898989;
 }
