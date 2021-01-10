@@ -6,7 +6,7 @@ body {
     .all{
         width: 1750px;
         width: auto;
-        background-color: rgb(247, 166, 166);
+        // background-color: rgb(247, 166, 166);
         margin-left: 175px;
 
         .page_name{
@@ -22,31 +22,76 @@ body {
         }
         .camp_area{
             width: 100%;
-
+            height: auto;
             .camp_area_grass{
+                display: flex;
                 img{
-                    width: 45vw;
+                    width: 40vw;
+                    height: 23.5vw;
                 }
                 .grass_text_box{
+                    padding-left: 0.5vw;
+                    padding-top: 4vw;
+                    position: relative;
                     .grass_text_title{
                         font-size: $h2;
                         color: $text-title-color;
                     }
                     .grass_text_title_underline{
-                        
+                        width: 12vw; 
+                        height: 0.4vw;
+                        position: absolute;
+                        top: 6vw;
+                        left: -2vw;
                     }
                     .grass_text_content{
+                        margin-top: 1vw;
                         font-size: $h3;
                         color: $text-content-color;
                     }
                 }
             }
-            .camp_area_wooden{
-
-            }
-
-            
         } 
+        // .camp_area{
+        //     width: 100%;
+        //     height: auto;
+        //     padding-bottom: 10vw;
+        //     .camp_area_wooden{
+        //         justify-content: flex-end;
+        //         img{
+        //             width: 40vw;
+        //             height: 23.5vw;
+                    
+        //         }
+        //         .camp_area_wooden_bkcolor{
+        //             width: 37vw;
+        //             height: 11vw;
+        //             background-color:$nav-text-color ;
+        //         }
+        //         .wooden_text_box{
+        //             width: 37vw;
+        //             height: 11vw;
+        //             text-align: center;
+        //             .wooden_text_title{
+        //                 font-size: $h2;
+        //                 color: $text-title-color;
+        //             }
+        //             .wooden_text_title_underline{
+        //                 width: 12vw; 
+        //                 height: 0.4vw;
+        //                 position: absolute;
+        //                 top: 6vw;
+        //                 left: -2vw;
+        //             }
+        //             .wooden_text_content{
+        //                 margin-top: 1vw;
+        //                 font-size: $h3;
+        //                 color: $text-content-color;
+        //                 display: flex;
+        //             }
+        //         }
+        //     }
+        // }
         .tent_area{
             margin: 5vh 0;
             position: relative;
