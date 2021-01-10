@@ -1,0 +1,115 @@
+@import 'variable';
+
+body {
+  padding: 0;
+  margin: 0;
+  .container{
+    // max-width: 1745px;
+    width: 100%;
+    background-color: aqua;
+    float: right;
+    
+    .nav {
+      width: auto;
+      margin:0 2%;
+    }
+  .shop_title {
+    font-size: 20px;
+    margin: auto;
+    color: #727171;
+    margin: 1% 0;
+    text-align: center;
+    samp{
+      border-bottom:1px #898989 solid; padding-bottom:5px;
+    }  
+  }
+  .content_top{
+    width: auto;
+    display: flex;
+    justify-content:space-around;
+    .commodity_top_card{
+      margin: 2%;
+      .text_box{
+        text-align: center;
+        font-size: 18px;
+        color: #898989;
+      }
+      .buy_button{
+        display: flex;
+        justify-content: center;
+        .buy_button_left{
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          line-height: 25px;
+          background-color:yellow;
+          font-size: 18px;
+          color: #898989;
+        }
+        .buy_button_quantity{
+          width: 30px;
+          text-align: center;
+          line-height: 25px;
+          background-color:white;
+          font-size: 18px;
+          color: #898989;
+        }
+        .buy_button_right{
+          width: 25px;
+          text-align: center;
+          line-height: 25px;
+          background-color:yellow;
+          font-size: 18px;
+          color: #898989;
+        }
+      }
+    }
+  }
+  .content_bottom{
+    width: auto;
+    display: flex;
+    justify-content:space-around;
+    .commodity_bottom_card{
+      margin: 2%;
+      .text_box{
+        text-align: center;
+        font-size: 18px;
+        color: #898989;
+      }
+      .buy_button{
+        display: flex;
+        justify-content: center;
+        .buy_button_left{
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          line-height: 25px;
+          background-color:yellow;
+          font-size: 18px;
+          color: #898989; 
+        }
+        .buy_button_quantity{
+          width: 30px;
+          text-align: center;
+          line-height: 25px;
+          background-color:white;
+          font-size: 18px;
+         color: #898989;
+        }
+        .buy_button_right{
+          width: 25px;
+          text-align: center;
+          line-height: 25px;
+          background-color:yellow;
+          font-size: 18px;
+          color: #898989;
+        }
+        
+      }
+    }
+      
+  }
+  }
+  
+
+}
