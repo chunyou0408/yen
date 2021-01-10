@@ -4,9 +4,9 @@ body {
 }
 
 body .container {
-  width: 100%;
+  max-width: 1890px;
   background-color: aqua;
-  float: right;
+  margin-left: 145px;
 }
 
 body .container .nav {
