@@ -1,0 +1,33 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+}
+
+main .photo {
+  width: auto;
+}
+
+main .photo img {
+  width: 100%;
+}
+
+main .contnet {
+  width: 70%;
+  margin: auto;
+}
+
+main .contnet .title {
+  text-align: center;
+  color: #727171;
+}
+
+main .contnet .text {
+  color: #898989;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=02-about_us.css.map */

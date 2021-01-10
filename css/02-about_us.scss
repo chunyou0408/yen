@@ -1,0 +1,31 @@
+@import "variable";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    .photo{
+        width: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .contnet{
+        width: 70%;
+        margin: auto;
+        
+        .title{
+            text-align: center;
+            color: #727171;
+            
+        }
+        .text{
+            color: #898989;
+            letter-spacing: 3px;
+            line-height: 10px;　
+        }
+    }
+}
