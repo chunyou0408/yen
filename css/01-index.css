@@ -1,10 +1,78 @@
-body {
-  padding: 0;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
-body .container {
-  color: red;
-  font-size: 40px;
+main {
+  width: 100%;
+}
+
+main .above {
+  width: 100%;
+  position: relative;
+}
+
+main .above .index_photo {
+  width: 100%;
+  opacity: 70%;
+}
+
+main .above .index_photo img {
+  width: 100%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+main .above .logo {
+  width: auto;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .above .logo_horizontal {
+  width: auto;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .above .logo_horizontal_en {
+  width: auto;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .above .text {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .below {
+  width: 90%;
+  position: absolute;
+  right: 0;
 }
 /*# sourceMappingURL=01-index.css.map */

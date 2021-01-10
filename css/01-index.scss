@@ -1,12 +1,62 @@
-@import 'variable';
+@import "variable";
 
-body {
-  padding: 0;
-  margin: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-  .container {
-    color: $font-color;
-    font-size: $a;
-  }
+main{
+    width: 100%;
+    .above{
+        width: 100%;
+        position: relative;
+        .index_photo{
+            width: 100%;
+            opacity: 70%;
+            img{
+                width: 100%;
+                filter:brightness(50%);
+            }
+        }
+        .logo{
+            width: auto; 
+            position: absolute;
+            top:35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
+        }
+        .logo_horizontal{
+            width: auto;
+            position: absolute;
+            top:47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+        }
+        .logo_horizontal_en{
+            width: auto;
+            position: absolute;
+            top:53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        .text{
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+    .below{
+        width: 90%;
+       position: absolute;
+       right: 0;
+    }
 }
