@@ -8,7 +8,9 @@
 .container {
     width: 1744px;
     height: 2569px;
-    background-color: yellow;
+    // 之後用模板要取消
+    border: 1px black solid;
+    
     margin: auto;
     .camping-title {
         width: 200px;
@@ -30,8 +32,10 @@
     .camping-photo-box {
         width: 1617px;
         height: 1140px;
-        background-color: darkkhaki;
+        
+        
         margin: auto;
+        margin-top:20px;
         // 照片1-3
         .pt-box-1-to-3 {
             width: 100%;
@@ -39,10 +43,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+           
             .pt-box {
                 width: 503px;
                 height: 349px;
-                background-color: darkolivegreen;
+            
                 a {
                     text-decoration: none;
                     div {
@@ -79,7 +84,7 @@
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
-                    background-color: darkseagreen;
+                
                     font-size: $h2;
                     color: $text-content-color;
                     line-height: 65px;
@@ -101,7 +106,7 @@
                 width: 503px;
                 height: 349px;
                 // 302+47
-                background-color: darkolivegreen;
+               
                 img {
                     width: 503px;
                     height: 302px;
@@ -112,7 +117,7 @@
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
-                    background-color: darkseagreen;
+                 
                     font-size: $h2;
                     color: $text-content-color;
                     line-height: 65px;
@@ -133,7 +138,7 @@
                 width: 503px;
                 height: 349px;
                 // 302+47
-                background-color: darkolivegreen;
+              
                 img {
                     width: 503px;
                     height: 302px;
@@ -144,7 +149,7 @@
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
-                    background-color: darkseagreen;
+               
                     font-size: $h2;
                     color: $text-content-color;
                     line-height: 65px;
@@ -173,7 +178,7 @@
             .pt-box {
                 width: 503px;
                 height: 349px;
-                background-color: darkolivegreen;
+         
                 a {
                     text-decoration: none;
                     div {
@@ -210,7 +215,7 @@
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
-                    background-color: darkseagreen;
+                  
                     font-size: $h2;
                     color: $text-content-color;
                     line-height: 65px;
@@ -242,7 +247,7 @@
             .pt-box {
                 width: 503px;
                 height: 349px;
-                background-color: darkolivegreen;
+        
                 a {
                     text-decoration: none;
                     div {
@@ -279,7 +284,7 @@
                 .pt-box-text {
                     width: 100%;
                     height: 47px;
-                    background-color: darkseagreen;
+             
                     font-size: $h2;
                     color: $text-content-color;
                     line-height: 65px;
@@ -313,86 +318,117 @@
     .camping-introduction-box {
         width: 1617px;
         height: 858px;
-        background-color:brown;
-        margin:auto;
-        margin-top:100px;
+
+        margin: auto;
+        margin-top: 100px;
         .camping-notes-and-price {
-            width:100%;
-            height:400px;
-            background-color:pink;
-            display:flex;
+            width: 100%;
+            height: 400px;
+
+            display: flex;
             justify-content: space-between;
+            // 露營注意事項
             .camping-notes-box {
-                width:914px;
-                height:399px;
-                background-color:$box-color;
+                width: 914px;
+                height: 399px;
+                background-color: $box-color;
                 .camping-notes-title {
-                    width:200px;
-                    height:50px;
-                    font-size:$h2;
-                    color:$text-title-color;
-                    text-align:center;
+                    width: 200px;
+                    height: 50px;
+                    font-size: $h2;
+                    color: $text-title-color;
+                    text-align: center;
 
                     border-bottom: 1px $text-line-color solid;
                     padding-bottom: 5px;
                     margin: auto;
-                    margin-top:15px;
+                    margin-top: 15px;
                 }
                 .camping-notes-text {
-                    width:500px;
-                    height:300px;
-                   
-                    color:$text-content-color;
-                    font-size:$h3;
-                    line-height:50px;
+                    width: 500px;
+                    height: 300px;
 
-                    margin:auto;
-                    margin-top:30px;
+                    color: $text-content-color;
+                    font-size: $h3;
+                    line-height: 50px;
+
+                    margin: auto;
+                    margin-top: 30px;
                 }
             }
+            // 露營收費
             .camping-price {
-                width:672px;
-                height:399px;
-                background-color:$box-color;
+                width: 672px;
+                height: 399px;
+                background-color: $box-color;
                 .camping-price-title {
-                    width:150px;
-                    height:50px;
-                    font-size:$h2;
-                    color:$text-title-color;
-                    text-align:center;
+                    width: 150px;
+                    height: 50px;
+                    font-size: $h2;
+                    color: $text-title-color;
+                    text-align: center;
 
                     border-bottom: 1px $text-line-color solid;
                     padding-bottom: 5px;
                     margin: auto;
-                    margin-top:15px;
+                    margin-top: 15px;
                 }
                 .camping-price-text {
-                    width:500px;
-                    height:300px;
-                   background-color:green;
-                    color:$text-content-color;
-                    font-size:$h3;
-                    line-height:50px;
-
-                    margin:auto;
-                    margin-top:30px;
-
-                    .text-indent {
-                        text-indent:50em;
-                    }
+                    width: 400px;
+                    height: 300px;
                     
+                    color: $text-content-color;
+                    font-size: $h3;
+                    line-height: 50px;
+
+                    margin: auto;
+                    margin-top: 35px;
+                    margin-right:110px;
+
+                    p {
+                        span {
+                            margin-left:150px;
+                        }
+                    }
+                    #price-text-3 {
+                        margin-top: 20px;
+                    }
                 }
             }
-
         }
-
+        // 露營預約
         .camping-reservation {
-            width:100%;
-            height:437px;
-            background-color:$box-color;
-            margin-top:35px;
-        }
-       
-    }
+            width: 100%;
+            height: 437px;
+            background-color: $box-color;
+            margin-top: 35px;
+            .camping-reservation-title {
+                width: 150px;
+                height: 60px;
+                font-size: $h2;
+                color: $text-title-color;
+                text-align: center;
 
+                border-bottom: 1px $text-line-color solid;
+                padding-bottom: 5px;
+                margin: auto;
+                padding-top: 10px;
+            }
+            .camping-reservation-text {
+                width: 1080px;
+                height: 300px;
+
+                color: $text-content-color;
+                font-size: $h3;
+                line-height: 50px;
+                letter-spacing: 3px;
+
+                margin: auto;
+                margin-top: 30px;
+                p {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 }

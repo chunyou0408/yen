@@ -7,7 +7,7 @@
 .container {
   width: 1744px;
   height: 2569px;
-  background-color: yellow;
+  border: 1px black solid;
   margin: auto;
 }
 
@@ -31,8 +31,8 @@
 .container .camping-photo-box {
   width: 1617px;
   height: 1140px;
-  background-color: darkkhaki;
   margin: auto;
+  margin-top: 20px;
 }
 
 .container .camping-photo-box .pt-box-1-to-3 {
@@ -51,7 +51,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box {
   width: 503px;
   height: 349px;
-  background-color: darkolivegreen;
 }
 
 .container .camping-photo-box .pt-box-1-to-3 .pt-box a {
@@ -96,7 +95,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box .pt-box-text {
   width: 100%;
   height: 47px;
-  background-color: darkseagreen;
   font-size: 32px;
   color: #898989;
   line-height: 65px;
@@ -117,7 +115,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box2 {
   width: 503px;
   height: 349px;
-  background-color: darkolivegreen;
 }
 
 .container .camping-photo-box .pt-box-1-to-3 .pt-box2 img {
@@ -131,7 +128,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box2 .pt-box-text {
   width: 100%;
   height: 47px;
-  background-color: darkseagreen;
   font-size: 32px;
   color: #898989;
   line-height: 65px;
@@ -151,7 +147,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box3 {
   width: 503px;
   height: 349px;
-  background-color: darkolivegreen;
 }
 
 .container .camping-photo-box .pt-box-1-to-3 .pt-box3 img {
@@ -165,7 +160,6 @@
 .container .camping-photo-box .pt-box-1-to-3 .pt-box3 .pt-box-text {
   width: 100%;
   height: 47px;
-  background-color: darkseagreen;
   font-size: 32px;
   color: #898989;
   line-height: 65px;
@@ -199,7 +193,6 @@
 .container .camping-photo-box .pt-box-4-to-6 .pt-box {
   width: 503px;
   height: 349px;
-  background-color: darkolivegreen;
 }
 
 .container .camping-photo-box .pt-box-4-to-6 .pt-box a {
@@ -244,7 +237,6 @@
 .container .camping-photo-box .pt-box-4-to-6 .pt-box .pt-box-text {
   width: 100%;
   height: 47px;
-  background-color: darkseagreen;
   font-size: 32px;
   color: #898989;
   line-height: 65px;
@@ -280,7 +272,6 @@
 .container .camping-photo-box .pt-box-7-to-8 .pt-box {
   width: 503px;
   height: 349px;
-  background-color: darkolivegreen;
 }
 
 .container .camping-photo-box .pt-box-7-to-8 .pt-box a {
@@ -325,7 +316,6 @@
 .container .camping-photo-box .pt-box-7-to-8 .pt-box .pt-box-text {
   width: 100%;
   height: 47px;
-  background-color: darkseagreen;
   font-size: 32px;
   color: #898989;
   line-height: 65px;
@@ -355,7 +345,6 @@
 .container .camping-introduction-box {
   width: 1617px;
   height: 858px;
-  background-color: brown;
   margin: auto;
   margin-top: 100px;
 }
@@ -363,7 +352,6 @@
 .container .camping-introduction-box .camping-notes-and-price {
   width: 100%;
   height: 400px;
-  background-color: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,18 +407,22 @@
 }
 
 .container .camping-introduction-box .camping-notes-and-price .camping-price .camping-price-text {
-  width: 500px;
+  width: 400px;
   height: 300px;
-  background-color: green;
   color: #898989;
   font-size: 28px;
   line-height: 50px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 35px;
+  margin-right: 110px;
 }
 
-.container .camping-introduction-box .camping-notes-and-price .camping-price .camping-price-text .text-indent {
-  text-indent: 50em;
+.container .camping-introduction-box .camping-notes-and-price .camping-price .camping-price-text p span {
+  margin-left: 150px;
+}
+
+.container .camping-introduction-box .camping-notes-and-price .camping-price .camping-price-text #price-text-3 {
+  margin-top: 20px;
 }
 
 .container .camping-introduction-box .camping-reservation {
@@ -438,5 +430,32 @@
   height: 437px;
   background-color: #e2e3df;
   margin-top: 35px;
+}
+
+.container .camping-introduction-box .camping-reservation .camping-reservation-title {
+  width: 150px;
+  height: 60px;
+  font-size: 32px;
+  color: #727171;
+  text-align: center;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 5px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.container .camping-introduction-box .camping-reservation .camping-reservation-text {
+  width: 1080px;
+  height: 300px;
+  color: #898989;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.container .camping-introduction-box .camping-reservation .camping-reservation-text p {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=05-camping.css.map */
