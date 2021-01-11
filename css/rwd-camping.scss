@@ -29,7 +29,6 @@ section {
     // 露營照片區
     .camping-photo-card {
         width: 83%;
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -38,8 +37,6 @@ section {
         margin-top: 20px;
         // 每一個照片加文字
         .pt-box {
-            max-width: 503px;
-            height: 349px;
             margin-top: 10px;
             a {
                 text-decoration: none;
