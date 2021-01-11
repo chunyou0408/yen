@@ -9,21 +9,23 @@ body {
         // background-color: rgb(247, 166, 166);
         margin-left: 175px;
         
-        .page_name{
-            font-size: $h1;
-            color: $text-title-color;
-            letter-spacing: 11px;
-            padding: 1% 0 0 1.5%;
-            .name_underline{
-                width: 260px;
-                border:1px solid $text-line-color;
-                margin-left: 20px;
-            }
-        }
+        
         .camp_area_1{
             width: 100%;
             height: auto;
-            
+            position: relative;
+            .page_name{
+                font-size: $h1;
+                color: $text-title-color;
+                letter-spacing: 11px;
+                padding: 1% 0 0 1.5%;
+                position: relative;
+                top: 0.5vw;
+                .name_underline{
+                    width: 16.5vw;
+                    border:1px solid $text-line-color;
+                }
+            }
             .camp_area_grass{
                 display: flex;
                 img{

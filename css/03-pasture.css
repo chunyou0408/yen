@@ -9,22 +9,24 @@ body .all {
   margin-left: 175px;
 }
 
-body .all .page_name {
+body .all .camp_area_1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+body .all .camp_area_1 .page_name {
   font-size: 36px;
   color: #727171;
   letter-spacing: 11px;
   padding: 1% 0 0 1.5%;
+  position: relative;
+  top: 0.5vw;
 }
 
-body .all .page_name .name_underline {
-  width: 260px;
+body .all .camp_area_1 .page_name .name_underline {
+  width: 16.5vw;
   border: 1px solid #898989;
-  margin-left: 20px;
-}
-
-body .all .camp_area_1 {
-  width: 100%;
-  height: auto;
 }
 
 body .all .camp_area_1 .camp_area_grass {
