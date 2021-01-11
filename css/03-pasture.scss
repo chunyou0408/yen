@@ -9,6 +9,7 @@ body {
         // background-color: rgb(247, 166, 166);
         margin-left: 175px;
 
+
         .page_name{
             font-size: $h1;
             color: $text-title-color;
@@ -20,7 +21,7 @@ body {
                 margin-left: 20px;
             }
         }
-        .camp_area{
+        .camp_area_1{
             width: 100%;
             height: auto;
             .camp_area_grass{
@@ -52,46 +53,63 @@ body {
                 }
             }
         } 
-        // .camp_area{
-        //     width: 100%;
-        //     height: auto;
-        //     padding-bottom: 10vw;
-        //     .camp_area_wooden{
-        //         justify-content: flex-end;
-        //         img{
-        //             width: 40vw;
-        //             height: 23.5vw;
+        .camp_area_2{
+            width: 100%;
+            height: auto;
+            padding-bottom: 10vw;
+            .camp_area_wooden{
+                justify-content: flex-end;
+                position: relative;
+                img{
+                    width: 40vw;
+                    height: 23.5vw;
+                    position: absolute;
+                    top: -8vw;
+                    right: 14vw;
+                } 
+                .camp_area_wooden_bkcolor{
+                    width: 37vw;
+                    height: 11vw;
+                    background-color:$nav-text-color ;
+                    position: absolute;
+                    top: 12vw;
+                    left: 18.75vw;
+                }
+                .wooden_text_box{
+                    width: 37vw;
+                    height: 11vw;
                     
-        //         }
-        //         .camp_area_wooden_bkcolor{
-        //             width: 37vw;
-        //             height: 11vw;
-        //             background-color:$nav-text-color ;
-        //         }
-        //         .wooden_text_box{
-        //             width: 37vw;
-        //             height: 11vw;
-        //             text-align: center;
-        //             .wooden_text_title{
-        //                 font-size: $h2;
-        //                 color: $text-title-color;
-        //             }
-        //             .wooden_text_title_underline{
-        //                 width: 12vw; 
-        //                 height: 0.4vw;
-        //                 position: absolute;
-        //                 top: 6vw;
-        //                 left: -2vw;
-        //             }
-        //             .wooden_text_content{
-        //                 margin-top: 1vw;
-        //                 font-size: $h3;
-        //                 color: $text-content-color;
-        //                 display: flex;
-        //             }
-        //         }
-        //     }
-        // }
+                    .wooden_text_title{
+                        font-size: $h2;
+                        color: $text-title-color;
+                        text-align: center;
+                    }
+                    .underline_img{
+                        text-align: center;
+                        .wooden_text_title_underline{
+                        width: 12vw; 
+                        height: 0.4vw;
+                        }
+                    }
+                    .wooden_text_content{
+                        margin-top: 1vw;
+                        font-size: $h3;
+                        color: $text-content-color;
+                        display: flex;
+                        .wooden_text_content_left{
+                            width: 50%;
+                            padding-left: 7vw ;
+                        }
+                        .wooden_text_content_right{
+                            width: 50%;
+                            padding-left: 2vw ;
+                        }
+                    }
+                }
+            }
+
+        }
+        
         .tent_area{
             margin: 5vh 0;
             position: relative;
@@ -145,10 +163,10 @@ body {
                     padding:1vw;
 
                     @media (max-width: 1220px){
-                        font-size:26px;
+                        
                     }
                     @media (max-width: 992px){
-                        font-size:22px;
+                        
                     }
                     @media (max-width: 768px){
                         
