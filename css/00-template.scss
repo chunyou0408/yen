@@ -126,7 +126,8 @@ body {
       }
       .news_box {
         // display: none;
-        background-color: red;
+
+        background-color: $footer-bg-color;
 
         position: absolute;
         top: 0;
@@ -134,9 +135,10 @@ body {
         width: 175px;
         height: 100vh;
         position: fixed;
-        transition: 0.1s;
+        transition: 0.5s;
         z-index: -1;
-        opacity: 1;
+        opacity: 0;
+
 
         display: flex;
         flex-direction: column;
@@ -149,11 +151,27 @@ body {
 
       .news_hover:hover .news_box {
         // display: block;
-        background-color: $footer-bg-color;
 
         left: 175px;
         top: 0;
         opacity: 1;
+        animation: opening 0.5s linear 1 both;
+        @keyframes opening {
+          0% {
+            // transform: translate(0px, 0px) scale(0);
+            opacity: 0;
+          }
+          50% {
+            // transform: translate(0px, 0px) scale(0);
+            opacity: 0;
+
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+            opacity: 1;
+
+          }
+        }
       }
     }
 
@@ -238,7 +256,7 @@ body {
       li:first-child {
         font-size: $h1;
         display: flex;
-        
+
         div:nth-child(2) {
           padding-left: 22px;
         }
