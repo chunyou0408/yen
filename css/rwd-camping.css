@@ -5,12 +5,12 @@
 }
 
 .container {
+  width: 100%;
   border: 1px black solid;
   margin: auto;
 }
 
 .container .camping-title {
-  background-color: green;
   margin: auto;
   text-align: center;
 }
@@ -27,7 +27,6 @@
 
 .container .camping-photo-box {
   width: 83%;
-  background-color: pink;
   margin: auto;
   margin-top: 20px;
 }
@@ -46,27 +45,29 @@
 .container .camping-photo-box .camp-card .pt-box {
   max-width: 503px;
   height: 349px;
+  margin-top: 10px;
 }
 
 .container .camping-photo-box .camp-card .pt-box a {
   text-decoration: none;
 }
 
-.container .camping-photo-box .camp-card .pt-box a div {
+.container .camping-photo-box .camp-card .pt-box a .img-hover {
   max-width: 100%;
   height: auto;
   position: relative;
 }
 
-.container .camping-photo-box .camp-card .pt-box a div img {
+.container .camping-photo-box .camp-card .pt-box a .img-hover img {
   max-width: 100%;
   --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
 }
 
-.container .camping-photo-box .camp-card .pt-box a div .pt-box-img-text {
-  max-width: 100%;
+.container .camping-photo-box .camp-card .pt-box a .img-hover .pt-box-img-text {
+  width: 100%;
+  height: 100%;
   text-align: center;
   line-height: 300px;
   font-size: 32px;
@@ -83,7 +84,8 @@
   bottom: 4px;
 }
 
-.container .camping-photo-box .camp-card .pt-box a div .pt-box-img-text:hover {
+.container .camping-photo-box .camp-card .pt-box a .img-hover:hover .pt-box-img-text {
+  display: block;
   opacity: 0.8;
 }
 
