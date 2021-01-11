@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .container {
@@ -40,10 +42,18 @@ body .container .content_top .commodity_top_card {
   margin: 2%;
 }
 
+body .container .content_top .commodity_top_card .imgbox {
+  margin-bottom: 5%;
+}
+
 body .container .content_top .commodity_top_card .text_box {
   text-align: center;
   font-size: 18px;
   color: #898989;
+}
+
+body .container .content_top .commodity_top_card .text_box p {
+  margin: 0;
 }
 
 body .container .content_top .commodity_top_card .buy_button {
@@ -53,6 +63,7 @@ body .container .content_top .commodity_top_card .buy_button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2%;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_left {
@@ -60,19 +71,20 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   height: 25px;
   text-align: center;
   line-height: 25px;
-  background-color: yellow;
+  border: 3px #898989 solid;
   font-size: 18px;
   color: #898989;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_quantity {
   width: 30px;
   text-align: center;
   line-height: 25px;
-  background-color: white;
   font-size: 18px;
+  border-bottom: 3px #898989 solid;
+  border-top: 3px #898989 solid;
   color: #898989;
 }
 
@@ -80,11 +92,11 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   width: 25px;
   text-align: center;
   line-height: 25px;
-  background-color: yellow;
+  border: 3px #898989 solid;
   font-size: 18px;
   color: #898989;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 body .container .content_bottom {
@@ -100,10 +112,18 @@ body .container .content_bottom .commodity_bottom_card {
   margin: 2%;
 }
 
+body .container .content_bottom .commodity_bottom_card .imgbox {
+  margin-bottom: 5%;
+}
+
 body .container .content_bottom .commodity_bottom_card .text_box {
   text-align: center;
   font-size: 18px;
   color: #898989;
+}
+
+body .container .content_bottom .commodity_bottom_card .text_box p {
+  margin: 0;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button {
@@ -113,6 +133,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2%;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left {
@@ -120,18 +141,19 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   height: 25px;
   text-align: center;
   line-height: 25px;
-  background-color: yellow;
+  border: 3px #898989 solid;
   font-size: 18px;
   color: #898989;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_quantity {
   width: 30px;
   text-align: center;
   line-height: 25px;
-  background-color: white;
+  border-bottom: 3px #898989 solid;
+  border-top: 3px #898989 solid;
   font-size: 18px;
   color: #898989;
 }
@@ -140,10 +162,10 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   width: 25px;
   text-align: center;
   line-height: 25px;
-  background-color: yellow;
+  border: 3px #898989 solid;
   font-size: 18px;
   color: #898989;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 /*# sourceMappingURL=06-shopping.css.map */
