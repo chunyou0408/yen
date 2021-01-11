@@ -6,8 +6,8 @@
 }
 
 .container {
-    width: 1744px;
-    height: 2569px;
+    // width: 1744px;
+    // height: 2569px;
     // 之後用模板要取消
     border: 1px black solid;
     
@@ -51,8 +51,11 @@
                 a {
                     text-decoration: none;
                     div {
+                        // 設寬高 %
+                        // 高度 auto
                         position: relative;
                         img {
+                            // 再調100%
                             width: 503px;
                             height: 302px;
                             --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
