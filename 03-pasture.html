@@ -21,12 +21,14 @@
 <body>
     <div class="all">
 
-        <!--Page_Title-->
-        <div class="page_name">Introduction
-            <div class="name_underline"></div>
-        </div>
+       
+        
         <!-- Content -->
-        <section class="camp_area">
+        <section class="camp_area_1">
+             <!--Page_Title-->
+            <div class="page_name">Introduction
+                <div class="name_underline"></div>
+            </div>
             <div class="camp_area_grass">
                 <img src="./img/03/grass_area.jpg" alt="">
                 <div class="grass_text_box">
@@ -40,13 +42,16 @@
             </div> 
         </section>
 
-        <!-- <section class="camp_area">
+        <section class="camp_area_2">
             <div class="camp_area_wooden">
                 <img src="./img/03/wooden_area.jpg" alt="">
                 <div class="camp_area_wooden_bkcolor"></div>
                 <div class="wooden_text_box">
                     <div class="wooden_text_title">木板營位</div>
-                    <img class="wooden_text_title_underline" src="/img/03/underline(s).png" alt="">
+                    <div class="underline_img">
+                        <img class="wooden_text_title_underline" src="/img/03/underline(s).png" alt="">
+                    </div>
+                    
                     <div class="wooden_text_content">
                         <div class="wooden_text_content_left">
                             <p>枕木林露營區01</p>
@@ -61,7 +66,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="tent_area">
             <img src="/img/03/air_area.jpg" alt="">
@@ -109,22 +114,22 @@
     <!-- import Swiper's JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
-        const swiper = new Swiper(...)
-    </script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             //無限輪迴
             loop:true,
-            //自動輪播(尚未完成)
-            autoplay:5000,
+            //自動輪播
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            // clickable:ture,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -132,9 +137,13 @@
                 modifier: 1,
                 slideShadows: true,
             },
+            //點點可以點換
             pagination: {
                 el: '.swiper-pagination',
+                clickable:true,
+              
             },
+
         });
     </script>
 

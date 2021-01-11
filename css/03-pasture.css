@@ -9,47 +9,49 @@ body .all {
   margin-left: 175px;
 }
 
-body .all .page_name {
+body .all .camp_area_1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+body .all .camp_area_1 .page_name {
   font-size: 36px;
   color: #727171;
   letter-spacing: 11px;
   padding: 1% 0 0 1.5%;
+  position: relative;
+  top: 0.5vw;
 }
 
-body .all .page_name .name_underline {
-  width: 260px;
+body .all .camp_area_1 .page_name .name_underline {
+  width: 16.5vw;
   border: 1px solid #898989;
-  margin-left: 20px;
 }
 
-body .all .camp_area {
-  width: 100%;
-  height: auto;
-}
-
-body .all .camp_area .camp_area_grass {
+body .all .camp_area_1 .camp_area_grass {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .all .camp_area .camp_area_grass img {
+body .all .camp_area_1 .camp_area_grass img {
   width: 40vw;
   height: 23.5vw;
 }
 
-body .all .camp_area .camp_area_grass .grass_text_box {
+body .all .camp_area_1 .camp_area_grass .grass_text_box {
   padding-left: 0.5vw;
   padding-top: 4vw;
   position: relative;
 }
 
-body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
+body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title {
   font-size: 32px;
   color: #727171;
 }
 
-body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underline {
+body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title_underline {
   width: 12vw;
   height: 0.4vw;
   position: absolute;
@@ -57,10 +59,86 @@ body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underlin
   left: -2vw;
 }
 
-body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
+body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content {
   margin-top: 1vw;
   font-size: 28px;
   color: #898989;
+}
+
+body .all .camp_area_2 {
+  width: 100%;
+  height: auto;
+}
+
+body .all .camp_area_2 .camp_area_wooden {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  padding-bottom: 27vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden img {
+  width: 40vw;
+  height: 23.5vw;
+  position: absolute;
+  top: -8vw;
+  right: 14vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
+  width: 37vw;
+  height: 14vw;
+  background-color: #f7f8f8;
+  position: absolute;
+  top: 12vw;
+  left: 19.5vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box {
+  width: 37vw;
+  height: 11vw;
+  padding-bottom: 50vw;
+  position: absolute;
+  top: 12.5vw;
+  left: 19vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
+  font-size: 32px;
+  color: #727171;
+  text-align: center;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .underline_img {
+  text-align: center;
+  position: absolute;
+  top: 10vw;
+  left: 38.5vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .underline_img .wooden_text_title_underline {
+  width: 12vw;
+  height: 0.4vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content {
+  margin-top: 1vw;
+  font-size: 28px;
+  color: #898989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
+  width: 50%;
+  padding-left: 7vw;
+}
+
+body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
+  width: 50%;
+  padding-left: 2vw;
 }
 
 body .all .tent_area {
@@ -129,18 +207,6 @@ body .all .coffee_area .color_box .background_color_box {
   padding: 1vw;
 }
 
-@media (max-width: 1220px) {
-  body .all .coffee_area .color_box .background_color_box {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 992px) {
-  body .all .coffee_area .color_box .background_color_box {
-    font-size: 22px;
-  }
-}
-
 body .all .coffee_area .coffee {
   width: 50vw;
   position: absolute;
@@ -165,5 +231,21 @@ body .all .swiper-container .swiper-slide {
   background-size: cover;
   width: 35%;
   height: 20vw;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
 }
 /*# sourceMappingURL=03-pasture.css.map */

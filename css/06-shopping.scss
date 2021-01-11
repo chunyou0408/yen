@@ -36,6 +36,7 @@ body {
       .buy_button{
         display: flex;
         justify-content: center;
+        
         .buy_button_left{
           width: 25px;
           height: 25px;
@@ -44,6 +45,8 @@ body {
           background-color:yellow;
           font-size: 18px;
           color: #898989;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
         }
         .buy_button_quantity{
           width: 30px;
@@ -60,6 +63,8 @@ body {
           background-color:yellow;
           font-size: 18px;
           color: #898989;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
       }
     }
@@ -85,7 +90,9 @@ body {
           line-height: 25px;
           background-color:yellow;
           font-size: 18px;
-          color: #898989; 
+          color: #898989;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px; 
         }
         .buy_button_quantity{
           width: 30px;
@@ -102,6 +109,8 @@ body {
           background-color:yellow;
           font-size: 18px;
           color: #898989;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
         
       }
