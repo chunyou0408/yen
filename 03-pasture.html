@@ -112,22 +112,22 @@
     <!-- import Swiper's JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
-        const swiper = new Swiper(...)
-    </script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             //無限輪迴
             loop:true,
-            //自動輪播(尚未完成)
-            autoplay:5000,
+            //自動輪播
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            // clickable:ture,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -135,9 +135,13 @@
                 modifier: 1,
                 slideShadows: true,
             },
+            //點點可以點換
             pagination: {
                 el: '.swiper-pagination',
+                clickable:true,
+              
             },
+
         });
     </script>
 
