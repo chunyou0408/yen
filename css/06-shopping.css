@@ -63,6 +63,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   background-color: yellow;
   font-size: 18px;
   color: #898989;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_quantity {
@@ -81,6 +83,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   background-color: yellow;
   font-size: 18px;
   color: #898989;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 body .container .content_bottom {
@@ -119,6 +123,8 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   background-color: yellow;
   font-size: 18px;
   color: #898989;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_quantity {
@@ -137,5 +143,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   background-color: yellow;
   font-size: 18px;
   color: #898989;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 /*# sourceMappingURL=06-shopping.css.map */
