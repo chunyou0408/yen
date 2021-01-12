@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <nav class="nav01">
+    <nav>
         <div class="nav_logo_box">
             <div class="logo_area">
-                <img src="./img/00/LOGO.png" alt="">
+                <img src="./img/00/LOGO.png" alt="" width="100%">
             </div>
             <div class="logo_text">
                 <div class="logo_text_left">
-                    <img src="./img/00/logo_pasture_en.png" alt="">
+                    <img src="./img/00/logo_pasture_en.png" alt="" height="100%">
                 </div>
                 <div class="logo_text_right">
-                    <img src="./img/00/logo_pasture_zh.png" alt="">
+                    <img src="./img/00/logo_pasture_zh.png" alt="" width="100%">
                 </div>
             </div>
         </div>
@@ -50,45 +50,13 @@
                 </a></li>
         </ul>
 
-        <!-- <div class="box2">
+        <div class="box2">
             <p>漢堡條</p>
-        </div> -->
+        </div>
     </nav>
-    <nav class="nav02">
-        <div class="fold_area">
-            <img src="./img/00/bars-solid.svg" alt="" height="100%">
-        </div>
-        <div class="logo_area">
-            <img src="./img/00/LOGO.png" alt="" height="80%">
-        </div>
-        <div class="box"></div>
-        <ul id="nav02_box">
-            <li class="nav_hover"><a href=""><span>關於顏氏</span></a>
-            </li>
-            <li class="nav_hover"><a href=""><span>牧場介紹</span></a>
-            </li>
-            <li id="nav02_news" class="nav_hover news_hover">
-                <a href=""><span>最新消息</span></a>
-            </li>
-            <li class="nav_hover"><a href=""><span>場地活動</span>
-                </a></li>
-        </ul>
 
-    </nav>
     <main>
-        <section>
-            <div class="icon_area">
-                <ul class="icon_">
-                    <li><a href=""><img class="booking_icon" src="/img/00/icon/booking_icon.png" alt=""
-                                width="30px"></a></li>
-                    <li><a href=""><img class="shopping_icon" src="/img/00/icon/shopping_icon.png" alt=""
-                                width="35px"></a></li>
-                    <li><a href=""><img class="user_icon" src="/img/00/icon/user_icon.png" alt="" width="27px"></a></li>
-                </ul>
-            </div>
-            <div class="box"></div>
-
-        </section>
+        <div class="box"></div>
         <!-- @main放這邊 -->
     </main>
     <div style="clear: both;"></div>
@@ -131,67 +99,8 @@
         </div>
     </footer>
 
-
-
-
     <!-- js -->
     <script>
-        var booking_icon = document.querySelector('.booking_icon');
-        var shopping_icon = document.querySelector('.shopping_icon');
-        var user_icon = document.querySelector('.user_icon');
-        var fold_area = document.querySelector('.fold_area');
-        var nav02_box = document.querySelector('#nav02_box');
-        var nav02_news = document.querySelector('#nav02_news');
-        var nav02_news_box = document.querySelector('#nav02_news_box');
-        
-        fold_area.onclick = function () {
-
-            if (!fold_area.classList.contains('active')) {
-                fold_area.classList.add('active')
-                nav02_box.classList.add('active')
-            } else {
-                fold_area.classList.remove('active')
-                nav02_box.classList.remove('active')
-            }
-        }
-
-        nav02_news.onclick = function () {
-            if (!nav02_news.classList.contains('active')) {
-                nav02_news.classList.add('active')
-                nav02_news_box.classList.add('active')
-            } else {
-                nav02_news.classList.remove('active')
-                nav02_news_box.classList.remove('active')
-            }
-        }
-
-
-        booking_icon.onmouseover = function () {
-            booking_icon.src = '/img/00/icon/booking_icon_hover.png';
-        }
-        booking_icon.onmouseout = function () {
-            booking_icon.src = '/img/00/icon/booking_icon.png';
-        }
-
-        shopping_icon.onmouseover = function () {
-            shopping_icon.src = '/img/00/icon/shopping_icon_hover.png';
-        }
-        shopping_icon.onmouseout = function () {
-            shopping_icon.src = '/img/00/icon/shopping_icon.png';
-        }
-
-        user_icon.onmouseover = function () {
-            user_icon.src = '/img/00/icon/user_icon_hover.png';
-
-
-        }
-        user_icon.onmouseout = function () {
-            user_icon.src = '/img/00/icon/user_icon.png';
-        }
-
-
-
-
 
     </script>
 </body>

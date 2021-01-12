@@ -4,9 +4,15 @@
 }
 
 body .all {
-  width: 1750px;
   width: auto;
   margin-left: 175px;
+}
+
+@media (max-width: 768px) {
+  body .all {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 body .all .camp_area_1 {
@@ -24,20 +30,49 @@ body .all .camp_area_1 .page_name {
   top: 0.5vw;
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area_1 .page_name {
+    text-align: center;
+  }
+}
+
 body .all .camp_area_1 .page_name .name_underline {
-  width: 16.5vw;
+  width: 330px;
   border: 1px solid #898989;
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area_1 .page_name .name_underline {
+    width: 45vw;
+    margin: auto;
+  }
+}
+
 body .all .camp_area_1 .camp_area_grass {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area_1 .camp_area_grass {
+    display: initial;
+  }
+}
+
 body .all .camp_area_1 .camp_area_grass img {
   width: 40vw;
   height: 23.5vw;
+  z-index: -2;
+}
+
+@media (max-width: 768px) {
+  body .all .camp_area_1 .camp_area_grass img {
+    width: 95vw;
+    height: 55.8125vw;
+  }
 }
 
 body .all .camp_area_1 .camp_area_grass .grass_text_box {
@@ -46,9 +81,36 @@ body .all .camp_area_1 .camp_area_grass .grass_text_box {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box {
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #f7f8f8;
+  }
+}
+
 body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title {
   font-size: 32px;
   color: #727171;
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title {
+    font-size: 16px;
+  }
 }
 
 body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title_underline {
@@ -59,10 +121,46 @@ body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title_underl
   left: -2vw;
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_title_underline {
+    position: initial;
+  }
+}
+
 body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content {
   margin-top: 1vw;
   font-size: 28px;
   color: #898989;
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_1 .camp_area_grass .grass_text_box .grass_text_content p {
+    margin-bottom: 4px;
+  }
 }
 
 body .all .camp_area_2 {
@@ -84,24 +182,66 @@ body .all .camp_area_2 .camp_area_wooden img {
   position: absolute;
   top: -8vw;
   right: 14vw;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body .all .camp_area_2 .camp_area_wooden img {
+    position: initial;
+    width: 95vw;
+    height: 53vw;
+  }
 }
 
 body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
   width: 37vw;
-  height: 14vw;
+  height: 260px;
   background-color: #f7f8f8;
   position: absolute;
   top: 12vw;
   left: 19.5vw;
+  z-index: 0;
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
+    height: 210px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
+    height: 150px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .all .camp_area_2 .camp_area_wooden .camp_area_wooden_bkcolor {
+    position: initial;
+    width: 100%;
+  }
 }
 
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box {
   width: 37vw;
-  height: 11vw;
   padding-bottom: 50vw;
   position: absolute;
   top: 12.5vw;
   left: 19vw;
+  z-index: 1;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box {
+    position: initial;
+  }
 }
 
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
@@ -110,11 +250,36 @@ body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
   text-align: center;
 }
 
+@media (max-width: 1679px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_title {
+    font-size: 16px;
+  }
+}
+
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box .underline_img {
   text-align: center;
   position: absolute;
   top: 10vw;
   left: 38.5vw;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .underline_img {
+    position: initial;
+  }
 }
 
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box .underline_img .wooden_text_title_underline {
@@ -131,14 +296,56 @@ body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content {
   display: flex;
 }
 
+@media (max-width: 1679px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content {
+    font-size: 14px;
+  }
+}
+
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
   width: 50%;
-  padding-left: 7vw;
+  padding-left: 5vw;
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left p {
+    margin-bottom: 4px;
+  }
 }
 
 body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
   width: 50%;
   padding-left: 2vw;
+}
+
+@media (max-width: 1679px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .camp_area_2 .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right p {
+    margin-bottom: 4px;
+  }
 }
 
 body .all .tent_area {
@@ -176,10 +383,51 @@ body .all .tent_area .tent_text_box .tent_text_title {
   line-height: 70px;
 }
 
+@media (max-width: 1679px) {
+  body .all .tent_area .tent_text_box .tent_text_title {
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .tent_area .tent_text_box .tent_text_title {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .tent_area .tent_text_box .tent_text_title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
 body .all .tent_area .tent_text_box p {
   font-size: 28px;
   color: #f7f8f8;
   line-height: 20px;
+}
+
+@media (max-width: 1679px) {
+  body .all .tent_area .tent_text_box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .tent_area .tent_text_box p {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .tent_area .tent_text_box p {
+    font-size: 14px;
+  }
 }
 
 body .all .coffee_area {
@@ -205,6 +453,24 @@ body .all .coffee_area .color_box .background_color_box {
   font-size: 36px;
   background-color: #e2e3df;
   padding: 1vw;
+}
+
+@media (max-width: 1679px) {
+  body .all .coffee_area .color_box .background_color_box {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1119px) {
+  body .all .coffee_area .color_box .background_color_box {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 943px) {
+  body .all .coffee_area .color_box .background_color_box {
+    font-size: 18px;
+  }
 }
 
 body .all .coffee_area .coffee {

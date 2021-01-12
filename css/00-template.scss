@@ -8,7 +8,7 @@ body {
 
   height: auto;
 
-  .nav01 {
+  nav {
     margin-top: 0;
     width: 175px;
     height: 100%;
@@ -18,19 +18,17 @@ body {
     left: 0;
     z-index: 1;
 
-    // border-right: 3px solid $text-title-color;
+    border-right: 3px solid $text-title-color;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       justify-content: space-between;
       flex-wrap: nowrap;
       width: 100%;
       height: 150px;
-
-      display: none;
     }
 
     .nav_logo_box {
@@ -40,66 +38,26 @@ body {
       padding-top: 80px;
       margin: 0 auto;
 
-      @media (max-width: 768px) {
-        display: flex;
-        padding-top: 0;
-        height: 100%;
+      @media (max-height: 750px) {
+        padding-top: 0px;
       }
+
       // background-color: coral;
       .logo_area {
         // background-color: lightskyblue;
         width: 100%;
-        @media (max-width: 768px) {
-          width: auto;
-          height: 100%;
-        }
-
-        img {
-          width: 100%;
-          @media (max-width: 768px) {
-            width: auto;
-            height: 100%;
-          }
-        }
       }
       .logo_text {
         display: flex;
-        width: 100%;
+
         // background-color: lightskyblue;
-
-        @media (max-width: 768px) {
-          display: block;
-          width: 50%;
-          height: auto;
-        }
-
+        width: 100%;
         .logo_text_left {
           width: 30%;
-
-          img {
-            height: 100%;
-            @media (max-width: 768px) {
-              width: 50%;
-              height: auto;
-            }
-          }
           // background-color: linen;
         }
         .logo_text_right {
           width: 70%;
-          @media (max-width: 768px) {
-            width: 100%;
-          }
-
-          img {
-            width: 100%;
-
-            @media (max-width: 768px) {
-              width: 100%;
-              height: auto;
-              background-color: salmon;
-            }
-          }
           // background-color: olive;
         }
       }
@@ -169,10 +127,7 @@ body {
       .news_box {
         // display: none;
 
-        background-color: rgba($color: #b5b5b6, $alpha: 0.7);
-
-        // border-left: 1px solid black;
-        // border-right: 1px solid black;
+        background-color: $footer-bg-color;
 
         position: absolute;
         top: 0;
@@ -183,6 +138,7 @@ body {
         transition: 0.5s;
         z-index: -1;
         opacity: 0;
+
 
         display: flex;
         flex-direction: column;
@@ -208,12 +164,12 @@ body {
           50% {
             // transform: translate(0px, 0px) scale(0);
             opacity: 0;
-            // filter:brightness(100%);
+
           }
           100% {
             transform: translate(0px, 0px) scale(1);
             opacity: 1;
-            // filter:brightness(50%);
+
           }
         }
       }
@@ -228,7 +184,7 @@ body {
         background-color: lightpink;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 1000px) {
         display: none;
       }
     }
@@ -237,7 +193,7 @@ body {
       display: none;
       text-align: center;
       line-height: 100px;
-      @media (max-width: 768px) {
+      @media (max-width: 1000px) {
         display: inline-block;
 
         margin-right: 50px;
@@ -257,80 +213,10 @@ body {
       }
     }
   }
-  .nav02 {
-    display: none;
-    width: 100%;
-    height: 80px;
 
-    // background-color: lightgrey;
-
-    @media (max-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-
-      border-bottom: 3px solid black;
-
-      .fold_area {
-        height: 100%;
-        width: 100px;
-
-        padding: 10px 25px;
-        &.active {
-          background-color: yellowgreen;
-        }
-      }
-
-      .logo_area {
-        display: flex;
-
-        // background-color: lightseagreen;
-        img {
-          margin: auto;
-        }
-      }
-    }
-    
-    #nav02_box ,#nav02_news_box{
-      position: absolute;
-      top: 80px;
-      left: -300px;
-      width: auto;
-      // display: none;
-      opacity: 0;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      font-size: 60px;
-      background-color: $footer-bg-color;
-      transition: 1s;
-      li {
-        padding: 10px 0;
-        border: 1px solid black;
-        .news_box{
-          display: none;
-        }
-        a {
-          text-decoration: none;
-          color: $nav-text-color;
-          
-        }
-      }
-  
-
-      &.active {
-        // display: block;
-        opacity: 1;
-        top: 80px;
-        left: 0;
-      }
-    }
-
-    .box {
-      float: right;
-      height: 100%;
-      min-width: 150px;
-      // background-color: lightsalmon;
-    }
+  main {
+    height: 100vh;
+    margin-left: 175px;
   }
 
   footer {
@@ -339,7 +225,6 @@ body {
 
     padding: 30px 0;
     background-color: $footer-bg-color;
-    border-left: 3px solid black;
 
     display: flex;
     flex-wrap: wrap;
@@ -350,10 +235,9 @@ body {
     font-size: $h4;
     color: $footer-text-color;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       width: 100%;
     }
-
     ul {
       display: inline-block;
 
@@ -396,37 +280,6 @@ body {
 }
 
 main {
-  border-left: 3px solid $text-title-color;
-
-  height: 100vh;
-  margin-left: 175px;
-
-  @media (max-width: 768px) {
-    margin-left: 0;
-    border-left: 0;
-  }
-
-  .icon_area {
-    width: 100%;
-    // background-color: aqua;
-    z-index: 10;
-    position: relative;
-  }
-  ul {
-    list-style: none;
-    li {
-      // background-color: lightgray;
-      margin: 0 10px;
-      padding: 0;
-    }
-  }
-  .icon_ {
-    display: flex;
-    position: fixed;
-    // background-color: lightcyan;
-    top: 0;
-    right: 0;
-  }
   .box {
     width: 100%;
     height: 100vh;

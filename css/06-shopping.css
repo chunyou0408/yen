@@ -24,7 +24,6 @@ body .container .shop_title {
 }
 
 body .container .shop_title samp {
-  letter-spacing: 3px;
   border-bottom: 1px #898989 solid;
   padding-bottom: 5px;
 }
@@ -90,7 +89,6 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_quantit
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   width: 25px;
-  height: 25px;
   text-align: center;
   line-height: 25px;
   border: 2px #898989 solid;
@@ -161,7 +159,6 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_q
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_right {
   width: 25px;
-  height: 25px;
   text-align: center;
   line-height: 25px;
   border: 2px #898989 solid;
