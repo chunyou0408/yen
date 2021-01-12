@@ -4,16 +4,21 @@
 }
 body {
     .all{
-        width: 1750px;
         width: auto;
         // background-color: rgb(247, 166, 166);
         margin-left: 175px;
-        
-        
+
+        @media (max-width: 768px){
+            width: 95%;
+            margin: auto;
+        }
+
         .camp_area_1{
             width: 100%;
             height: auto;
             position: relative;
+            
+
             .page_name{
                 font-size: $h1;
                 color: $text-title-color;
@@ -21,9 +26,16 @@ body {
                 padding: 1% 0 0 1.5%;
                 position: relative;
                 top: 0.5vw;
+                @media (max-width: 768px){
+                    text-align: center;
+                }
                 .name_underline{
-                    width: 16.5vw;
+                    width: 330px;
                     border:1px solid $text-line-color;
+                    @media (max-width: 768px){
+                        width: 45vw;
+                        margin: auto;
+                    }
                 }
             }
             .camp_area_grass{
@@ -31,6 +43,11 @@ body {
                 img{
                     width: 40vw;
                     height: 23.5vw;
+                    z-index: -2;
+                    // @media (max-width: 768px){
+                    //     width: 50vw;
+                    //     height: 29.375vw;
+                    // }
                 }
                 .grass_text_box{
                     padding-left: 0.5vw;
@@ -39,6 +56,12 @@ body {
                     .grass_text_title{
                         font-size: $h2;
                         color: $text-title-color;
+                        @media (max-width: 1679px){
+                            font-size: 24px;
+                        }
+                        @media (max-width: 1119px){
+                            font-size: 20px;
+                        }
                     }
                     .grass_text_title_underline{
                         width: 12vw; 
@@ -51,6 +74,21 @@ body {
                         margin-top: 1vw;
                         font-size: $h3;
                         color: $text-content-color;
+
+                        @media (max-width: 1679px){
+                            font-size: 22px;
+                        }
+                        @media (max-width: 1119px){
+                            font-size: 18px;
+                        }
+                        p{
+                            @media (max-width: 1679px){
+                                margin-bottom: 10px;
+                            } 
+                            @media (max-width: 1119px){
+                                margin-bottom: 4px;
+                            }
+                        }
                     }
                 }
             }
@@ -69,33 +107,50 @@ body {
                     position: absolute;
                     top: -8vw;
                     right: 14vw;
+                    z-index: -1;
                 } 
                 .camp_area_wooden_bkcolor{
                     width: 37vw;
-                    height: 14vw;
+                    height: 260px;
                     background-color:$nav-text-color ;
                     position: absolute;
                     top: 12vw;
                     left: 19.5vw;
+                    z-index: 0;
+                    @media (max-width: 1679px){
+                        height: 210px;
+                    }
+                    @media (max-width: 1119px){
+                        height: 150px;
+                    }
                 }
                 .wooden_text_box{
                     width: 37vw;
-                    height: 11vw;
                     padding-bottom: 50vw;
                     position: absolute;
                     top: 12.5vw;
                     left: 19vw;
+                    z-index: 1;
+                    padding-bottom: 0;
                     
                     .wooden_text_title{
                         font-size: $h2;
                         color: $text-title-color;
                         text-align: center;
+                        @media (max-width: 1679px){
+                            font-size: 24px;
+                        }
+                        @media (max-width: 1119px){
+                            font-size: 20px;
+                        }
                     }
                     .underline_img{
                         text-align: center;
                         position: absolute;
                         top: 10vw;
                         left: 38.5vw;
+                        z-index: -1;
+                       
                         .wooden_text_title_underline{
                         width: 12vw; 
                         height: 0.4vw;
@@ -106,13 +161,36 @@ body {
                         font-size: $h3;
                         color: $text-content-color;
                         display: flex;
+                        @media (max-width: 1679px){
+                            font-size: 22px;
+                        }
+                        @media (max-width: 1119px){
+                            font-size: 18px;
+                        }
+
                         .wooden_text_content_left{
                             width: 50%;
-                            padding-left: 7vw ;
+                            padding-left: 5vw ;
+                            p{
+                                @media (max-width: 1679px){
+                                    margin-bottom: 10px;
+                                } 
+                                @media (max-width: 1119px){
+                                    margin-bottom: 4px;
+                                }
+                            }
                         }
                         .wooden_text_content_right{
                             width: 50%;
                             padding-left: 2vw ;
+                            p{
+                                @media (max-width: 1679px){
+                                    margin-bottom: 10px;
+                                } 
+                                @media (max-width: 1119px){
+                                    margin-bottom: 4px;
+                                }
+                            }
                         }
                     }
                 }
@@ -147,11 +225,27 @@ body {
                     font-size: $h2;
                     color:$nav-text-color;
                     line-height: 70px;
+                    @media (max-width: 1679px){
+                        font-size: 22px;
+                        line-height: 45px;
+                    }
+                    @media (max-width: 1119px){
+                        font-size: 18px;
+                        
+                    }
                 }
                 p{
                     font-size: $h3;
                     color: $nav-text-color; 
                     line-height: 20px;
+                    @media (max-width: 1679px){
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                    @media (max-width: 1119px){
+                        font-size: 16px;
+                        margin-bottom: 4px;
+                    }
                 }
             }
         }
@@ -171,6 +265,9 @@ body {
                     font-size:$h1;
                     background-color: #e2e3df;
                     padding:1vw;
+                    @media (max-width: 1679px){
+                        font-size: 26px;
+                    }
 
                     @media (max-width: 1220px){
                         
