@@ -5,443 +5,227 @@
     margin: 0;
 }
 
-.container {
-    // width: 1744px;
-    // height: 2569px;
+section {
     // 之後用模板要取消
+    width: 100%;
     border: 1px black solid;
     margin: auto;
+    // 大標題 CAMPING
     .camping-title {
-        // width: 200px;
-        // height: 100px;
-       
-        background-color:green;
-        margin: auto;
         text-align: center;
+        margin: auto;
         span {
             font-size: $h2;
             color: $text-title-color;
             line-height: 100px;
-
             letter-spacing: 5px;
+
             border-bottom: 1px $text-line-color solid;
+           
             padding-bottom: 5px;
             margin: auto;
         }
     }
     // 露營照片區
-    .camping-photo-box {
-        // width: 1617px;
-        // height: 1140px;
-        width:83%;
-        background-color:pink;
-        
+    .camping-photo-card {
+        width: 83%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
         margin: auto;
-        margin-top:20px;
-        // 照片1-3
-        .pt-box-1-to-3 {
-            width: 100%;
-            // height: 349px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-           
-            .pt-box {
-                max-width: 503px;
-                height: 349px;
-                // width:31%;
-        
-                background-color:blue;
-            
-                a {
-                    text-decoration: none;
-                    div {
-                        // 設寬高 %
-                        // 高度 auto
-                        max-width:100%;
-                        height:auto;
-                        position: relative;
-                        img {
-                            // 再調100%
-                            // width: 503px;
-                            max-width:100%;
-                            // object-fit: cover;
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                        }
-                        .pt-box-img-text {
-                            // width: 503px;
-                            // height: 302px;
-                            max-width:100%;
+        margin-top: 20px;
+        // 每一個照片加文字
+        .pt-box {
+            margin-top: 10px;
+            a {
+                text-decoration: none;
+                .img-hover {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                        // css套件讓圖片形狀變特別
+                        --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                        clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                    }
+                    .pt-box-img-text {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(221, 209, 209, 0.8);
+                        --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                        clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
 
-                            text-align: center;
-                            line-height: 300px;
-                            font-size: $h2;
-                            font-weight: 600;
-                            color: $text-title-color;
-                            background-color: rgba(221, 209, 209, 0.8);
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-
-                            position: absolute;
-                            opacity: 0;
-                            transition: all 200ms ease-in-out;
-                            bottom: 4px;
-                        }
-                        .pt-box-img-text:hover {
-                            opacity: 0.8;
-                        }
+                        font-size: $h2;
+                        font-weight: 600;
+                        color: $text-title-color;
+                        text-align: center;
+                        line-height: 300px;
+                        
+                        position: absolute;
+                        opacity: 0;
+                        transition: all 200ms ease-in-out;
+                        bottom: 4px;
+                    }
+                    // 要直接用hover必須前面加一個 &
+                    // 意思是對img-hover做hover效果
+                    // 我在對img-hover做hover的同時，
+                    // pt-box-img-text會被我顯示出來
+                    &:hover .pt-box-img-text {
+                        display: block;
+                        opacity: 0.8;
                     }
                 }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
+            }
+            // 照片下方文字(set區塊)
+            .pt-box-text {
+                width: 100%;
+                height: 47px;
+
+                font-size: $h2;
+                color: $text-content-color;
+                line-height: 65px;
+                text-align: right;
                 
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
+                position: relative;
+                z-index: 1;
+
+                .text-line {
+                    width: 25mm;
+                    height: 4mm;
                     position: relative;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 25mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 90px;
-                        z-index: -1;
-                    }
+                    z-index: -1;
+                    top: 10px;
+                    left: 90px;
                 }
-            }
-            .pt-box2 {
-                width: 503px;
-                height: 349px;
-                // 302+47
-               
-                img {
-                    width: 503px;
-                    height: 302px;
 
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-                 
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 15mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 53px;
-                        z-index: 0;
-                    }
-                }
-            }
-            .pt-box3 {
-                width: 503px;
-                height: 349px;
-                // 302+47
-              
-                img {
-                    width: 503px;
-                    height: 302px;
-
-                    --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-               
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 15mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 53px;
-                        z-index: 0;
-                    }
+                .text-line-8 {
+                    width: 40mm;
+                    height: 4mm;
+                    position: relative;
+                    z-index: -1;
+                    top: 10px;
+                    left: 150px;
                 }
             }
         }
-        // 照片4-6
-        .pt-box-4-to-6 {
-            width: 100%;
-            // height: 349px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 30px;
-            .pt-box {
-                width: 503px;
-                height: 349px;
-         
-                a {
-                    text-decoration: none;
-                    div {
-                        position: relative;
-                        img {
-                            width: 503px;
-                            height: 302px;
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                        }
-                        .pt-box-img-text {
-                            width: 503px;
-                            height: 302px;
-
-                            text-align: center;
-                            line-height: 300px;
-                            font-size: $h2;
-                            font-weight: 600;
-                            color: $text-title-color;
-                            background-color: rgba(221, 209, 209, 0.8);
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-
-                            position: absolute;
-                            opacity: 0;
-                            transition: all 200ms ease-in-out;
-                            bottom: 4px;
-                        }
-                        .pt-box-img-text:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-                  
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    position: relative;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 25mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 90px;
-                        z-index: -1;
-                    }
-                }
-            }
-        }
-
-        // 照片7-8
-        .pt-box-7-to-8 {
-            width:66%;
-            // width: 1050px;
-            // height: 349px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: auto;
-            margin-top: 30px;
-            .pt-box {
-                width: 503px;
-                height: 349px;
-        
-                a {
-                    text-decoration: none;
-                    div {
-                        position: relative;
-                        img {
-                            width: 503px;
-                            height: 302px;
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                        }
-                        .pt-box-img-text {
-                            width: 503px;
-                            height: 302px;
-
-                            text-align: center;
-                            line-height: 300px;
-                            font-size: $h2;
-                            font-weight: 600;
-                            color: $text-title-color;
-                            background-color: rgba(221, 209, 209, 0.8);
-                            --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                            clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-
-                            position: absolute;
-                            opacity: 0;
-                            transition: all 200ms ease-in-out;
-                            bottom: 4px;
-                        }
-                        .pt-box-img-text:hover {
-                            opacity: 0.8;
-                        }
-                    }
-                }
-                .pt-box-text {
-                    width: 100%;
-                    height: 47px;
-             
-                    font-size: $h2;
-                    color: $text-content-color;
-                    line-height: 65px;
-                    text-align: right;
-                    position: relative;
-                    z-index: 1;
-
-                    .text-line {
-                        width: 25mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 90px;
-                        z-index: -1;
-                    }
-
-                    .text-line-8 {
-                        width: 40mm;
-                        height: 4mm;
-                        position: relative;
-                        top: 10px;
-                        left: 150px;
-                        z-index: -1;
-                    }
-                }
-            }
-        }
-        // 露營注意事項、預約
     }
     // 露營預約、注意事項
     .camping-introduction-box {
-        // width: 1617px;
-        // height: 858px;
-
-        width:83%;
+        width: 83%;
         margin: auto;
         margin-top: 100px;
         .camping-notes-and-price {
             width: 100%;
-            // height: 400px;
-
             display: flex;
             justify-content: space-between;
             // 露營注意事項
             .camping-notes-box {
-                // width: 914px;
-                // height: 399px;
-                width:58%;
+                width: 58%;
                 background-color: $box-color;
+                // 露營注意事項標題
                 .camping-notes-title {
                     width: 200px;
                     height: 50px;
+
                     font-size: $h2;
                     color: $text-title-color;
                     text-align: center;
-
                     border-bottom: 1px $text-line-color solid;
-                    padding-bottom: 5px;
+
                     margin: auto;
                     margin-top: 15px;
                 }
+                // 露營注意事項文字區塊
                 .camping-notes-text {
                     width: 500px;
                     height: 300px;
 
-                    color: $text-content-color;
                     font-size: $h3;
+                    color: $text-content-color;
                     line-height: 50px;
 
                     margin: auto;
                     margin-top: 30px;
                 }
             }
-            // 露營收費
+            // 露營收費區塊
             .camping-price {
-                // width: 672px;
-                // height: 399px;
-                width:40%;
+                width: 40%;
                 background-color: $box-color;
+                // 露營收費區塊
                 .camping-price-title {
                     width: 150px;
                     height: 50px;
+
                     font-size: $h2;
                     color: $text-title-color;
                     text-align: center;
-
                     border-bottom: 1px $text-line-color solid;
-                    padding-bottom: 5px;
+                    
                     margin: auto;
                     margin-top: 15px;
                 }
+                // 露營收費文字區塊
                 .camping-price-text {
                     width: 400px;
                     height: 300px;
-                    
-                    color: $text-content-color;
+
                     font-size: $h3;
+                    color: $text-content-color;
                     line-height: 50px;
 
                     margin: auto;
                     margin-top: 35px;
-                    margin-right:110px;
+                    margin-right: 110px;
 
                     p {
                         span {
-                            margin-left:150px;
+                            margin-left: 150px;
                         }
                     }
+                    // 段落分行
                     #price-text-3 {
                         margin-top: 20px;
                     }
                 }
             }
         }
-        // 露營預約
+        // 露營預約區塊
         .camping-reservation {
             width: 100%;
-            // height: 437px;
             background-color: $box-color;
+
             margin-top: 35px;
-            padding-bottom:50px;
+            padding-bottom: 50px;
+            // 露營預約標題
             .camping-reservation-title {
                 width: 150px;
                 height: 60px;
+
                 font-size: $h2;
                 color: $text-title-color;
                 text-align: center;
-
                 border-bottom: 1px $text-line-color solid;
+
                 padding-bottom: 5px;
                 margin: auto;
                 padding-top: 10px;
             }
+            // 露營預約文字區塊
             .camping-reservation-text {
                 width: 1080px;
                 height: 300px;
 
-                color: $text-content-color;
                 font-size: $h3;
+                color: $text-content-color;
                 line-height: 50px;
                 letter-spacing: 3px;
 
                 margin: auto;
                 margin-top: 30px;
+                
                 p {
                     margin-top: 30px;
                 }
