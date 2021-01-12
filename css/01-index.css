@@ -25,7 +25,7 @@ main .above .index_photo img {
 }
 
 main .above .logo {
-  width: auto;
+  width: 10%;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -34,18 +34,18 @@ main .above .logo {
 }
 
 main .above .logo_horizontal {
-  width: auto;
+  width: 30%;
   position: absolute;
-  top: 47%;
+  top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 main .above .logo_horizontal_en {
-  width: auto;
+  width: 30%;
   position: absolute;
-  top: 53%;
+  top: 62%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

@@ -3,14 +3,16 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   .container{
     max-width: 1890px;
-    background-color: aqua;
+
     margin-left: 145px;
     
     .nav {
       width: auto;
       margin:0 2%;
+      
     }
   .shop_title {
     font-size: 36px;
@@ -28,43 +30,53 @@ body {
     justify-content:space-around;
     .commodity_top_card{
       margin: 2%;
+      .imgbox{
+        margin-bottom: 5%;
+      }
       .text_box{
         text-align: center;
         font-size: 18px;
         color: #898989;
+        p{
+          margin: 0;
+        }
       }
       .buy_button{
         display: flex;
         justify-content: center;
+        margin-top: 2%;
         
         .buy_button_left{
           width: 25px;
           height: 25px;
           text-align: center;
           line-height: 25px;
-          background-color:yellow;
+          // background-color:yellow;
+          border:2px #898989 solid;
+          
           font-size: 18px;
           color: #898989;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
         }
         .buy_button_quantity{
           width: 30px;
           text-align: center;
           line-height: 25px;
-          background-color:white;
           font-size: 18px;
+          border-bottom:2px #898989 solid;
+          border-top:2px #898989 solid;
           color: #898989;
         }
         .buy_button_right{
           width: 25px;
           text-align: center;
           line-height: 25px;
-          background-color:yellow;
+          border:2px #898989 solid;
           font-size: 18px;
           color: #898989;
-          border-top-right-radius: 5px;
-          border-bottom-right-radius: 5px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
         }
       }
     }
@@ -75,30 +87,38 @@ body {
     justify-content:space-around;
     .commodity_bottom_card{
       margin: 2%;
+      .imgbox{
+        margin-bottom: 5%;
+      }
       .text_box{
         text-align: center;
         font-size: 18px;
         color: #898989;
+        p{
+          margin: 0;
+        }
       }
       .buy_button{
         display: flex;
         justify-content: center;
+        margin-top: 2%;
         .buy_button_left{
           width: 25px;
           height: 25px;
           text-align: center;
           line-height: 25px;
-          background-color:yellow;
+          border:2px #898989 solid;
           font-size: 18px;
           color: #898989;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px; 
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px; 
         }
         .buy_button_quantity{
           width: 30px;
           text-align: center;
           line-height: 25px;
-          background-color:white;
+          border-bottom:2px #898989 solid;
+          border-top:2px #898989 solid;
           font-size: 18px;
          color: #898989;
         }
@@ -106,11 +126,11 @@ body {
           width: 25px;
           text-align: center;
           line-height: 25px;
-          background-color:yellow;
+          border:2px #898989 solid;
           font-size: 18px;
           color: #898989;
-          border-top-right-radius: 5px;
-          border-bottom-right-radius: 5px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
         }
         
       }
