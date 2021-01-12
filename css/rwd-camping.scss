@@ -4,12 +4,12 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 section {
   // 之後用模板要取消
   width: 100%;
   border: 1px black solid;
   margin: auto;
+
   // 大標題 CAMPING
   .camping-title {
     text-align: center;
@@ -39,15 +39,15 @@ section {
     .pt-box {
       width: 400px;
       margin-top: 10px;
-      @media screen and (max-width:1128px){
-          width:350px;
+      @media screen and (max-width: 1128px) {
+        width: 350px;
       }
-      @media screen and (max-width:892px){
-        width:300px;
-    }
-    @media screen and (max-width:768px){
-        width:100%;
-    }
+      @media screen and (max-width: 892px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
       a {
         text-decoration: none;
         .img-hover {
@@ -132,21 +132,21 @@ section {
         }
       }
     }
-    .pt-box1 {
-        @media screen and (max-width:959px){
-            margin-top:40px;
-        }
-    }
-    .pt-box2 {
-      @media screen and (max-width: 965px) {
-        margin-top: 40px;
-      }
-    }
-    .pt-box3 {
-      @media screen and (max-width: 1440px) {
-        margin-top: 40px;
-      }
-    }
+    // .pt-box1 {
+    //     @media screen and (max-width:959px){
+    //         margin-top:40px;
+    //     }
+    // }
+    // .pt-box2 {
+    //   @media screen and (max-width: 965px) {
+    //     margin-top: 40px;
+    //   }
+    // }
+    // .pt-box3 {
+    //   @media screen and (max-width: 1440px) {
+    //     margin-top: 40px;
+    //   }
+    // }
     // 移動照片4-6與照片7-8與上面照片1-3距離
     .pt-box-4-6,
     .pt-box-7-8 {
@@ -156,35 +156,36 @@ section {
   // 露營文字區塊
   .camping-introduction-box {
     width: 83%;
-    height:auto;
+    height: auto;
     margin: auto;
     margin-top: 100px;
-   
+
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     // 露營注意事項
     .camping-notes-box {
       width: 49%;
+      
       background-color: $box-color;
-      @media screen and (max-width:1064px) {
-          height:450px;
+    //   font-size:10px;
+      //   @media screen and (max-width:1064px) {
+      //       height:450px;
+      //   }
+      //   @media screen and (max-width:1048px) {
+      //     height:550px;
+      // }
+      //   @media screen and (max-width:987px) {
+      //     height:600px;
+      // }
+      @media screen and (max-width:768px){
+          width:100%;
+          height:auto;
       }
-      @media screen and (max-width:1048px) {
-        height:550px;
-    }
-      @media screen and (max-width:987px) {
-        height:600px;
-    }
-    @media screen and (max-width:768px){
-        width:100%;
-        height:350px;
-    }
       // 露營注意事項標題
       .camping-notes-title {
-        width: 200px;
-        height: 50px;
-
+       
+        
         font-size: $h2;
         color: $text-title-color;
         text-align: center;
@@ -192,56 +193,68 @@ section {
 
         margin: auto;
         margin-top: 15px;
-        @media screen and (max-width:1346px){
+        @media screen and (max-width:1235px){
             font-size:$h3;
-           
+        }
+        @media screen and (max-width:768px){
+            width:100%;
         }
       }
       // 露營注意事項文字區塊
       .camping-notes-text {
-        width: 500px;
-        height: 300px;
+        width: 80%;
+        height: auto;
+        
         font-size: $h3;
         color: $text-content-color;
         line-height: 50px;
         margin: auto;
-        margin-top: 30px;
-        @media screen and (max-width:1346px){
-            width:400px;
+        margin-top: 10px;
+        @media screen and (max-width:1235px){
             font-size:$h4;
-            margin-top:10px;
-        }
-        @media screen and (max-width:1346px){
-            width:400px;
-            font-size:$h4;
-            margin-top:10px;
-        }
-        @media screen and (max-width:1048px) {
-            width:350px;
-        }
-        @media screen and (max-width:987px) {
-            width:300px;
-        }
-        @media screen and (max-width:768px){
-            width:500px;
-            margin-left:120px;
         }
         
+
+        p{
+            width: 100%;
+            margin:auto;
+
+        }
+        // @media screen and (max-width:1346px){
+        //     width:400px;
+        //     font-size:$h4;
+        //     margin-top:10px;
+        // }
+        // @media screen and (max-width:1346px){
+        //     width:400px;
+        //     font-size:$h4;
+        //     margin-top:10px;
+        // }
+        // @media screen and (max-width:1048px) {
+        //     width:350px;
+        // }
+        // @media screen and (max-width:987px) {
+        //     width:300px;
+        // }
+        // @media screen and (max-width:768px){
+        //     width:500px;
+        //     margin-left:120px;
+        // }
       }
     }
     // 露營收費區塊
     .camping-price {
-      width: 49%;;
+      width: 49%;
       background-color: $box-color;
       @media screen and (max-width:768px){
         width:100%;
-        height:400px;
         margin-top:30px;
     }
-      // 露營收費區塊
+       
+      // 露營收費標題
       .camping-price-title {
         width: 150px;
-        height: 50px;
+        height: auto;
 
         font-size: $h2;
         color: $text-title-color;
@@ -250,14 +263,14 @@ section {
 
         margin: auto;
         margin-top: 15px;
-        @media screen and (max-width:1346px){
+        @media screen and (max-width:1235px){
             font-size:$h3;
         }
       }
       // 露營收費文字區塊
       .camping-price-text {
         width: 400px;
-        height: 300px;
+        height: auto;
 
         font-size: $h3;
         color: $text-content-color;
@@ -265,129 +278,126 @@ section {
 
         margin: auto;
         margin-top: 35px;
-        @media screen and (max-width:1346px){
-            width:350px;
-            font-size:$h4;
-            margin-top:15px;
-        }
-        @media screen and (max-width:1048px){
-            width:330px;
-            margin-top:80px;
-            margin-left:55px;
-        }
-        @media screen and (max-width:913px){
-            margin-left:40px;
-        }
-        @media screen and (max-width:844px){
-            margin-left:30px;
-        }
-        @media screen and (max-width:799px){
-            margin-left:20px;
-        }
-        @media screen and (max-width:799px){
-            width:300px;
-        }
-        @media screen and (max-width:778px){
-            width:280px;
-        }
-        @media screen and (max-width:768px){
-            margin-top:10px;
-            margin-left:170px;
-            width:300px;
-        }
-
         p {
-          span {
-            margin-left:100px;
-            @media screen and (max-width:778px){
-                margin-left:80px;
-            }
+            width:80%;
+            margin:auto;
           }
+        @media screen and (max-width:1235px){
+            font-size:$h4;
+            margin:auto;
+            margin-top:20px;
+            padding-left:20px;
         }
+        // @media screen and (max-width:1346px){
+        //     width:350px;
+        //     font-size:$h4;
+        //     margin-top:15px;
+        // }
+        // @media screen and (max-width:1048px){
+        //     width:330px;
+        //     margin-top:80px;
+        //     margin-left:55px;
+        // }
+        // @media screen and (max-width:913px){
+        //     margin-left:40px;
+        // }
+        // @media screen and (max-width:844px){
+        //     margin-left:30px;
+        // }
+        // @media screen and (max-width:799px){
+        //     margin-left:20px;
+        // }
+        // @media screen and (max-width:799px){
+        //     width:300px;
+        // }
+        // @media screen and (max-width:778px){
+        //     width:280px;
+        // }
+        // @media screen and (max-width:768px){
+        //     margin-top:10px;
+        //     margin-left:170px;
+        //     width:300px;
+        // }
+
         
-        // 段落分行
-        #price-text-3 {
-          margin-top: 20px;
-        }
+
+        
       }
     }
 
     // 露營預約區塊
     .camping-reservation {
       width: 100%;
-      height:500px;
+      height: auto;
       background-color: $box-color;
-     
+
       margin-top: 35px;
       padding-bottom: 50px;
-      @media screen and (max-width:851px){
-        height:600px;
+      //   @media screen and (max-width:851px){
+      //     height:600px;
     }
-      // 露營預約標題
-      .camping-reservation-title {
-        width: 150px;
-        height: 60px;
+    // 露營預約標題
+    .camping-reservation-title {
+      width: 150px;
+      height: auto;
 
-        font-size: $h2;
-        color: $text-title-color;
-        text-align: center;
-        border-bottom: 1px $text-line-color solid;
+      font-size: $h2;
+      color: $text-title-color;
+      text-align: center;
+      border-bottom: 1px $text-line-color solid;
 
-        padding-bottom: 5px;
-        margin: auto;
-        padding-top: 10px;
-        @media screen and (max-width:1346px){
-            font-size:$h3;
-        }
-        
+      padding-bottom: 5px;
+      margin: auto;
+      padding-top: 10px;
+      @media screen and (max-width:1235px){
+        font-size:$h3;
+    }
+    }
+    // 露營預約文字區塊
+    .camping-reservation-text {
+      width: 100%;
+      height: auto;
+
+      font-size: $h3;
+      color: $text-content-color;
+      line-height: 50px;
+      letter-spacing: 3px;
+
+      margin: auto;
+      margin-top: 30px;
+      @media screen and (max-width:1235px){
+        font-size:$h4;
+    }
+      p {
+          width:80%;
+          margin:auto;
       }
-      // 露營預約文字區塊
-      .camping-reservation-text {
-        width: 1080px;
-        height: 300px;
-
-        font-size: $h3;
-        color: $text-content-color;
-        line-height: 50px;
-        letter-spacing: 3px;
-
-        margin: auto;
+      
+      // @media screen and (max-width:1346px){
+      //     width:900px;
+      //     font-size:$h4;
+      // }
+      // @media screen and (max-width:1176px){
+      //     width:800px;
+      //     height:380px;
+      // }
+      // @media screen and (max-width:1048px){
+      //     width:750px;
+      // }
+      // @media screen and (max-width:963px){
+      //     width:700px;
+      // }
+      // @media screen and (max-width:894px){
+      //     width:650px;
+      // }
+      // @media screen and (max-width:851px){
+      //     width:600px;
+      // }
+      // @media screen and (max-width:768px){
+      //     width:550px;
+      // }
+      p {
         margin-top: 30px;
-        @media screen and (max-width:1346px){
-            width:900px;
-            font-size:$h4;
-        }
-        @media screen and (max-width:1176px){
-            width:800px;
-            height:380px;
-        }
-        @media screen and (max-width:1048px){
-            width:750px;
-        }
-        @media screen and (max-width:963px){
-            width:700px;
-        }
-        @media screen and (max-width:963px){
-            width:700px;
-        }
-        @media screen and (max-width:963px){
-            width:700px;
-        }
-        @media screen and (max-width:963px){
-            width:700px;
-        }
-        @media screen and (max-width:894px){
-            width:650px;
-        }
-        @media screen and (max-width:851px){
-            width:600px;
-        }
-        @media screen and (max-width:768px){
-            width:550px;
-        }
-        p {
-          margin-top: 30px;
-        }
       }
     }
   }
