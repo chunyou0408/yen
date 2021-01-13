@@ -4,13 +4,13 @@
 }
 body {
     .all{
-        width: auto;
+        width: 100%;
         // background-color: rgb(247, 166, 166);
         margin-left: 175px;
 
         @media (max-width: 768px){
-            width: 95%;
-            margin: auto;
+            width: 100%;
+            margin: 0;
         }
 
         .camp_area_1{
@@ -50,8 +50,8 @@ body {
                     height: 23.5vw;
                     z-index: -2;
                     @media (max-width: 768px){
-                        width: 95vw;
-                        height:55.8125vw;
+                        width: 100vw;
+                        height:58.75vw;
                     }
                 }
                 .grass_text_box{
@@ -60,8 +60,7 @@ body {
                     position: relative;
                     @media (max-width: 768px){
                         text-align: center;
-                        padding-top: 1vw;
-                        padding-bottom: 1vw;
+                        padding:0;
                         background-color: $nav-text-color;
                     }
                     .grass_text_title{
@@ -121,7 +120,11 @@ body {
                 justify-content: flex-end;
                 position: relative;
                 padding-bottom: 27vw;
-                
+                @media (max-width: 768px){
+                    position: relative;
+                    padding-bottom: 1vw;
+                    width: 100%;
+                }
                 img{
                     width: 40vw;
                     height: 23.5vw;
@@ -131,8 +134,8 @@ body {
                     z-index: -1;
                     @media (max-width: 768px){
                         position:initial;
-                        width: 95vw;
-                        height:53vw;
+                        width: 100vw;
+                        height:52vw;
                     }
                 } 
                 .camp_area_wooden_bkcolor{
@@ -155,6 +158,7 @@ body {
                     @media (max-width: 768px){
                         position:initial;
                         width:100%;
+                        height:125px
                     }
                 }
                 .wooden_text_box{
@@ -166,7 +170,9 @@ body {
                     z-index: 1;
                     padding-bottom: 0;
                     @media (max-width: 768px){
-                        position:initial;
+                        width: 100%;
+                        top: 53vw;
+                        left:0
                     }
                     
                     .wooden_text_title{
@@ -190,8 +196,10 @@ body {
                         left: 38.5vw;
                         z-index: -1;
                         @media (max-width: 768px){
-                            position:initial;
-                             
+                            // position:initial;
+                            top:1.05vw;
+                            left: 43.5vw;
+                            
                         }
                        
                         .wooden_text_title_underline{
@@ -217,6 +225,10 @@ body {
                         .wooden_text_content_left{
                             width: 50%;
                             padding-left: 5vw ;
+                            @media (max-width: 768px){
+                                width: 50%;
+                                padding-left: 20vw;
+                            }
                             p{
                                 @media (max-width: 1679px){
                                     margin-bottom: 10px;
@@ -230,6 +242,10 @@ body {
                         .wooden_text_content_right{
                             width: 50%;
                             padding-left: 2vw ;
+                            @media (max-width: 768px){
+                                width: 50%;
+                                padding-left: 8.5vw;
+                            }
                             p{
                                 @media (max-width: 1679px){
                                     margin-bottom: 10px;

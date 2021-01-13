@@ -10,9 +10,22 @@ body .container {
   margin-left: 145px;
 }
 
+@media (max-width: 768px) {
+  body .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 body .container .nav {
   width: auto;
   margin: 0 2%;
+}
+
+@media (max-width: 768px) {
+  body .container .nav {
+    margin: 0%;
+  }
 }
 
 body .container .shop_title {
@@ -26,6 +39,7 @@ body .container .shop_title {
 body .container .shop_title samp {
   border-bottom: 1px #898989 solid;
   padding-bottom: 5px;
+  letter-spacing: 6px;
 }
 
 body .container .content_top {
@@ -33,8 +47,34 @@ body .container .content_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+body .container .content_top .content_top_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1%;
+}
+
+@media (max-width: 768px) {
+  body .container .content_top .content_top_left {
+    display: block;
+    margin: 5% 5% 0 10%;
+  }
+}
+
+body .container .content_top .content_top_rigth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1%;
+}
+
+@media (max-width: 768px) {
+  body .container .content_top .content_top_rigth {
+    display: block;
+    margin: 5% 10% 0 5%;
+  }
 }
 
 body .container .content_top .commodity_top_card {
@@ -67,7 +107,6 @@ body .container .content_top .commodity_top_card .buy_button {
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   width: 25px;
-  height: 25px;
   text-align: center;
   line-height: 25px;
   border: 2px #898989 solid;
@@ -75,6 +114,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   color: #898989;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_quantity {
@@ -96,6 +137,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   color: #898989;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 
 body .container .content_bottom {
@@ -105,6 +148,34 @@ body .container .content_bottom {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+body .container .content_bottom .content_bottom_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1%;
+}
+
+@media (max-width: 768px) {
+  body .container .content_bottom .content_bottom_left {
+    display: block;
+    margin: 0 5% 0 10%;
+  }
+}
+
+body .container .content_bottom .content_bottom_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1%;
+}
+
+@media (max-width: 768px) {
+  body .container .content_bottom .content_bottom_right {
+    display: block;
+    margin: 0 10% 0 5%;
+  }
 }
 
 body .container .content_bottom .commodity_bottom_card {
@@ -137,7 +208,6 @@ body .container .content_bottom .commodity_bottom_card .buy_button {
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left {
   width: 25px;
-  height: 25px;
   text-align: center;
   line-height: 25px;
   border: 2px #898989 solid;
@@ -145,6 +215,8 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   color: #898989;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_quantity {
@@ -166,5 +238,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   color: #898989;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 /*# sourceMappingURL=06-shopping.css.map */
