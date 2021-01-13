@@ -39,6 +39,7 @@ body .container .shop_title {
 body .container .shop_title samp {
   border-bottom: 1px #898989 solid;
   padding-bottom: 5px;
+  letter-spacing: 6px;
 }
 
 body .container .content_top {
