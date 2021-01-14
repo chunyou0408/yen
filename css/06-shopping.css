@@ -47,6 +47,8 @@ body .container .content_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body .container .content_top .content_top_left {
@@ -118,6 +120,18 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   background-color: white;
 }
 
+body .container .content_top .commodity_top_card .buy_button .buy_button_left:hover {
+  background-color: lightgray;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_left:focus {
+  outline: initial;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_left:active {
+  background-color: lightcoral;
+}
+
 body .container .content_top .commodity_top_card .buy_button .buy_button_quantity {
   width: 30px;
   text-align: center;
@@ -139,6 +153,18 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   border-bottom-right-radius: 20px;
   cursor: pointer;
   background-color: white;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_right:hover {
+  background-color: lightgray;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_right:focus {
+  outline: initial;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_right:active {
+  background-color: lightcoral;
 }
 
 body .container .content_bottom {
@@ -219,6 +245,18 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   background-color: white;
 }
 
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left:hover {
+  background-color: lightgray;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left:focus {
+  outline: initial;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left:active {
+  background-color: lightcoral;
+}
+
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_quantity {
   width: 30px;
   text-align: center;
@@ -240,5 +278,17 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   border-bottom-right-radius: 20px;
   cursor: pointer;
   background-color: white;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_right:hover {
+  background-color: lightgray;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_right:focus {
+  outline: initial;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_right:active {
+  background-color: lightcoral;
 }
 /*# sourceMappingURL=06-shopping.css.map */

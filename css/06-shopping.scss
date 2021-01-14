@@ -33,7 +33,8 @@ body {
     .content_top {
       width: auto;
       display: flex;
-      // justify-content:space-around;
+      justify-content:space-around;
+
       .content_top_left {
         display: flex;
         margin-left: 1%;
@@ -79,6 +80,15 @@ body {
             border-bottom-left-radius: 20px;
             cursor: pointer;
             background-color: white;
+            &:hover{
+              background-color:lightgray;
+            }
+            &:focus{
+              outline:initial;
+            }
+            &:active{
+              background-color: lightcoral;
+            }
           }
           .buy_button_quantity {
             width: 30px;
@@ -100,6 +110,15 @@ body {
             border-bottom-right-radius: 20px;
             cursor: pointer;
             background-color: white;
+            &:hover{
+              background-color:lightgray;
+            }
+            &:focus{
+              outline:initial;
+            }
+            &:active{
+              background-color: lightcoral;
+            }
           }
         }
       }
@@ -152,6 +171,15 @@ body {
             border-bottom-left-radius: 20px;
             cursor: pointer;
             background-color: white;
+            &:hover{
+              background-color:lightgray;
+            }
+            &:focus{
+              outline:initial;
+            }
+            &:active{
+              background-color: lightcoral;
+            }
           }
           .buy_button_quantity {
             width: 30px;
@@ -173,6 +201,15 @@ body {
             border-bottom-right-radius: 20px;
             cursor: pointer;
             background-color: white;
+            &:hover{
+              background-color:lightgray;
+            }
+            &:focus{
+              outline:initial;
+            }
+            &:active{
+              background-color: lightcoral;
+            }
           }
         }
       }
