@@ -34,18 +34,18 @@ main .above .logo {
 }
 
 main .above .logo_horizontal {
-  width: 30%;
+  width: 25%;
   position: absolute;
-  top: 52%;
+  top: 51%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 main .above .logo_horizontal_en {
-  width: 30%;
+  width: 24%;
   position: absolute;
-  top: 62%;
+  top: 59%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
