@@ -83,6 +83,12 @@ section .camping-photo-card .pt-box a .img-hover .pt-box-img-text {
   bottom: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  section .camping-photo-card .pt-box a .img-hover .pt-box-img-text {
+    line-height: 330.36px;
+  }
+}
+
 section .camping-photo-card .pt-box a .img-hover:hover .pt-box-img-text {
   opacity: 0.8;
 }
@@ -116,13 +122,13 @@ section .camping-photo-card .pt-box .pt-box-text .text-line-8 {
   left: 150px;
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 982px) {
   section .camping-photo-card .pt-box2 {
     margin-top: 40px;
   }
 }
 
-@media screen and (max-width: 1445px) {
+@media screen and (max-width: 1464px) {
   section .camping-photo-card .pt-box3 {
     margin-top: 39px;
   }

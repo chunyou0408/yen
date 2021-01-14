@@ -70,6 +70,9 @@ section {
             opacity: 0;
             transition: all 200ms ease-in-out;
             bottom: 4px;
+            @media screen and (max-width:768px){
+              line-height: 330.36px;
+            }
           }
           // 要直接用hover必須前面加一個 &
           // 意思是對img-hover做hover效果
@@ -114,12 +117,12 @@ section {
       }
     }
     .pt-box2 {
-      @media screen and (max-width: 965px) {
+      @media screen and (max-width: 982px) {
         margin-top: 40px;
       }
     }
     .pt-box3 {
-      @media screen and (max-width: 1445px) {
+      @media screen and (max-width: 1464px) {
         margin-top: 39px;
       }
     }
