@@ -71,6 +71,9 @@
                                     @media screen and (max-width: 768px) {
                                         font-size: $h3;
                                         opacity: 1;
+                                        backface-visibility: visible;
+                                        width: 100%;
+                                        height: 98%;
                                     }
                                     div {
                                         margin-top: 25%;

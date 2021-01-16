@@ -107,7 +107,6 @@
                 </div>
                 <!-- 照片7-8 -->
                 <div class="pt-box pt-box7">
-
                     <div class="img-hover">
                         <img src="./img/05/07.jpg" alt="">
                         <div class="pt-box-img-text">
@@ -187,21 +186,40 @@
     <script>
         AOS.init();
 
-        var fade_img = document.querySelectorAll(".pt-box-img-text");
+        // var fade_img = document.querySelector(".pt-box-img-text");
+
+        // $(window).width();
+        // if ($(window).width() < 768) {
+        //     // JavaScript here 
+        //     // 當視窗寬度小於768px時執行
+        //     console.log('123');
+        //     fade_img.setAttribute('data-aos', 'flip-left');
+        //     fade_img.setAttribute('data-aos-delay', '3000');
+
+        // } else {
+        //     // JavaScript here
+        //     // 當視窗寬度不小於768px時執行
+        //     fade_img.removeAttribute('data-aos');
+        //     fade_img.removeAttribute('data-aos-delay');
+        // }
+
+        var fade_img = $('.pt-box-img-text')
 
 
-        fade_img.onclick = function() {
-            console.log('success');
-            $(window).width();
-            if ($(window).width() < 768) {
-                // JavaScript here 
-                // 當視窗寬度小於768px時執行
-                fade_img.setAttribute('data-aos="flip-left"', 'data-aos-delay:3000');
-            } else {
-                // JavaScript here
-                // 當視窗寬度不小於768px時執行
-                fade_img.removeAttribute('data-aos="flip-left"', 'data-aos-delay:3000');
-            }
+        $(window).width();
+        if ($(window).width() < 768) {
+            // JavaScript here 
+            // 當視窗寬度小於768px時執行
+            console.log('123');
+            fade_img.attr('data-aos', 'zoom-in');
+            fade_img.attr('data-aos-delay', '3000');
+
+        } else {
+
+            // JavaScript here
+            // 當視窗寬度不小於768px時執行
+            fade_img.removeAttr('data-aos');
+            fade_img.removeAttr('data-aos-delay');
         }
     </script>
 </body>
