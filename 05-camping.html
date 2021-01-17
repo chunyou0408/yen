@@ -1,175 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/05-camping.css">
+    <!-- 因為使用sass所以要先link程式碼 -->
+    <link rel="stylesheet" href="./css/rwd-camping_cyh.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+   
 </head>
 
 <body>
-
     <main>
-        <div class="container">
+        <!-- section-之後套模板統一模式 -->
+        <!-- 畫面最上方 -->
+        <!-- <div id="box_display" class="box"></div> -->
+        
+        <section>
             <div class="camping-title">
                 <span>CAMPING</span>
             </div>
-            <!-- 露營照片區 -->
-            <div class="camping-photo-box">
+            <!-- 露營照片區塊 -->
+            <div class="camping-photo-card">
                 <!-- 照片1-3 -->
-                <div class="pt-box-1-to-3">
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/01.jpg" alt="">
-                                <div class="pt-box-img-text">草原露營區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            50 set
-                        </div>
-                    </div>
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/02.jpg" alt="">
-                                <div class="pt-box-img-text">樟樹林露營區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            8 set
-                        </div>
-                    </div>
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/03.jpg" alt="">
-                                <div class="pt-box-img-text">枕木露營區(遮雨棚)</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            7 set
-                        </div>
-                    </div>
-                </div>
-                <!-- 照片4-6 -->
-                <div class="pt-box-4-to-6">
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/04.jpg" alt="">
-                                <div class="pt-box-img-text">枕木露營區2(遮雨棚)</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            7 set
-                        </div>
-                    </div>
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/05.jpg" alt="">
-                                <div class="pt-box-img-text">針葉林露營區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            27 set
+                <div class="pt-box pt-box1">
+
+                    <div class="img-hover">
+                        <img src="./img/05/01.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <!-- animated fadein -->
+                            <div>草原露營區</div>
                         </div>
                     </div>
 
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/06.jpg" alt="">
-                                <div class="pt-box-img-text">星光露營區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            17 set
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 50 set
+                    </div>
+                </div>
+                <div class="pt-box pt-box2">
+
+                    <div class="img-hover">
+                        <img src="./img/05/02.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <div>樟樹林露營區</div>
                         </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 8 set
+                    </div>
+                </div>
+                <div class="pt-box pt-box3">
+
+                    <div class="img-hover">
+                        <img src="./img/05/03.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <div>枕木露營區(遮雨棚)</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 7 set
+                    </div>
+                </div>
+                <!-- 照片4-6 -->
+                <div class="pt-box pt-box4">
+
+                    <div class="img-hover">
+                        <img src="./img/05/04.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <div>枕木露營區2(遮雨棚)</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 7 set
+                    </div>
+                </div>
+
+                <div class="pt-box pt-box5">
+
+                    <div class="img-hover">
+                        <img src="./img/05/05.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <!-- data-aos="fade-down" data-aos-delay:3000; -->
+                            <div> 針葉林露營區</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 27 set
+                    </div>
+                </div>
+                <div class="pt-box pt-box6">
+
+                    <div class="img-hover">
+                        <img src="./img/05/06.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <!-- data-aos="fade-down" data-aos-delay:3000; -->
+                            <div> 星光露營區(遮雨棚)</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 17 set
                     </div>
                 </div>
                 <!-- 照片7-8 -->
-                <div class="pt-box-7-to-8">
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/04.jpg" alt="">
-                                <div class="pt-box-img-text">松樹林露營區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line" src="./img/05/text-line.png" alt="">
-                            10 set
+                <div class="pt-box pt-box7">
+                    <div class="img-hover">
+                        <img src="./img/05/07.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <!-- data-aos="fade-down" data-aos-delay:3000; -->
+                            <div>松樹林露營區</div>
                         </div>
                     </div>
-                    <div class="pt-box">
-                        <a href="/">
-                            <div>
-                                <img src="./img/05/05.jpg" alt="">
-                                <div class="pt-box-img-text">空中帳篷區</div>
-                            </div>
-                        </a>
-                        <div class="pt-box-text">
-                            <img class="text-line-8" src="./img/05/text-line.png" alt="">
-                            致電預約
+
+                    <div class="pt-box-text">
+                        <img class="text-line" src="./img/05/text-line.png" alt=""> 10 set
+                    </div>
+                </div>
+                <div class="pt-box pt-box8">
+
+                    <div class="img-hover">
+                        <img src="./img/05/08.jpg" alt="">
+                        <div class="pt-box-img-text fade-effect" data-aos="fade-right">
+                            <!-- data-aos="fade-down" data-aos-delay:3000; -->
+                            <div>空中帳篷區</div>
                         </div>
+                    </div>
+
+                    <div class="pt-box-text">
+                        <img class="text-line-8" src="./img/05/text-line.png" alt=""> 致電預約
                     </div>
                 </div>
             </div>
             <!-- 露營注意事項、預約等文字 -->
             <div class="camping-introduction-box">
-                <div class="camping-notes-and-price">
-                    <div class="camping-notes-box">
-                        <div class="camping-notes-title">露營注意事項</div>
-                        <div class="camping-notes-text">
-                            <span>一. 垃圾菸蒂請勿落地，勿施放煙火。</span>
-                            <span>二. 請勿在地面生火，烤肉請自備爐具。</span>
-                            <span>三. 各營區有數個插座供共同使用，請自備延長線。</span>
-                            <span>四. 汽車均可停於營位附近。</span>
-                            <span>五. 請保持營區寧靜，下午一點前離營。</span>
-                        </div>
 
-                    </div>
-                    <div class="camping-price">
-                        <div class="camping-price-title">露營收費</div>
-                        <div class="camping-price-text">
-                            <p>空帳收費<span>$1300/帳</span></p>
-                            
-                            <p>地帳收費<span>$800/帳</span></p>
-                            
-                            <p id="price-text-3">可進場2位人3小孩或3位大人，</p>
-                            <p>每多1位大人$250小孩$100</p>
-                        </div>
+                <div class="camping-notes-box" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="camping-notes-title">露營注意事項</div>
+                    <div class="line"></div>
+                    <div class="camping-notes-text">
+                        <p>
+                            一. 垃圾菸蒂請勿落地，勿施放煙火。<br> 二. 請勿在地面生火，烤肉請自備爐具。<br> 三. 各營區有數個插座供共同使用，請自備延長線。<br> 四.
+                            汽車均可停於營位附近。<br> 五. 請保持營區寧靜，下午一點前離營。<br>
+                        </p>
                     </div>
                 </div>
-                <div class="camping-reservation">
+                <div class="camping-price" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="camping-price-title">露營收費</div>
+                    <div class="line"></div>
+                    <div class="camping-price-text">
+                        <p>
+                            空帳收費&emsp;&emsp;&nbsp;&nbsp;&nbsp;$1300/帳<br>地帳收費&emsp;&emsp;&nbsp;&nbsp;&nbsp;$800/帳
+
+                            <br>
+
+                            <br>可進場2位人3小孩或3位大人，
+                            <br>每多1位大人$250小孩$100
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="camping-reservation" data-aos="zoom-in" data-aos-delay="1600">
                     <div class="camping-reservation-title">露營預約</div>
+                    <div class="line"></div>
                     <div class="camping-reservation-text">
                         <p>
-                            牧場採線上預約，露營日期前一個月開放預約，您必須提前12小時預約，並且于收到預約確認信後完成預約。
+                            牧場採線上預約，露營日期前一個月開放預約，您必須提前12小時預約，並且于收到預約確認信後完成預約。<br>
+
+                            <br>若您因故無法前來，請事先上網取消預約，當日取消需來電告知工作人員，以免影響他人權益。多次無故取消且未事先通知者，牧場有權利取消其預約。<br>
+
+                            <br>遇事件或活動，顏氏牧場可能停止或僅開放部分露營區。<br>
                         </p>
-                        <p>
-                            若您因故無法前來，請事先上網取消預約，當日取消需來電告知工作人員，以免影響他人權益。多次無故取消且未事先通知者，牧場有權利取消其預約。
-                        </p>
-                        <p>遇事件或活動，顏氏牧場可能停止或僅開放部分露營區。</p>
 
                     </div>
                 </div>
             </div>
+        </section>
 
-
-
-        </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        // var fade_img = document.querySelector(".pt-box-img-text");
+
+        // $(window).width();
+        // if ($(window).width() < 768) {
+        //     // JavaScript here 
+        //     // 當視窗寬度小於768px時執行
+        //     console.log('123');
+        //     fade_img.setAttribute('data-aos', 'flip-left');
+        //     fade_img.setAttribute('data-aos-delay', '3000');
+
+        // } else {
+        //     // JavaScript here
+        //     // 當視窗寬度不小於768px時執行
+        //     fade_img.removeAttribute('data-aos');
+        //     fade_img.removeAttribute('data-aos-delay');
+        // }
+
+        // var fade_img = $('.pt-box-img-text')
+
+
+        // $(window).width();
+        // if ($(window).width() < 768) {
+        //     // JavaScript here 
+        //     // 當視窗寬度小於768px時執行
+        //     console.log('123');
+        //     fade_img.attr('data-aos', 'zoom-in');
+        //     fade_img.attr('data-aos-delay', '3000');
+
+        // } else {
+
+        //     // JavaScript here
+        //     // 當視窗寬度不小於768px時執行
+        //     fade_img.removeAttr('data-aos');
+        //     fade_img.removeAttr('data-aos-delay');
+        // }
+       
+
+        
+
+        var fade_img = $('.fade-effect');
+        $(window).width();
+        //偵測畫面寬度
+        window.onresize = function () {
+            if ($(window).width() < 768) {
+                // JavaScript here 
+                // 當視窗寬度小於768px時執行
+                console.log('123');
+                fade_img.attr('data-aos', 'fade-up');
+                // fade_img.attr('data-aos', 'fade-left');
+                fade_img.attr('data-aos-delay', '2000');
+
+            } else {
+
+                // JavaScript here
+                // 當視窗寬度不小於768px時執行
+                // console.log('321');
+
+                fade_img.removeAttr('data-aos');
+                fade_img.removeAttr('data-aos-delay');
+            }
+        }
+
+    //     var box = document.getElementById("box_display");
+
+    //     function move() {
+    //     var box = document.getElementById("h");
+    //     display.style.display = "";
+    // }
+    //     function out() {
+    //     var box = document.getElementById("h");
+    //     box.style.display = "none";
+    // }
+
+        
+    </script>
 </body>
 
 </html>
