@@ -5,16 +5,14 @@
 }
 
 //畫面最上方
-// .box{
-//     height: 1000px;
-//     width: 100%;
-//     display:none;
-//     @media screen and (width:768px) {
-//         height: 1000px;
-//         width: 100%;
-//         display:block;
-//     }                        
-// }
+.box{
+    height: 1000px;
+    width: 100%;
+    display:none;
+    @media screen and (max-width:768px) {
+        display:block;
+    }                        
+}
  
 section {
     // 之後用模板要取消
