@@ -81,6 +81,7 @@ body .container .content_top .content_top_rigth {
 
 body .container .content_top .commodity_top_card {
   margin: 2%;
+  margin-bottom: 0;
 }
 
 body .container .content_top .commodity_top_card .imgbox {
@@ -114,6 +115,7 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   border: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
+  border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   cursor: pointer;
@@ -137,7 +139,7 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_quantit
   text-align: center;
   line-height: 25px;
   font-size: 18px;
-  border-bottom: 2px #898989 solid;
+  border-left: 2px #898989 solid;
   border-top: 2px #898989 solid;
   color: #898989;
 }
@@ -149,6 +151,7 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   border: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
+  border-left: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
@@ -239,6 +242,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   border: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
+  border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   cursor: pointer;
@@ -261,7 +265,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_q
   width: 30px;
   text-align: center;
   line-height: 25px;
-  border-bottom: 2px #898989 solid;
+  border-left: 2px #898989 solid;
   border-top: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
@@ -274,6 +278,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   border: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
+  border-left: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;

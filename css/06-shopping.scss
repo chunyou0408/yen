@@ -53,6 +53,7 @@ body {
       }
       .commodity_top_card {
         margin: 2%;
+        margin-bottom: 0;
         .imgbox {
           margin-bottom: 5%;
         }
@@ -76,6 +77,7 @@ body {
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
+            border-right: none ;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             cursor: pointer;
@@ -95,7 +97,7 @@ body {
             text-align: center;
             line-height: 25px;
             font-size: 18px;
-            border-bottom: 2px #898989 solid;
+            border-left:  2px #898989 solid;
             border-top: 2px #898989 solid;
             color: #898989;
           }
@@ -106,6 +108,7 @@ body {
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
+            border-left: none;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             cursor: pointer;
@@ -167,6 +170,7 @@ body {
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
+            border-right: none;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             cursor: pointer;
@@ -185,7 +189,7 @@ body {
             width: 30px;
             text-align: center;
             line-height: 25px;
-            border-bottom: 2px #898989 solid;
+            border-left: 2px #898989 solid;
             border-top: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
@@ -197,6 +201,7 @@ body {
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
+            border-left: none;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             cursor: pointer;
