@@ -50,7 +50,7 @@ body {
                     display: initial;
                 }
                 img{
-                    width: 40vw;
+                    width: 44.5%;
                     height: 23.5vw;
                     z-index: -2;
                     @media (max-width: 768px){
@@ -59,18 +59,20 @@ body {
                     }
                 }
                 .grass_text_box{
+                    height: auto;
                     padding-left: 0.5vw;
                     padding-top: 4vw;
                     position: relative;
                     @media (max-width: 768px){
-                        height: 9vh;
+                        height: 120px;
                         text-align: center;
-                        padding:0;
-                        top: -4vw;
+                        padding:0 0 110px 0;
+                        top: -7vw;
                     }
                     .grass_text_title{
                         font-size: $h2;
                         color: $text-title-color;
+                        z-index: 1;
                         @media (max-width: 1679px){
                             font-size: 24px;
                         }
@@ -82,6 +84,7 @@ body {
                         }
                         @media (max-width: 768px){
                             color: white;
+                            font-size: $h2;
                         }
                     }
                     .grass_text_title_underline{
@@ -90,10 +93,12 @@ body {
                         position: absolute;
                         top: 6vw;
                         left: -2vw;
+                        z-index: 0;
                         @media (max-width: 768px){
-                            top:3vw;
-                            left: 36.5vw;
-                            z-index: 2;
+                            width: 150px;
+                            top:38.75%;
+                            left: 38.5%;
+                           
                         }
                     }
                     .grass_text_content{
@@ -109,6 +114,9 @@ body {
                         }
                         @media (max-width: 943px){
                             font-size: 14px;
+                        }
+                        @media (max-width: 768px){
+                            font-size: $h3;
                         }
                         p{
                             @media (max-width: 1679px){
@@ -140,7 +148,7 @@ body {
                     width: 100%;
                 }
                 img{
-                    width: 40vw;
+                    width: 44.5%;
                     height: 23.5vw;
                     position: absolute;
                     top: -8vw;
@@ -178,6 +186,7 @@ body {
                 }
                 .wooden_text_box{
                     width: 37vw;
+                    height: auto;
                     padding-bottom: 50vw;
                     position: absolute;
                     top: 12.5vw;
@@ -186,7 +195,7 @@ body {
                     padding-bottom: 0;
                     @media (max-width: 768px){
                         width: 100%;
-                        top: 48vw;
+                        top: 44vw;
                         left:0
                     }
                     
@@ -204,6 +213,7 @@ body {
                             font-size: 16px;
                         }
                         @media (max-width: 768px){
+                            font-size: $h2;
                             color:white;
                         }
                     }
@@ -215,14 +225,18 @@ body {
                         z-index: -1;
                         @media (max-width: 768px){
                             // position:initial;
-                            top:1.05vw;
-                            left: 36.5vw;
+                            top:30px;
+                            left: 31vw;
                             
                         }
                        
                         .wooden_text_title_underline{
-                        width: 12vw; 
-                        height: 0.4vw;
+                            width: 12vw; 
+                            height: 0.4vw;
+                            @media (max-width: 768px){
+                                width: 160px;
+                                height: 5px;
+                            }
                         }
                     }
                     .wooden_text_content{
@@ -239,22 +253,25 @@ body {
                         @media (max-width: 943px){
                             font-size: 14px;
                         }
+                        @media (max-width: 768px){
+                            font-size: $h3;
+                            
+                        }
 
                         .wooden_text_content_left{
                             width: 50%;
                             padding-left: 4vw ;
                             @media (max-width: 768px){
                                 width: 50%;
-                                padding-left: 20vw;
+                                padding-left: 5vw;
                             }
                             p{
                                 @media (max-width: 1679px){
                                     margin-bottom: 10px;
                                 } 
                                 @media (max-width: 1119px){
-                                    margin-bottom: 4px;
+                                    margin-bottom: 4px; 
                                 }
-
                             }
                         }
                         .wooden_text_content_right{
@@ -287,7 +304,7 @@ body {
                 margin: auto;
             }
             img{
-                width: 76vw;
+                width: 83.5%;
                 height: 29.65vw;
                 @media (max-width: 768px){
                     width: 100%;
@@ -381,19 +398,16 @@ body {
                     @media (max-width: 943px){
                         font-size: 18px;
                     }
-
-                    @media (max-width: 1220px){
-                        
-                    }
-                    @media (max-width: 992px){
-                        
-                    }
                     @media (max-width: 768px){
-                        width: 75vw;
+                        width: 75%;
                         height: 49.5vw; 
+                        padding:0.5vw;
                     }
                     @media (max-width: 576px){
-                        
+                        font-size:14px;
+                    }
+                    @media (max-width: 440px){
+                        font-size:12px;   
                     }
                 }
             }
@@ -403,7 +417,7 @@ body {
                 top:5vw;
                 right: 15vw;
                 @media (max-width: 768px){
-                    width: 77vw;
+                    width: 77.5%;
                     height: 50vw; 
                 }
             }
@@ -416,6 +430,7 @@ body {
                 background-repeat: no-repeat;
                 position: absolute;
                 top:7vw;
+                z-index: -1;
                 @media (max-width: 768px){
                     display: none;
                 }
