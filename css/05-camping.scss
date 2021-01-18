@@ -4,16 +4,6 @@
     margin: 0;
 }
 
-//畫面最上方
-// .box{
-//     height: 1000px;
-//     width: 100%;
-//     display:none;
-//     @media screen and (max-width:768px) {
-//         display:block;
-//     }
-// }
-
 section {
     width: 100%;
     // 之後用模板要取消
@@ -55,6 +45,9 @@ section {
             width: 30%;
             padding-bottom: 40px;
             margin-bottom: -25px;
+            @media screen and (max-width:768px) {
+                margin-bottom:-40px;
+            }
             // @media screen and (max-width: 1400px) {
             //     width: 35%;
             // }
@@ -93,15 +86,15 @@ section {
                     transition: all 200ms ease-in;
                     bottom: 4px;
 
-                    // @media screen and (max-width: 768px) {
-                    //     &.aos-animate{
-                    //         font-size: $h2;
-                    //         opacity: 1;
-                    //         // backface-visibility: visible;
-                    //         width: 100%;
-                    //         height: 98%;
-                    //     }
-                    // }
+                    @media screen and (max-width: 768px) {
+                        &.aos-animate{
+                            font-size: $h2;
+                            opacity: 1;
+                            // backface-visibility: visible;
+                            width: 100%;
+                            height: 98%;
+                        }
+                    }
                     // @media screen and (max-width: 360px) {
                     //     &.aos-animate{
                     //         font-size: $h7;
@@ -111,30 +104,17 @@ section {
                     //         height: 98%;
                     //     }
                     // }
-
                     div {
                         margin-top: 25%;
                         @media screen and (max-width: 768px) {
-                            // font-size:$h4;
-                            margin-top: 3%;
+                            font-size:$h3;
+                            margin-top: 20%;
                         }
-                        // @media screen and (max-width: 674px) {
-                        //     font-size:$h4;
-                        // }
-                        // @media screen and (max-width: 572px) {
-                        //     font-size:$h5;
-                        // }
-                        // @media screen and (max-width: 487px) {
-                        //     font-size:$h6;
-                        // }
-                        // @media screen and (max-width: 414px) {
-                        //     font-size:$h7;
-                        // }
                     }
                     // hover文字
-                    @media screen and (max-width: 768px) {
-                        line-height: 330.36px;
-                    }
+                    // @media screen and (max-width: 768px) {
+                    //     margin-top:10%;
+                    // }
                 }
                 // 要直接用hover必須前面加一個 &
                 // 意思是對img-hover做hover效果
@@ -153,7 +133,8 @@ section {
                 width: 100%;
                 height: 47px;
                 font-size: $h2;
-                color: $text-content-color;
+                font-family:$font-family;
+                color: white;
                 // line-height: 65px;
                 text-align: right;
                 position: relative;
@@ -161,16 +142,16 @@ section {
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
-                z-index: 1;
-                // @media screen and (max-width: 768px) {
-                //     width: 43%;
-                //     text-align: center;
-                //     font-size: $h3;
-                //     position: relative;
-                //     left: 27%;
-                //     top: -25%;
-                //     z-index: 1;
-                // }
+                z-index: 1;  
+                @media screen and (max-width: 768px) {
+                    width: 43%;
+                    text-align: center;
+                    font-size: $h3;
+                    position: relative;
+                    left: 27%;
+                    top: -25%;
+                    z-index: 1;
+                }
                 // @media screen and (max-width: 674px) {
                 //     font-size:$h4;
                 // }
@@ -184,38 +165,33 @@ section {
                 // }
                 .text-line {
                     width: 92px;
-                    height: 20px;
+                    height: 15px;
                     position: relative;
                     z-index: -1;
                     top: 10px;
-                    // bottom:20px;
                     left: 88px;
                     @media screen and (max-width: 768px) {
                         display: none;
                     }
                 }
-                
             }
-
-           
-
-            // .pt-box8 {
-            //     font-size: $h2;
-            //     @media screen and (max-width:522px){
-            //         font-size:$h7;
-            //     }
-            // }
         }
         .pt-box7 {
             margin-left:20%;
+            @media screen and (max-width:768px) {
+                margin-left:0%;
+            }
         }
         .pt-box8 {
             margin-right:15%;
+            @media screen and (max-width:768px) {
+                margin-right:0%;
+            }
             .pt-box-text {
                 font-size:$h3;
                 .text-line-8 {
                     width: 130px;
-                    height: 20px;
+                    height: 15px;
                     position: relative;
                     z-index: -1;
                     top: 10px;
@@ -259,6 +235,9 @@ section {
         justify-content: space-between;
 
         border: 1px black solid;
+        @media screen and (max-width:768px){
+            margin-top:30px;
+        }
         // 露營注意事項
         .camping-notes-box {
             width: 49%;
@@ -369,7 +348,7 @@ section {
                     font-size: $h5;
                 }
                 p {
-                    margin-left: 30%;
+                    margin-left: 27%;
                     @media screen and (max-width: 1415px) {
                         margin-left: 20%;
                     }
