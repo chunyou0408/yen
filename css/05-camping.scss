@@ -5,34 +5,32 @@
 }
 
 //畫面最上方
-.box{
-    height: 1000px;
-    width: 100%;
-    display:none;
-    @media screen and (max-width:768px) {
-        display:block;
-    }                        
-}
+// .box{
+//     height: 1000px;
+//     width: 100%;
+//     display:none;
+//     @media screen and (max-width:768px) {
+//         display:block;
+//     }                        
+// }
  
 section {
-    // 之後用模板要取消
     width: 100%;
-    // height: 10000px;
-    // height:auto;
-    border: 1px black solid;
+    // 之後用模板要取消
+    // border: 1px black solid;
     margin: auto;
-   
-    // @media screen and (width:768px){
-    //     height: 10000px;
-    // }
+ 
+
     // 大標題 CAMPING
     .camping-title {
         text-align: center;
         margin: auto;
         span {
-            font-size: $h2;
+            font-size: 40px;
+
+            font-family:$font-family;
+
             color: $text-title-color;
-            // line-height: 100px;
             letter-spacing: 5px;
             border-bottom: 1px $text-line-color solid;
             padding-bottom: 5px;
@@ -78,13 +76,18 @@ section {
                 .pt-box-img-text {
                     width: 100%;
                     height: 98%;
-                    background-color: rgba(221, 209, 209, 0.3);
                     --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
+                    background-color: rgba(221, 209, 209, 0.4);
+                   
+                    color:white;
                     font-size: $h2;
-                    // font-weight: 600;
-                    color: white;
+
+                    font-family:$font-family;
+
+                    font-weight:600;
                     text-align: center;
+
                     position: absolute;
                     opacity: 0;
                     transition: all 200ms ease-in;
@@ -109,28 +112,28 @@ section {
                         }
                     }
                     
-                    // div {
-                    //     margin-top: 25%;
-                    //     @media screen and (max-width: 768px) {
-                    //         margin-top:20%;
-                    //     }
-                    //     @media screen and (max-width: 674px) {
-                    //         font-size:$h4;
-                    //     }
-                    //     @media screen and (max-width: 572px) {
-                    //         font-size:$h5;
-                    //     }
-                    //     @media screen and (max-width: 487px) {
-                    //         font-size:$h6;
-                    //     }
-                    //     @media screen and (max-width: 414px) {
-                    //         font-size:$h7;
-                    //     }
-                    // }
+                    div {
+                        margin-top: 25%;
+                        @media screen and (max-width: 768px) {
+                            margin-top:20%;
+                        }
+                        @media screen and (max-width: 674px) {
+                            font-size:$h4;
+                        }
+                        @media screen and (max-width: 572px) {
+                            font-size:$h5;
+                        }
+                        @media screen and (max-width: 487px) {
+                            font-size:$h6;
+                        }
+                        @media screen and (max-width: 414px) {
+                            font-size:$h7;
+                        }
+                    }
                     // hover文字
-                    // @media screen and (max-width: 768px) {
-                    //     line-height: 330.36px;
-                    // }
+                    @media screen and (max-width: 768px) {
+                        line-height: 330.36px;
+                    }
                 }
                 // 要直接用hover必須前面加一個 &
                 // 意思是對img-hover做hover效果
@@ -233,14 +236,14 @@ section {
     // 露營文字區塊
     .camping-introduction-box {
         width: 85%;
-        // height: auto;
+
         margin: auto;
         margin-top: 100px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         border: 1px black solid;
-        // text-align: center;
         // 露營注意事項
         .camping-notes-box {
             width: 49%;
@@ -267,7 +270,7 @@ section {
             }
             // 標題線
             .line {
-                width: 30%;
+                width: 28%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
@@ -276,7 +279,7 @@ section {
             .camping-notes-text {
                 width: 100%;
                 font-size: $h3;
-                color: $camping-note;
+                color: $text-content-color;
                 line-height: 60px;
                 margin: auto;
                 padding-bottom: 30px;
@@ -332,7 +335,7 @@ section {
                 }
             }
             .line {
-                width: 25%;
+                width: 20%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
@@ -416,7 +419,7 @@ section {
                 // }
             }
             .line {
-                width: 15%;
+                width: 10%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
