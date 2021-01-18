@@ -158,25 +158,27 @@
 
 
     <script>
-        var num_jia = document.getElementById("buy_button_left");
-        var num_jian = document.getElementById("buy_button_right");
-        var input_num = document.getElementById("buy_button_quantity");
+        var buy_button_left = document.getElementById("buy_button_left");
+        var buy_button_right = document.getElementById("buy_button_right");
+        var buy_button_quantity = document.getElementById("buy_button_quantity");
 
-        num_jia.onclick = function () {
+        buy_button_left.onclick = function () {
 
-            input_num.value = parseInt(input_num.value) + 1;
+            buy_button_quantity.value = parseInt(buy_button_quantity.value) + 1;
+            
         }
 
-        num_jian.onclick = function () {
+        buy_button_right.onclick = function () {
 
-            if (input_num.value <= 0) {
-                input_num.value = 0;
+            if (buy_button_quantity.value <= 0) {
+                buy_button_quantity.value = 0;
             } else {
-
-                input_num.value = parseInt(input_num.value) - 1;
+                
+                buy_button_quantity.value = parseInt(buy_button_quantity.value) - 1;
             }
 
         }
+
     </script>
 </body>
 

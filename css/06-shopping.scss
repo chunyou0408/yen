@@ -59,8 +59,11 @@ body {
         }
         .text_box {
           text-align: center;
-          font-size: 18px;
+          font-size: 28px;
           color: #898989;
+          @media (max-width: 768px){
+            font-size: 18px;
+          }
           p {
             margin: 0;
           }
@@ -100,6 +103,9 @@ body {
             border-left:  2px #898989 solid;
             border-top: 2px #898989 solid;
             color: #898989;
+            &:focus{
+              outline-width: 0px;
+            }
           }
           .buy_button_right {
             width: 25px;
@@ -193,6 +199,9 @@ body {
             border-top: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
+            &:focus{
+              outline-width: 0px;
+            }
           }
           .buy_button_right {
             width: 25px;

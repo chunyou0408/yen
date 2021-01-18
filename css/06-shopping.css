@@ -90,8 +90,14 @@ body .container .content_top .commodity_top_card .imgbox {
 
 body .container .content_top .commodity_top_card .text_box {
   text-align: center;
-  font-size: 18px;
+  font-size: 28px;
   color: #898989;
+}
+
+@media (max-width: 768px) {
+  body .container .content_top .commodity_top_card .text_box {
+    font-size: 18px;
+  }
 }
 
 body .container .content_top .commodity_top_card .text_box p {
@@ -142,6 +148,10 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_quantit
   border-left: 2px #898989 solid;
   border-top: 2px #898989 solid;
   color: #898989;
+}
+
+body .container .content_top .commodity_top_card .buy_button .buy_button_quantity:focus {
+  outline-width: 0px;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_right {
@@ -269,6 +279,10 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_q
   border-top: 2px #898989 solid;
   font-size: 18px;
   color: #898989;
+}
+
+body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_quantity:focus {
+  outline-width: 0px;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_right {
