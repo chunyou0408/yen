@@ -305,7 +305,7 @@ body .nav01 .box2 {
 body .nav01 .box2 p {
   padding: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 body .nav02 {
@@ -424,7 +424,7 @@ body footer .footer_left {
 }
 
 body footer .footer_left li:first-child {
-  font-size: 36px;
+  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

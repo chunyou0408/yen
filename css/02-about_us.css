@@ -23,15 +23,27 @@ main .content {
 
 main .content .title {
   text-align: center;
+  margin: auto;
   color: #727171;
-  font-size: 20px;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: Microsoft JhengHei;
+}
+
+main .content .title .line {
+  width: 150px;
+  margin: auto;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 15px;
 }
 
 main .content .text {
-  font-size: 18px;
+  font-size: 22px;
   color: #898989;
   text-align: center;
   letter-spacing: 3px;
   line-height: 30px;
+  font-family: Microsoft JhengHei;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=02-about_us.css.map */
