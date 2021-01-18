@@ -76,7 +76,7 @@ section .camping-photo-card .pt-box {
 
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box {
-    width: 48%;
+    width: 100%;
   }
 }
 
