@@ -61,7 +61,7 @@ body {
                 .grass_text_box{
                     height: auto;
                     padding-left: 0.5vw;
-                    padding-top: 4vw;
+                    padding-top: 8vh;
                     position: relative;
                     @media (max-width: 768px){
                         height: 120px;
@@ -74,17 +74,17 @@ body {
                         color: $text-title-color;
                         z-index: 1;
                         @media (max-width: 1679px){
-                            font-size: 24px;
+                            
                         }
                         @media (max-width: 1119px){
-                            font-size: 20px;
+                            
                         }
                         @media (max-width: 943px){
-                            font-size: 16px;
+                            
                         }
                         @media (max-width: 768px){
                             color: white;
-                            font-size: $h2;
+                            
                         }
                     }
                     .grass_text_title_underline{
@@ -107,16 +107,16 @@ body {
                         color: $text-content-color;
 
                         @media (max-width: 1679px){
-                            font-size: 22px;
+                            
                         }
                         @media (max-width: 1119px){
-                            font-size: 18px;
+                            
                         }
                         @media (max-width: 943px){
-                            font-size: 14px;
+                            
                         }
                         @media (max-width: 768px){
-                            font-size: $h3;
+                            
                         }
                         p{
                             @media (max-width: 1679px){
@@ -130,6 +130,9 @@ body {
                 }
             }
         } 
+        .block{
+            height: 26vw;
+        }
         .camp_area_2{
             width: 100%;
             height: auto;
@@ -141,7 +144,7 @@ body {
             .camp_area_wooden{
                 justify-content: flex-end;
                 position: relative;
-                padding-bottom: 27vw;
+                // padding-bottom: 27vw;
                 @media (max-width: 768px){
                     position: relative;
                     padding-bottom: 1vw;
@@ -204,16 +207,16 @@ body {
                         color: $text-title-color;
                         text-align: center;
                         @media (max-width: 1679px){
-                            font-size: 24px;
+                            
                         }
                         @media (max-width: 1119px){
-                            font-size: 20px;
+                            
                         }
                         @media (max-width: 943px){
-                            font-size: 16px;
+                            
                         }
                         @media (max-width: 768px){
-                            font-size: $h2;
+                            
                             color:white;
                         }
                     }
@@ -245,16 +248,16 @@ body {
                         color: $text-content-color;
                         display: flex;
                         @media (max-width: 1679px){
-                            font-size: 22px;
+                            
                         }
                         @media (max-width: 1119px){
-                            font-size: 18px;
+                            
                         }
                         @media (max-width: 943px){
-                            font-size: 14px;
+                            
                         }
                         @media (max-width: 768px){
-                            font-size: $h3;
+                            
                             
                         }
 
@@ -340,15 +343,14 @@ body {
                     color:$nav-text-color;
                     line-height: 70px;
                     @media (max-width: 1679px){
-                        font-size: 22px;
                         line-height: 45px;
                     }
                     @media (max-width: 1119px){
-                        font-size: 18px;
+                        
                         line-height: 40px; 
                     }
                     @media (max-width: 943px){
-                        font-size: 16px;
+                        
                         line-height: 30px;
                     }
                 }
@@ -357,15 +359,15 @@ body {
                     color: $nav-text-color; 
                     line-height: 20px;
                     @media (max-width: 1679px){
-                        font-size: 18px;
+                        
                         margin-bottom: 10px;
                     }
                     @media (max-width: 1119px){
-                        font-size: 16px;
+                        
                         margin-bottom: 4px;
                     }
                     @media (max-width: 943px){
-                        font-size: 14px;
+                        
                     }
                 }
             }
@@ -390,13 +392,13 @@ body {
                     background-color: #e2e3df;
                     padding:1vw;
                     @media (max-width: 1679px){
-                        font-size: 26px;
+                        
                     }
                     @media (max-width: 1119px){
-                        font-size: 22px;
+                        
                     }
                     @media (max-width: 943px){
-                        font-size: 18px;
+                        
                     }
                     @media (max-width: 768px){
                         width: 75%;
@@ -404,10 +406,10 @@ body {
                         padding:0.5vw;
                     }
                     @media (max-width: 576px){
-                        font-size:14px;
+                        
                     }
                     @media (max-width: 440px){
-                        font-size:12px;   
+                          
                     }
                 }
             }
