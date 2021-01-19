@@ -24,6 +24,12 @@ section {
             border-bottom: 1px $text-line-color solid;
             padding-bottom: 5px;
             margin: auto;
+            @media screen and (max-width: 540px) {
+               font-size:$h2;
+            }
+            @media screen and (max-width: 360px) {
+                font-size:$h3;
+             }
             // @media screen and (max-width: 768px) {
             //    font-size:$h2;
             // }
@@ -57,6 +63,9 @@ section {
             @media screen and (max-width: 768px) {
                 width: 47%;
             }
+            @media screen and (max-width: 540px) {
+                width: 100%;
+            }
             .img-hover {
                 width: 100%;
                 position: relative;
@@ -89,15 +98,16 @@ section {
                         opacity:1;
                     }
 
-                    // @media screen and (max-width: 768px) {
-                    //     &.aos-animate{
-                    //         font-size: $h2;
-                    //         opacity: 1;
-                    //         // backface-visibility: visible;
-                    //         width: 100%;
-                    //         height: 98%;
-                    //     }
-                    // }
+                    // 540px跳板-->有dataos的效果
+                    @media screen and (max-width: 540px) {
+                        &.aos-animate{
+                            font-size: $h2;
+                            opacity: 1;
+                            // backface-visibility: visible;
+                            width: 100%;
+                            height: 98%;
+                        }
+                    }
                     // @media screen and (max-width: 360px) {
                     //     &.aos-animate{
                     //         font-size: $h7;
@@ -109,10 +119,21 @@ section {
                     // }
                     div {
                         margin-top: 25%;
+                        @media screen and (max-width: 1051px) {
+                            font-size: $h3;
+                        }
+                        @media screen and (max-width: 900px) {
+                            font-size: $h4;
+                        }
                         @media screen and (max-width: 768px) {
-                            font-size:$h4;
                             margin-top: 20%;
                         }
+                        @media screen and (max-width: 540px) {
+                            font-size:$h3;
+                         }
+                         @media screen and (max-width: 360px) {
+                            font-size:$h4;
+                         }
                     }
                     // hover文字
                     // @media screen and (max-width: 768px) {
@@ -145,7 +166,8 @@ section {
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
-                z-index: 1;  
+                z-index: 1; 
+               
                 @media screen and (max-width: 768px) {
                     width: 43%;
                     color:white;
@@ -165,6 +187,12 @@ section {
                         width:100%;
                         font-size:$h5;
                     }
+                    @media screen and (max-width: 540px) {
+                        font-size:$h3;
+                     }
+                     @media screen and (max-width: 360px) {
+                        font-size:$h4;
+                     }
                 }
                 // @media screen and (max-width: 674px) {
                 //     font-size:$h4;
@@ -306,22 +334,26 @@ section {
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h5;
+                    line-height: 40px;
                 }
                 p {
-                    margin-left: 12.5%;
+                    width:100%;
+                    // 文字直接貼邊
+                    background-color:yellow;
+                    // margin-left: 12.5%;
                     margin-top: 20px;
-                    @media screen and (max-width: 1060px) {
-                        margin-left: 4%;
-                    }
-                    @media screen and (max-width: 768px) {
-                        margin-left: 15%;
-                    }
-                    @media screen and (max-width: 689px) {
-                        margin-left: 10%;
-                    }
-                    @media screen and (max-width: 615px) {
-                        margin-left: 5%;
-                    }
+                    // @media screen and (max-width: 1060px) {
+                    //     margin-left: 4%;
+                    // }
+                    // @media screen and (max-width: 768px) {
+                    //     text-align:center;
+                    // }
+                    // @media screen and (max-width: 689px) {
+                    //     margin-left: 10%;
+                    // }
+                    // @media screen and (max-width: 615px) {
+                    //     margin-left: 5%;
+                    // }
                 }
             }
         }
@@ -370,6 +402,7 @@ section {
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h5;
+                    line-height: 40px;
                 }
                 p {
                     margin-left: 27%;
@@ -441,6 +474,9 @@ section {
                 background: $text-line-color;
                 margin: auto;
                 margin-top: 5px;
+                @media screen and (max-width: 768px) {
+                    width:20%;
+                }
             }
             // 露營預約文字區塊
             .camping-reservation-text {
@@ -457,6 +493,7 @@ section {
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h5;
+                    line-height: 40px;
                 }
                 // @media screen and (max-width: 1189px) {
                 //   font-size: $h4;
