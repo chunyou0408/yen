@@ -95,6 +95,9 @@ body {
           @media (max-width: 564px){
             font-size: 14px;
           }
+          @media (max-width: 360px){
+            font-size: 12px;
+          }
           
           p {
             margin: 0;
@@ -138,6 +141,16 @@ body {
               height: 18px;
               line-height: 18px;
             }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 16px;
+              line-height: 16px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 14px;
+              line-height: 14px;
+            }
             
           }
           .buy_button_quantity {
@@ -161,7 +174,16 @@ body {
               width: 18px;
               height: 16px;
               font-size: 14px;
-              
+            }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 14px;
+              line-height: 16px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 12px;
+              line-height: 10px;
             }
           }
           .buy_button_right {
@@ -195,6 +217,16 @@ body {
               width: 18px;
               height: 18px;
               line-height: 16px;
+            }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 16px;
+              line-height: 14px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 14px;
+              line-height: 12px;
             }
           }
         }
@@ -287,6 +319,16 @@ body {
               height: 18px;
               line-height: 18px;
             }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 16px;
+              line-height: 16px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 14px;
+              line-height: 14px;
+            }
           }
           .buy_button_quantity {
             width: 30px;
@@ -309,7 +351,16 @@ body {
               width: 18px;
               height: 16px;
               font-size: 14px;
-              
+            }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 14px;
+              line-height: 16px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 12px;
+              line-height: 10px;
             }
           }
           .buy_button_right {
@@ -343,6 +394,16 @@ body {
               width: 18px;
               height: 18px;
               line-height: 16px;
+            }
+            @media (max-width: 828px){
+              width: 16px;
+              height: 16px;
+              line-height: 14px;
+            }
+            @media (max-width: 360px){
+              width: 12px;
+              height: 14px;
+              line-height: 10px;
             }
           }
         }
