@@ -24,10 +24,23 @@ body {
       color: #727171;
       margin: 1% 0;
       text-align: center;
+      
       samp {
         border-bottom: 1px #898989 solid;
         padding-bottom: 5px;
         letter-spacing:6px
+      }
+      @media (max-width: 1300px){
+        font-size: 32px;
+      }
+      @media (max-width: 1117px) {
+        font-size: 28px;
+      }
+      @media (max-width: 924px) {
+        font-size: 24px;
+      }
+      @media (max-width: 768px){
+        font-size: 32px;
       }
     }
     .content_top {
@@ -59,13 +72,33 @@ body {
         }
         .text_box {
           text-align: center;
-          font-size: 28px;
+          font-size: 22px;
           color: #898989;
-          @media (max-width: 768px){
+          @media (max-width: 1300px){
+            font-size: 20px;
+          }
+          @media (max-width: 1117px){
             font-size: 18px;
           }
+          @media (max-width: 1020px){
+            font-size: 16px;
+          }
+          @media (max-width: 924px){
+            font-size: 14px;
+          }
+          @media (max-width: 828px){
+            font-size: 12px;
+          }
+          @media (max-width: 768px){
+            font-size: 16px;
+          }
+          @media (max-width: 564px){
+            font-size: 14px;
+          }
+          
           p {
             margin: 0;
+            
           }
         }
         .buy_button {
@@ -75,8 +108,9 @@ body {
 
           .buy_button_left {
             width: 25px;
+            height: 27px;
             text-align: center;
-            line-height: 25px;
+            line-height: 27px;
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
@@ -94,9 +128,21 @@ body {
             &:active{
               background-color: lightcoral;
             }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 22px;
+              line-height: 22px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 18px;
+              line-height: 18px;
+            }
+            
           }
           .buy_button_quantity {
             width: 30px;
+            height: 25px;
             text-align: center;
             line-height: 25px;
             font-size: 18px;
@@ -106,9 +152,21 @@ body {
             &:focus{
               outline-width: 0px;
             }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 20px;
+              font-size: 16px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 16px;
+              font-size: 14px;
+              
+            }
           }
           .buy_button_right {
             width: 25px;
+            height: 27px;
             text-align: center;
             line-height: 25px;
             border: 2px #898989 solid;
@@ -127,6 +185,16 @@ body {
             }
             &:active{
               background-color: lightcoral;
+            }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 22px;
+              line-height: 20px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 18px;
+              line-height: 16px;
             }
           }
         }
@@ -161,6 +229,24 @@ body {
           text-align: center;
           font-size: 18px;
           color: #898989;
+          @media (max-width: 1300px){
+            font-size: 20px;
+          }
+          @media (max-width: 1117px){
+            font-size: 18px;
+          }
+          @media (max-width: 1020px){
+            font-size: 16px;
+          }
+          @media (max-width: 924px){
+            font-size: 14px;
+          }
+          @media (max-width: 828px){
+            font-size: 12px;
+          }
+          @media (max-width: 768px){
+            font-size: 20xp;
+          }
           p {
             margin: 0;
           }
@@ -171,8 +257,9 @@ body {
           margin-top: 2%;
           .buy_button_left {
             width: 25px;
+            height: 27px;
             text-align: center;
-            line-height: 25px;
+            line-height: 27px;
             border: 2px #898989 solid;
             font-size: 18px;
             color: #898989;
@@ -190,9 +277,20 @@ body {
             &:active{
               background-color: lightcoral;
             }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 22px;
+              line-height: 22px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 18px;
+              line-height: 18px;
+            }
           }
           .buy_button_quantity {
             width: 30px;
+            height: 25px;
             text-align: center;
             line-height: 25px;
             border-left: 2px #898989 solid;
@@ -202,9 +300,21 @@ body {
             &:focus{
               outline-width: 0px;
             }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 20px;
+              font-size: 16px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 16px;
+              font-size: 14px;
+              
+            }
           }
           .buy_button_right {
             width: 25px;
+            height: 27px;
             text-align: center;
             line-height: 25px;
             border: 2px #898989 solid;
@@ -223,6 +333,16 @@ body {
             }
             &:active{
               background-color: lightcoral;
+            }
+            @media (max-width: 1300px){
+              width: 22px;
+              height: 22px;
+              line-height: 22px;
+            }
+            @media (max-width: 924px){
+              width: 18px;
+              height: 18px;
+              line-height: 16px;
             }
           }
         }
