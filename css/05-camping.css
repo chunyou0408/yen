@@ -4,8 +4,13 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
-  width: 100vw;
+  width: 100%;
+  background-color: yellow;
   margin: auto;
 }
 
@@ -59,7 +64,7 @@ section .camping-photo-card .pt-box {
 
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box {
-    margin-bottom: -40px;
+    margin-bottom: -20px;
   }
 }
 
@@ -133,6 +138,7 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text .set-show-768 {
     font-size: 22px;
     font-family: Microsoft JhengHei;
     margin: auto;
+    margin-top: 5px;
   }
 }
 

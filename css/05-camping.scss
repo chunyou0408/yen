@@ -4,12 +4,19 @@
     margin: 0;
 }
 
+body {
+    // body請幫我下一個overflow-x
+    overflow-x: hidden;
+}
+
 section {
-    width: 100vw;
+    width: 100%;
+    background-color:yellow;
     // overflow: hidden;
     // 之後用模板要取消
     // border: 1px black solid;
     margin: auto;
+    // overflow-x:hidden;
 
     // 大標題 CAMPING
     .camping-title {
@@ -53,7 +60,7 @@ section {
             padding-bottom: 40px;
             margin-bottom: -25px;
             @media screen and (max-width: 768px) {
-                margin-bottom: -40px;
+                margin-bottom: -20px;
             }
             // @media screen and (max-width: 1400px) {
             //     width: 35%;
@@ -119,6 +126,7 @@ section {
                             font-size: $h4;
                             font-family:$font-family;
                             margin:auto;
+                            margin-top:5px;
                         }
                     }
                     // @media screen and (max-width: 360px) {
@@ -557,3 +565,5 @@ section {
         }
     }
 }
+
+
