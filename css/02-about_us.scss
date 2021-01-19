@@ -4,7 +4,13 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+body{
+    font-size: 100%;
+    @media (max-width: 768px){
+        font-size:50%;
+        
+    }
+}
 main{
     width: 100%;
     .photo{
@@ -21,7 +27,8 @@ main{
             text-align: center;
             margin: auto;
             color: #727171;
-            font-size: 28px;
+            // font-size: 28px;
+            font-size: 1.6em;
             letter-spacing: 4px;
             font-family: Microsoft JhengHei;
 
@@ -32,13 +39,11 @@ main{
                 padding-bottom: 15px;  
             }
             
-            
-            
-            
 
         }
         .text{
-            font-size: 22px;
+            // font-size: 22px;
+            font-size: 1.3rem;
             color: #898989;
             text-align: center;
             letter-spacing: 3px;

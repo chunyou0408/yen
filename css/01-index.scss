@@ -12,11 +12,15 @@ header{
         width: 100%;
         position: relative;
         .index_photo{
-            width: 100%;
+            max-width: 100%;
             opacity: 70%;
             img{
                 width: 100%;
                 filter:brightness(50%);
+
+                @media (max-width: 375px){
+                    // content: url("../img/01/index-58\ 410h.jpg");
+                }
             }
         }
         .logo{
@@ -26,6 +30,9 @@ header{
             left: 50%;
             transform: translate(-50%, -50%);
 
+            @media (max-width: 375px){
+                top:50%;
+            }
 
         }
         .logo_horizontal{
@@ -34,6 +41,9 @@ header{
             top:51%;
             left: 50%;
             transform: translate(-50%, -50%);
+            @media (max-width: 375px){
+                top:58%;
+            }
            
         }
         .logo_horizontal_en{
@@ -42,6 +52,10 @@ header{
             top:59%;
             left: 50%;
             transform: translate(-50%, -50%);
+            @media (max-width: 375px){
+                top:62%;
+                
+            }
 
         }
         .text{
@@ -56,6 +70,21 @@ header{
             align-items: center;
             transition: 1s;
 
+            @media (max-width: 375px){
+                font-size: 12px;
+                bottom: 0%;
+                
+            }
+            i{
+                font-size: 30px;
+                @media (max-width: 375px){
+                    font-size: 12px;
+                    
+                    
+                }
+
+            }
+
             
         }
         
@@ -66,6 +95,10 @@ header{
 main{
     width: 100%;
     height: auto;
+
+    @media (max-width: 375px){
+        height: 50vh;
+      }
     
     .below{
         width: 100%;
@@ -80,7 +113,7 @@ main{
                 margin-bottom: 50px;
               
                 .swiper-slide {
-                    width: 100%;
+                    max-width: 100%;
                     text-align: center;
                     font-size: 18px;
                     background: #fff;

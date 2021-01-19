@@ -15,7 +15,7 @@ header .above {
 }
 
 header .above .index_photo {
-  width: 100%;
+  max-width: 100%;
   opacity: 70%;
 }
 
@@ -34,6 +34,12 @@ header .above .logo {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 375px) {
+  header .above .logo {
+    top: 50%;
+  }
+}
+
 header .above .logo_horizontal {
   width: 25%;
   position: absolute;
@@ -43,6 +49,12 @@ header .above .logo_horizontal {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 375px) {
+  header .above .logo_horizontal {
+    top: 58%;
+  }
+}
+
 header .above .logo_horizontal_en {
   width: 24%;
   position: absolute;
@@ -50,6 +62,12 @@ header .above .logo_horizontal_en {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 375px) {
+  header .above .logo_horizontal_en {
+    top: 62%;
+  }
 }
 
 header .above .text {
@@ -73,9 +91,32 @@ header .above .text {
   transition: 1s;
 }
 
+@media (max-width: 375px) {
+  header .above .text {
+    font-size: 12px;
+    bottom: 0%;
+  }
+}
+
+header .above .text i {
+  font-size: 30px;
+}
+
+@media (max-width: 375px) {
+  header .above .text i {
+    font-size: 12px;
+  }
+}
+
 main {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 375px) {
+  main {
+    height: 50vh;
+  }
 }
 
 main .below {
@@ -93,7 +134,7 @@ main .below .swiper-container .swiper-wrapper {
 }
 
 main .below .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   font-size: 18px;
   background: #fff;
