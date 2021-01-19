@@ -347,21 +347,6 @@ body {
       position: relative;
       top: 0.5vh;
     }
-    .decoration_01{
-      left: 25%;
-    }
-    .decoration_02{
-      left: 25%;
-    }
-    .decoration_03{
-      left: 48%;
-    }
-    .decoration_04{
-      left: 59%;
-    }
-    .decoration_05{
-      left: 57.5%;
-    }
   }
 
   footer {
@@ -400,6 +385,12 @@ body {
     }
     .footer_left {
       width: auto;
+      @media (max-width: 768px) {
+        padding-left: 8vw;
+      }
+      @media (max-width: 712px) {
+        padding-left: 0;
+      }
       li:first-child {
         font-size: $h1;
         display: flex;
