@@ -89,11 +89,8 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text {
 }
 
 @media screen and (max-width: 768px) {
-  section .camping-photo-card .pt-box .img-hover .pt-box-img-text.aos-animate {
-    font-size: 32px;
+  section .camping-photo-card .pt-box .img-hover .pt-box-img-text {
     opacity: 1;
-    width: 100%;
-    height: 98%;
   }
 }
 
@@ -103,7 +100,7 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
 
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
-    font-size: 28px;
+    font-size: 22px;
     margin-top: 20%;
   }
 }
@@ -136,12 +133,27 @@ section .camping-photo-card .pt-box .pt-box-text {
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box .pt-box-text {
     width: 43%;
+    color: white;
     text-align: center;
     font-size: 28px;
     position: relative;
     left: 27%;
-    top: -25%;
+    top: -35%;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  section .camping-photo-card .pt-box .pt-box-text span {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section .camping-photo-card .pt-box .pt-box-text span {
+    width: 100%;
+    font-size: 20px;
   }
 }
 
@@ -152,6 +164,14 @@ section .camping-photo-card .pt-box .pt-box-text .text-line {
   z-index: -1;
   top: 10px;
   left: 88px;
+}
+
+@media screen and (max-width: 995px) {
+  section .camping-photo-card .pt-box .pt-box-text .text-line {
+    width: 80px;
+    position: relative;
+    left: 80px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -191,6 +211,14 @@ section .camping-photo-card .pt-box8 .pt-box-text .text-line-8 {
   z-index: -1;
   top: 10px;
   left: 130px;
+}
+
+@media screen and (max-width: 995px) {
+  section .camping-photo-card .pt-box8 .pt-box-text .text-line-8 {
+    width: 115px;
+    position: relative;
+    left: 110px;
+  }
 }
 
 @media screen and (max-width: 768px) {

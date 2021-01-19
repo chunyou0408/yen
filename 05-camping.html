@@ -251,19 +251,36 @@
         //偵測畫面寬度
         window.onresize = function () {
             if ($(window).width() < 768) {
+                // // JavaScript here 
+                // // 當視窗寬度小於768px時執行
+                // console.log('123');
+                // fade_img.attr('data-aos', 'fade-up');
+                // // fade_img.attr('data-aos', 'fade-left');
+                // fade_img.attr('data-aos-delay', '2000');
+
+                // JavaScript here
+                // 當視窗寬度不小於768px時執行
+                // console.log('321');
+
+                fade_img.removeAttr('data-aos');
+                fade_img.removeAttr('data-aos-delay');
+
+            } else if($(window).width() < 360) {
+
+                // // JavaScript here
+                // // 當視窗寬度不小於768px時執行
+                // // console.log('321');
+
+                // fade_img.removeAttr('data-aos');
+                // fade_img.removeAttr('data-aos-delay');
+
                 // JavaScript here 
                 // 當視窗寬度小於768px時執行
                 console.log('123');
                 fade_img.attr('data-aos', 'fade-up');
                 // fade_img.attr('data-aos', 'fade-left');
                 fade_img.attr('data-aos-delay', '2000');
-
-            } else {
-
-                // JavaScript here
-                // 當視窗寬度不小於768px時執行
-                // console.log('321');
-
+            }else {
                 fade_img.removeAttr('data-aos');
                 fade_img.removeAttr('data-aos-delay');
             }
