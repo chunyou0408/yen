@@ -5,11 +5,11 @@
 }
 
 section {
-    width: 100%;
+    width: 100vw;
+    // overflow: hidden;
     // 之後用模板要取消
     // border: 1px black solid;
     margin: auto;
-  
 
     // 大標題 CAMPING
     .camping-title {
@@ -26,11 +26,11 @@ section {
             padding-bottom: 5px;
             margin: auto;
             @media screen and (max-width: 540px) {
-               font-size:$h2;
+                font-size: $h2;
             }
             @media screen and (max-width: 360px) {
-                font-size:$h3;
-             }
+                font-size: $h3;
+            }
             // @media screen and (max-width: 768px) {
             //    font-size:$h2;
             // }
@@ -46,14 +46,14 @@ section {
         border: 1px black solid;
         margin: auto;
         margin-top: 30px;
-
+        
         // 每一個照片加文字
         .pt-box {
             width: 30%;
             padding-bottom: 40px;
             margin-bottom: -25px;
-            @media screen and (max-width:768px) {
-                margin-bottom:-40px;
+            @media screen and (max-width: 768px) {
+                margin-bottom: -40px;
             }
             // @media screen and (max-width: 1400px) {
             //     width: 35%;
@@ -96,17 +96,29 @@ section {
                     transition: all 200ms ease-in;
                     bottom: 4px;
                     @media screen and (max-width: 768px) {
-                        opacity:1;
+                        opacity: 1;
+                        
                     }
 
                     // 540px跳板-->有dataos的效果
                     @media screen and (max-width: 540px) {
-                        &.aos-animate{
+                        &.aos-animate {
                             font-size: $h2;
                             opacity: 1;
                             // backface-visibility: visible;
                             width: 100%;
                             height: 98%;
+                        }
+                    }
+                    .set-show-768 {
+                        display: none;
+                        @media screen and (max-width: 768px) {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            font-size: $h4;
+                            font-family:$font-family;
+                            margin:auto;
                         }
                     }
                     // @media screen and (max-width: 360px) {
@@ -128,14 +140,16 @@ section {
                         }
                         @media screen and (max-width: 768px) {
                             margin-top: 20%;
+                            font-size: $h3;
                         }
-                        @media screen and (max-width: 540px) {
-                            font-size:$h3;
-                         }
-                         @media screen and (max-width: 360px) {
-                            font-size:$h4;
-                         }
+                        // @media screen and (max-width: 540px) {
+                        //     font-size: $h3;
+                        // }
+                        @media screen and (max-width: 360px) {
+                            font-size: $h4;
+                        }
                     }
+
                     // hover文字
                     // @media screen and (max-width: 768px) {
                     //     margin-top:10%;
@@ -158,7 +172,7 @@ section {
                 width: 100%;
                 height: 47px;
                 font-size: $h2;
-                font-family:$font-family;
+                font-family: $font-family;
                 color: $text-content-color;
                 // line-height: 65px;
                 text-align: right;
@@ -167,34 +181,35 @@ section {
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
-                z-index: 1; 
-               
+                z-index: 1;
+
                 @media screen and (max-width: 768px) {
-                    width: 43%;
-                    color:white;
-                    text-align: center;
-                    font-size: $h3;
-                    position: relative;
-                    left: 27%;
-                    top: -35%;
-                    z-index: 1;
+                    // width: 43%;
+                    // color:white;
+                    // text-align: center;
+                    // font-size: $h3;
+                    // position: relative;
+                    // left: 27%;
+                    // top: -35%;
+                    // z-index: 1;
+                    display: none;
                 }
-                span {
-                    @media screen and (max-width:995px) {
-                        width:100%;
-                        font-size:$h4;
-                    }
-                    @media screen and (max-width:768px) {
-                        width:100%;
-                        font-size:$h5;
-                    }
-                    @media screen and (max-width: 540px) {
-                        font-size:$h3;
-                     }
-                     @media screen and (max-width: 360px) {
-                        font-size:$h4;
-                     }
-                }
+                // span {
+                //     @media screen and (max-width:995px) {
+                //         width:100%;
+                //         font-size:$h4;
+                //     }
+                //     @media screen and (max-width:768px) {
+                //         width:100%;
+                //         font-size:$h5;
+                //     }
+                //     @media screen and (max-width: 540px) {
+                //         font-size:$h3;
+                //      }
+                //      @media screen and (max-width: 360px) {
+                //         font-size:$h4;
+                //      }
+                // }
                 // @media screen and (max-width: 674px) {
                 //     font-size:$h4;
                 // }
@@ -213,10 +228,10 @@ section {
                     z-index: -1;
                     top: 10px;
                     left: 88px;
-                    @media screen and (max-width:995px) {
-                        width:80px;
-                        position:relative;
-                        left:80px;
+                    @media screen and (max-width: 995px) {
+                        width: 80px;
+                        position: relative;
+                        left: 80px;
                     }
                     @media screen and (max-width: 768px) {
                         display: none;
@@ -225,18 +240,18 @@ section {
             }
         }
         .pt-box7 {
-            margin-left:20%;
-            @media screen and (max-width:768px) {
-                margin-left:0%;
+            margin-left: 20%;
+            @media screen and (max-width: 768px) {
+                margin-left: 0%;
             }
         }
         .pt-box8 {
-            margin-right:15%;
-            @media screen and (max-width:768px) {
-                margin-right:0%;
+            margin-right: 15%;
+            @media screen and (max-width: 768px) {
+                margin-right: 0%;
             }
             .pt-box-text {
-                font-size:$h3;
+                font-size: $h3;
                 .text-line-8 {
                     width: 130px;
                     height: 15px;
@@ -244,10 +259,10 @@ section {
                     z-index: -1;
                     top: 10px;
                     left: 130px;
-                    @media screen and (max-width:995px) {
-                        width:115px;
-                        position:relative;
-                        left:110px;
+                    @media screen and (max-width: 995px) {
+                        width: 115px;
+                        position: relative;
+                        left: 110px;
                     }
                     @media screen and (max-width: 768px) {
                         display: none;
@@ -288,8 +303,8 @@ section {
         justify-content: space-between;
 
         border: 1px black solid;
-        @media screen and (max-width:768px){
-            margin-top:30px;
+        @media screen and (max-width: 768px) {
+            margin-top: 30px;
         }
         // 露營注意事項
         .camping-notes-box {
@@ -338,9 +353,9 @@ section {
                     line-height: 40px;
                 }
                 p {
-                    width:100%;
+                    width: 100%;
                     // 文字直接貼邊
-                    background-color:yellow;
+                    background-color: yellow;
                     // margin-left: 12.5%;
                     margin-top: 20px;
                     // @media screen and (max-width: 1060px) {
@@ -476,7 +491,7 @@ section {
                 margin: auto;
                 margin-top: 5px;
                 @media screen and (max-width: 768px) {
-                    width:20%;
+                    width: 20%;
                 }
             }
             // 露營預約文字區塊

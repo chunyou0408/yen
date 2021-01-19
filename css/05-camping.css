@@ -5,7 +5,7 @@
 }
 
 section {
-  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 
@@ -121,6 +121,21 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text {
   }
 }
 
+section .camping-photo-card .pt-box .img-hover .pt-box-img-text .set-show-768 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section .camping-photo-card .pt-box .img-hover .pt-box-img-text .set-show-768 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: Microsoft JhengHei;
+    margin: auto;
+  }
+}
+
 section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
   margin-top: 25%;
 }
@@ -140,11 +155,6 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
     margin-top: 20%;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
     font-size: 28px;
   }
 }
@@ -182,40 +192,7 @@ section .camping-photo-card .pt-box .pt-box-text {
 
 @media screen and (max-width: 768px) {
   section .camping-photo-card .pt-box .pt-box-text {
-    width: 43%;
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    position: relative;
-    left: 27%;
-    top: -35%;
-    z-index: 1;
-  }
-}
-
-@media screen and (max-width: 995px) {
-  section .camping-photo-card .pt-box .pt-box-text span {
-    width: 100%;
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section .camping-photo-card .pt-box .pt-box-text span {
-    width: 100%;
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  section .camping-photo-card .pt-box .pt-box-text span {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  section .camping-photo-card .pt-box .pt-box-text span {
-    font-size: 22px;
+    display: none;
   }
 }
 
