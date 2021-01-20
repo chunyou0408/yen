@@ -44,9 +44,9 @@ body{
             .title_underline{
                 width: 375px;
                 border:1px solid $text-line-color;
-                position: relative;
-                top: 0.5vw;
-                left:10px;
+                margin-top: 0.5vh;
+                margin-left: 10px;
+                
                 @media (max-width: 768px){
                     margin: auto;
                     left:0;
@@ -60,6 +60,9 @@ body{
             width:100%;
             height: auto;
             display: flex;
+            margin-top: -1.5vh;
+            position: relative;
+            z-index: -1;
             @media (max-width: 768px){
                 width: 85%;
                 margin: auto;
@@ -86,10 +89,9 @@ body{
                     width: 100%;
                     text-align: center;
                     position: relative;
-                    top:-5vh;
+                    top:-4vh;
                 }
                 @media (max-width: 360px){
-                    top:-3vh;
                     margin-bottom: 3vh;
                 }
                 .grass_text_title{
@@ -107,16 +109,14 @@ body{
                 .grass_text_title_underline{
                    width: 190px;
                    height: 5px; 
+                   margin-top:-5vh;
+                   margin-left: -2vw;
                    position: relative ;
-                   top: -2.5vh;
-                   left: -4vh;
                    z-index: -1;
                     @media (max-width: 768px){
                         width: 170px;
                         left:0;
                     }
-                    
-
                 }
                 .grass_text_content{
                     font-size: $h3;
@@ -139,46 +139,42 @@ body{
         .camp_area_wooden{
             width: 100%;
             height: auto;
-            position: relative;
-            top: -10vh;
+            margin-top: -10vh;
             @media (max-width: 768px){
                 width: 100%;
                 margin: auto;
-                top: -5vh;
+                margin-top: 0;
             }
             img{
                 width: 66%;
                 max-width:777px;
-                position: relative;
-                left: 40%;
+                margin-left: 40%;
                 @media (max-width: 1470px){
-                    left: 34%;
+                    margin-left: 34%;
                 }  
                 @media (max-width: 768px){
                     width:100%;
-                    position:initial;
+                    margin-left:0%;
                 }
             }
             .wooden_text_box{
                 width: 55%;
                 min-width: 480px;
-                height: 240px;
+                height: auto;
                 background-color:$camping-reservation ;
-                position: relative;
-                top:-5vh;
+                margin-top: -5vh;
                 margin-left: 16%;
+                padding: 1vh 0 2vh 0;
                 text-align: center;
+                position: relative;
+                z-index: 1;
+                
                 @media (max-width: 768px){
                     width: 100%;
                     min-width:initial;
                     background-color:unset;
-                    top:-5vh;
                     margin-left:0;
                 }
-                @media (max-width: 360px){
-                    top:-3vh;
-                }
-                
                 .wooden_text_title{
                     font-size: $h2;
                     color:$text-title-color ;
@@ -196,31 +192,21 @@ body{
                     width: 180px;
                     height: 5px; 
                     margin-left: 0;
-                    position: relative ;
-                    top: -2vh;
-                    left: -0.9vh;
-                    z-index: 0;
-                    @media (max-width: 768px){
-                        top: -2vh;
-                        left: 0;
-                    }
-                    @media (max-width: 360px){
-                        top: -2.5vh;
-                        
-                    }
+                    margin-top: -5vh;
+                    position: relative;
+                    z-index:-1;
                 }
                 .wooden_text_content{
                     display: flex;
                     text-align: left;
                     color:$text-content-color ;
                     font-size: $h3;
+                    margin-top: -1.75vh;
                     @media (max-width: 768px){
                         font-size:$h6;
                     }
                     @media (max-width: 360px){
                         font-size:$h8;
-                        position: relative;
-                        top: -2vh;
                     }
                     .wooden_text_content_left{
                         width: 50%;
@@ -256,15 +242,12 @@ body{
         .camp_area_tent{
             width: 100%;
             height: auto;
-            position: relative;
-            top:-6vh;
+            margin-top: 10vh;
             display: flex;
             @media (max-width: 768px){
-                top:-20vh;
+                margin-top: 0;
             }
-            @media (max-width: 360px){
-                top:-23vh;
-            }
+            
             .tent_text_box{
                 width: 80%;
                 background-image: url(/img/03/air_area.jpg);
@@ -311,11 +294,9 @@ body{
         .coffee_area{
             width: 100%;
             height: auto;
+            margin-top: 10vh;
             @media (max-width: 768px){
                 width: 100%;
-                margin: auto;
-                position: relative;
-                top: -22vw;
             }
             .coffee_area_background_color{
                 width: 50%;
@@ -342,53 +323,43 @@ body{
             img{
                 width: 65%;
                 max-width: 870px;
+                margin-top: 5vh;
+                margin-left: 31.5vw;
                 position: relative;
-                top:5vh;
-                left: 35%;
                 @media (max-width: 1475px){
-                    width: 70%;
-                    left: 30%;
+                    margin-left:35%;
                 }
-                @media (max-width: 768px){
-                    width: 80%;
-                    left:0%;
-                } 
+                @media (max-width: 1475px){
+                    width: 
+                }
             }
             .coffee_area_background_img{
-                width: 28vw;
-                height: 35vw;
+                width: 30%;
+                height:70%;
                 background-image: url('/img/03/tree.png');
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
-                position: relative;
-                top: -26vw;
+                margin-top: -59.75vh;
+                position: absolute;
+                left: 175px;
                 z-index: -1;
                 @media (max-width: 768px){
                     display: none;
                 }
             }
         }   
-
         .segmentation{
             width: 50%;
             border:2px solid #898989;
-            margin: 14vw 0 0 0;
-            position: relative;
-            top: -40vw;
-            @media (max-width: 768px){
-                top: -20vw;
-            }
+            margin: 10vh 0 0 0; 
         }
         .swiper-container {
             width: calc(100vw - 175px);
             padding-top: 50px;
             padding-bottom: 50px;
-            position: relative;
-            top: -35vw;
             @media (max-width: 768px){
                 width: 100%;
-                top: -20vw;
             }
             .swiper-wrapper{
                 .swiper-slide {
@@ -402,20 +373,6 @@ body{
                     }
                 }
             }  
-        }
-        .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-            text-align: center;
-            line-height: 30px;
-            font-size: 12px;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);   
         } 
-        .swiper-pagination-bullet-active {
-            color: #fff;
-            background: #007aff;
-        }  
     }
 }
