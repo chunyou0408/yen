@@ -341,11 +341,34 @@ body {
     @media (max-width: 768px) {
       width: 100%;
       border-left:initial;
-      margin:0;
+      margin-left:0;
+      
     }
     img{
-      position: relative;
-      top: 0.5vh;
+      // marg
+      position: absolute;
+      bottom: 0vh;
+      @media (max-width: 768px) {
+        bottom: calc(0vh - 80px);
+      }
+    }
+    .decoration_01{
+      left: 25%;
+      @media (max-width: 768px) {
+        left: 5%;
+      }
+    }
+    .decoration_02{
+      left: 50%;
+      @media (max-width: 768px) {
+        left: 40%;
+      }
+    }
+    .decoration_03{
+      left: 70%;
+      @media (max-width: 768px) {
+        left: 70%;
+      }
     }
   }
 

@@ -16,6 +16,7 @@ section {
     .camping-title {
         text-align: center;
         margin: auto;
+        // span裡面的CAMPING
         span {
             font-size: $h1;
             font-family: $font-family;
@@ -46,20 +47,22 @@ section {
 
         margin: auto;
         margin-top: 30px;
-        // 每一個照片加文字
+        // 每一個照片加文字(都是一樣的)
         .pt-box {
             width: 30%;
             padding-bottom: 40px;
             margin-bottom: -25px;
             @media screen and (max-width: 768px) {
                 margin-bottom: -20px;
-            }
-            @media screen and (max-width: 768px) {
                 width: 47%;
             }
             @media screen and (max-width: 540px) {
                 width: 100%;
             }
+            @media screen and (max-width: 360px) {
+                margin-top:-15px;
+            }
+            // 圖片hover過去有文字
             .img-hover {
                 width: 100%;
                 position: relative;
@@ -69,12 +72,13 @@ section {
                     --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                 }
+                // hover的文字樣式
                 .pt-box-img-text {
                     width: 100%;
                     height: 98%;
                     --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    background-color: rgba(221, 209, 209, 0.4);
+                    background-color: rgba(221, 209, 209, 0.3);
 
                     color: white;
                     font-size: $h2;
@@ -90,7 +94,6 @@ section {
                     bottom: 4px;
                     @media screen and (max-width: 768px) {
                         opacity: 1;
-                        
                     }
                     // 540跳板做data-os效果
                     @media screen and (max-width: 540px) {
@@ -109,9 +112,9 @@ section {
                             color: white;
                             text-align: center;
                             font-size: $h4;
-                            font-family:$font-family;
-                            margin:auto;
-                            margin-top:5px;
+                            font-family: $font-family;
+                            margin: auto;
+                            margin-top: 5px;
                         }
                     }
                     div {
@@ -193,18 +196,23 @@ section {
             }
             .pt-box-text {
                 font-size: $h3;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
                 .text-line-8 {
                     width: 130px;
                     height: 15px;
-                    
+
                     position: relative;
                     z-index: -1;
                     top: 10px;
-                    left: 130px;
+                    // left: 130px;
+
                     @media screen and (max-width: 995px) {
                         width: 115px;
-                        position: relative;
-                        left: 110px;
                     }
                     @media screen and (max-width: 768px) {
                         display: none;
@@ -217,7 +225,6 @@ section {
     // 露營文字區塊
     .camping-introduction-box {
         width: 100%;
-
         margin: auto;
         margin-top: 60px;
         display: flex;
@@ -231,7 +238,7 @@ section {
         // 露營注意事項
         .camping-notes-box {
             width: 49%;
-            
+
             background-color: $camping-note;
             @media screen and (max-width: 768px) {
                 width: 100%;
@@ -248,58 +255,54 @@ section {
                 margin-top: 20px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
-                    line-height:45px;
-                    margin-top:10px;
+                    line-height: 45px;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h3;
                 }
                 @media screen and (max-width: 360px) {
-                    font-size:$h6;
+                    font-size: $h6;
                 }
             }
             // 標題線
             .line {
-                width: 45%;
+                width: 26%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
             }
             // 露營注意事項文字區塊
             .camping-notes-text {
-                width: 100%;
+                width: 80%;
                 font-size: $h3;
-                font-family:$font-family;
+                font-family: $font-family;
                 color: $text-content-color;
                 line-height: 60px;
                 margin: auto;
-                // background-color:green;
-                
-                // background-color:green;
                 padding-bottom: 10px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h4;
-                    
                 }
                 @media screen and (max-width: 565px) {
-                    width:100%;
-                 }
+                    width: 100%;
+                }
                 @media screen and (max-width: 545px) {
-                   width:90%;
+                    width: 90%;
                 }
                 @media screen and (max-width: 530px) {
-                    width:100%;
-                 }
-               
+                    width: 100%;
+                }
+
                 @media screen and (max-width: 768px) {
-                    width:70%;
+                    width: 70%;
                     // background-color:green;
                     font-size: $h5;
                     line-height: 40px;
-                    margin:auto;
+                    margin: auto;
                 }
                 @media screen and (max-width: 360px) {
-                    font-size:$h8;
+                    font-size: $h8;
                 }
                 p {
                     width: 100%;
@@ -308,11 +311,10 @@ section {
                     // margin-left: 12.5%;
                     margin-top: 20px;
                     @media screen and (max-width: 360px) {
-                        margin:auto;
+                        margin: auto;
                     }
                 }
             }
-
         }
 
         // 露營收費區塊
@@ -336,38 +338,50 @@ section {
                 margin-top: 20px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
-                    line-height:45px;
-                    margin-top:10px;
+                    line-height: 45px;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h3;
                 }
                 @media screen and (max-width: 360px) {
-                    font-size:$h6;
+                    font-size: $h6;
                 }
             }
             .line {
-                width: 35%;
+                width: 18%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
             }
-            // 露營收費文字區塊
             .camping-price-text {
-                width: 100%;
+                width: 80%;
                 font-size: $h3;
                 color: $text-content-color;
                 line-height: 50px;
-                margin: auto;
+                // margin: auto;
+                // background-color:yellow;
                 margin-top: 25px;
-
-                @media screen and (max-width: 1271px) {
-                    font-size: $h4;
+                margin-left:13%;
+                @media screen and (max-width:1592px) {
+                    margin-left:5%;
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width:1014px) {
+                    width:100%;
+                    margin-left:0;
+                    word-wrap:break-word;
+                }
+                @media screen and (max-width: 1285px) {
+                    font-size: $h4;
+                    
+                }
+                @media screen and (max-width: 816px) {
+                    
                     font-size: $h5;
                     line-height: 40px;
+                    
                 }
+               
                 @media screen and (max-width: 360px) {
                     font-size:$h8;
                 }
@@ -384,6 +398,10 @@ section {
                         margin:auto;
                         line-height:40px;
                     }
+                    @media screen and (max-width:572px) {
+                        width:100%;
+                        margin-left:20%;
+                    }
                     @media screen and (max-width: 360px) {
                         width:70%;
                         margin:auto;
@@ -394,10 +412,10 @@ section {
         // 露營預約區塊
         .camping-reservation {
             width: 100%;
-            height: auto;
             background-color: $camping-reservation;
             margin-top: 35px;
             padding-bottom: 50px;
+            margin-bottom:80px;
             // 露營預約標題
             .camping-reservation-title {
                 width: 100%;
@@ -409,17 +427,17 @@ section {
                 margin-top: 30px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
-                    margin-top:10px;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h3;
                 }
                 @media screen and (max-width: 360px) {
-                    font-size:$h6;
+                    font-size: $h6;
                 }
             }
             .line {
-                width: 45%;
+                width: 10%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
@@ -439,6 +457,7 @@ section {
                 color: $text-content-color;
                 line-height: 50px;
                 letter-spacing: 3px;
+                padding-bottom:20px;
                 margin: auto;
                 margin-top: 30px;
                 @media screen and (max-width: 1271px) {
@@ -449,28 +468,33 @@ section {
                     line-height: 40px;
                 }
                 @media screen and (max-width: 360px) {
-                    font-size:$h8;
+                    font-size: $h8;
                 }
                 p {
                     width: 80%;
                     margin: auto;
-                    
                 }
             }
-           
+            
+               
+                .reservation-btn {
+                    a {
+                        text-decoration: none;
+                        color:white;
+                    }
+                    width:170px;
+                    font-size:$h3;
+                    font-family:$font-family;
+                    text-align:center;
+                    // margin-top:60px;
+                    padding:5px 20px;
+                    border:1px $reservation-btn-color solid;
+                    border-radius: 10px;
+                    background-color:$reservation-btn-color;
+                    margin:auto;
+                }
+            
+            
         }
-    
-        
-        
-    
     }
-
-
-
-
-
-
 }
-
-
-
