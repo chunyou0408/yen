@@ -248,20 +248,23 @@ section .camping-photo-card .pt-box8 .pt-box-text {
   font-size: 28px;
 }
 
+section .camping-photo-card .pt-box8 .pt-box-text div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 section .camping-photo-card .pt-box8 .pt-box-text .text-line-8 {
   width: 130px;
   height: 15px;
   position: relative;
   z-index: -1;
   top: 10px;
-  left: 130px;
 }
 
 @media screen and (max-width: 995px) {
   section .camping-photo-card .pt-box8 .pt-box-text .text-line-8 {
     width: 115px;
-    position: relative;
-    left: 110px;
   }
 }
 
@@ -454,56 +457,21 @@ section .camping-introduction-box .camping-price .line {
 section .camping-introduction-box .camping-price .camping-price-text {
   width: 100%;
   font-size: 28px;
+  font-family: Microsoft JhengHei;
   color: #898989;
-  line-height: 50px;
   margin: auto;
-  margin-top: 25px;
 }
 
-@media screen and (max-width: 1271px) {
-  section .camping-introduction-box .camping-price .camping-price-text {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section .camping-introduction-box .camping-price .camping-price-text {
-    font-size: 20px;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  section .camping-introduction-box .camping-price .camping-price-text {
-    font-size: 14px;
-  }
-}
-
-section .camping-introduction-box .camping-price .camping-price-text p {
-  width: 70%;
-  margin-left: 25%;
-}
-
-@media screen and (max-width: 1098px) {
-  section .camping-introduction-box .camping-price .camping-price-text p {
-    margin-left: 15%;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section .camping-introduction-box .camping-price .camping-price-text p {
-    width: 45%;
-    margin: auto;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  section .camping-introduction-box .camping-price .camping-price-text p {
-    width: 70%;
-    margin: auto;
-  }
+section .camping-introduction-box .camping-price .camping-price-text .price {
+  width: 40%;
+  height: 100px;
+  background-color: green;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section .camping-introduction-box .camping-reservation {
