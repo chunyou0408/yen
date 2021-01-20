@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +31,7 @@ body nav {
 }
 
 body .all {
-  width: calc(100vw - 175px);
+  width: calc(100% - 175px);
   max-width: 1745px;
 }
 
@@ -85,270 +86,266 @@ body .all .page_title .title_underline {
   }
 }
 
-body .all .camp_area_grass {
+body .all .camp_area .camp_area_grass {
   width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -1.5vh;
+  margin-top: -10px;
   position: relative;
   z-index: -1;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_grass {
+  body .all .camp_area .camp_area_grass {
     width: 85%;
     margin: auto;
     display: initial;
   }
 }
 
-body .all .camp_area_grass img {
+body .all .camp_area .camp_area_grass img {
   width: 66%;
   max-width: 777px;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_grass img {
+  body .all .camp_area .camp_area_grass img {
     width: 100%;
   }
 }
 
-body .all .camp_area_grass .grass_text_box {
+body .all .camp_area .camp_area_grass .grass_text_box {
   width: 34%;
   height: auto;
-  padding-top: 3vw;
+  padding-top: 3%;
   padding-left: 9px;
   z-index: 1;
 }
 
 @media (max-width: 837px) {
-  body .all .camp_area_grass .grass_text_box {
+  body .all .camp_area .camp_area_grass .grass_text_box {
     padding-left: 0;
     padding-top: 0;
   }
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_grass .grass_text_box {
+  body .all .camp_area .camp_area_grass .grass_text_box {
     width: 100%;
     text-align: center;
-    position: relative;
-    top: -4vh;
+    margin-top: -30px;
   }
 }
 
-@media (max-width: 360px) {
-  body .all .camp_area_grass .grass_text_box {
-    margin-bottom: 3vh;
-  }
-}
-
-body .all .camp_area_grass .grass_text_box .grass_text_title {
+body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
   font-size: 32px;
   color: #727171;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_grass .grass_text_box .grass_text_title {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
     color: white;
     font-size: 22px;
   }
 }
 
 @media (max-width: 360px) {
-  body .all .camp_area_grass .grass_text_box .grass_text_title {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title {
     color: white;
     font-size: 18px;
   }
 }
 
-body .all .camp_area_grass .grass_text_box .grass_text_title_underline {
+body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underline {
   width: 190px;
   height: 5px;
-  margin-top: -5vh;
-  margin-left: -2vw;
+  margin-top: -50px;
+  margin-left: -30px;
   position: relative;
   z-index: -1;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_grass .grass_text_box .grass_text_title_underline {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underline {
     width: 170px;
-    left: 0;
+    margin-left: 0;
   }
 }
 
-body .all .camp_area_grass .grass_text_box .grass_text_content {
+body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
   font-size: 28px;
   color: #898989;
   margin-top: -20px;
 }
 
+@media (max-width: 900px) {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
+    margin-top: -30px;
+  }
+}
+
 @media (max-width: 768px) {
-  body .all .camp_area_grass .grass_text_box .grass_text_content {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
     font-size: 18px;
-    margin-top: -12px;
-  }
-}
-
-@media (max-width: 360px) {
-  body .all .camp_area_grass .grass_text_box .grass_text_content {
-    font-size: 14px;
     margin-top: -24px;
+    padding-bottom: 2%;
   }
 }
 
-body .all .camp_area_grass .grass_text_box .grass_text_content p {
+body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content p {
   margin-bottom: 0px;
+  margin-top: -5px;
 }
 
-body .all .camp_area_wooden {
+body .all .camp_area .camp_area_wooden {
   width: 100%;
   height: auto;
-  margin-top: -10vh;
+  margin-top: -100px;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden {
+  body .all .camp_area .camp_area_wooden {
     width: 100%;
     margin: auto;
     margin-top: 0;
   }
 }
 
-body .all .camp_area_wooden img {
+body .all .camp_area .camp_area_wooden img {
   width: 66%;
   max-width: 777px;
   margin-left: 40%;
 }
 
 @media (max-width: 1470px) {
-  body .all .camp_area_wooden img {
+  body .all .camp_area .camp_area_wooden img {
     margin-left: 34%;
   }
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden img {
+  body .all .camp_area .camp_area_wooden img {
     width: 100%;
     margin-left: 0%;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box {
+body .all .camp_area .camp_area_wooden .wooden_text_box {
   width: 55%;
   min-width: 480px;
   height: auto;
   background-color: #f8f6e9;
-  margin-top: -5vh;
+  margin-top: -80px;
   margin-left: 16%;
-  padding: 1vh 0 2vh 0;
+  padding: 2px 0 4px 0;
   text-align: center;
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden .wooden_text_box {
+  body .all .camp_area .camp_area_wooden .wooden_text_box {
     width: 100%;
     min-width: initial;
     background-color: unset;
     margin-left: 0;
+    margin-top: -35px;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_title {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_title {
   font-size: 32px;
   color: #727171;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_title {
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_title {
     color: white;
     font-size: 22px;
   }
 }
 
 @media (max-width: 360px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_title {
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_title {
     color: white;
     font-size: 18px;
     z-index: 1;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_title_underline {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_title_underline {
   width: 180px;
   height: 5px;
   margin-left: 0;
-  margin-top: -5vh;
+  margin-top: -45px;
   position: relative;
   z-index: -1;
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_content {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: left;
   color: #898989;
   font-size: 28px;
-  margin-top: -1.75vh;
+  margin-top: -20px;
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content {
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
     font-size: 18px;
+    padding-bottom: 2ㄓ;
   }
 }
 
 @media (max-width: 360px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content {
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
     font-size: 14px;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
   width: 50%;
-  padding-left: 9vw;
+  padding-left: 15%;
 }
 
 @media (max-width: 1470px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
-    padding-left: 3vw;
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
+    padding-left: 3%;
   }
 }
 
 @media (max-width: 768px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
-    padding-left: 13vw;
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
+    padding-left: 13%;
   }
 }
 
 @media (max-width: 432px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
-    padding-left: 7vw;
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
+    padding-left: 7%;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left p {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left p {
   margin-bottom: 0;
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
   width: 50%;
-  padding-left: 4vw;
+  padding-left: 10%;
 }
 
 @media (max-width: 1470px) {
-  body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
-    padding-left: 5.5vw;
+  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
+    padding-left: 5.5%;
   }
 }
 
-body .all .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right p {
+body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right p {
   margin-bottom: 0;
 }
 
