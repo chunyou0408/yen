@@ -193,6 +193,12 @@ section {
             }
             .pt-box-text {
                 font-size: $h3;
+
+                div{
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                }
                 .text-line-8 {
                     width: 130px;
                     height: 15px;
@@ -200,11 +206,11 @@ section {
                     position: relative;
                     z-index: -1;
                     top: 10px;
-                    left: 130px;
+                    // left: 130px;
+
+                
                     @media screen and (max-width: 995px) {
                         width: 115px;
-                        position: relative;
-                        left: 110px;
                     }
                     @media screen and (max-width: 768px) {
                         display: none;
@@ -354,42 +360,57 @@ section {
             }
             // 露營收費文字區塊
             .camping-price-text {
-                width: 100%;
-                font-size: $h3;
-                color: $text-content-color;
-                line-height: 50px;
-                margin: auto;
-                margin-top: 25px;
-
-                @media screen and (max-width: 1271px) {
-                    font-size: $h4;
-                }
-                @media screen and (max-width: 768px) {
-                    font-size: $h5;
-                    line-height: 40px;
-                }
-                @media screen and (max-width: 360px) {
-                    font-size:$h8;
-                }
-                p {
-                    width:70%;
-                    // background-color:green;
-                    margin-left:25%;
-                    @media screen and (max-width:1098px) {
-                        margin-left:15%;
-                        line-height:40px;
-                    }
-                    @media screen and (max-width:768px) {
-                        width:45%;
-                        margin:auto;
-                        line-height:40px;
-                    }
-                    @media screen and (max-width: 360px) {
-                        width:70%;
-                        margin:auto;
-                     }
+                width:100%;
+                font-size:$h3;
+                font-family:$font-family;
+                color:$text-content-color;
+                margin:auto;
+                .price {
+                    width:40%;
+                    height:100px;
+                    background-color:green;
+                    margin:auto;
+                    display:flex;
+                    flex-wrap:wrap;
                 }
             }
+            // .camping-price-text {
+            //     width: 100%;
+            //     font-size: $h3;
+            //     color: $text-content-color;
+            //     line-height: 50px;
+            //     margin: auto;
+            //     margin-top: 25px;
+
+            //     @media screen and (max-width: 1271px) {
+            //         font-size: $h4;
+            //     }
+            //     @media screen and (max-width: 768px) {
+            //         font-size: $h5;
+            //         line-height: 40px;
+            //     }
+            //     @media screen and (max-width: 360px) {
+            //         font-size:$h8;
+            //     }
+            //     p {
+            //         width:70%;
+            //         // background-color:green;
+            //         margin-left:25%;
+            //         @media screen and (max-width:1098px) {
+            //             margin-left:15%;
+            //             line-height:40px;
+            //         }
+            //         @media screen and (max-width:768px) {
+            //             width:45%;
+            //             margin:auto;
+            //             line-height:40px;
+            //         }
+            //         @media screen and (max-width: 360px) {
+            //             width:70%;
+            //             margin:auto;
+            //          }
+            //     }
+            // }
         }
         // 露營預約區塊
         .camping-reservation {
