@@ -21,15 +21,16 @@
             </div>
             <!-- 露營照片區塊 -->
             <div class="camping-photo-card">
+                <!--  -->
                 <!-- 照片1-3 -->
                 <div class="pt-box pt-box1">
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/01.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom"
+                            data-aos-offset="50"
                            >
-                            <!-- animated fadein -->
                             <div>草原露營區</div>
                             <div class="set-show-768">50set</div>
                         </div>
@@ -43,8 +44,9 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/02.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
-                            data-aos-anchor-placement="bottom-bottom">
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-offset="50">
                             <div>樟樹林露營區</div>
                             <div class="set-show-768">8set</div>
                         </div>
@@ -58,7 +60,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/03.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom">
                             <div>枕木露營區</div>
                             <div class="set-show-768">7set</div>
@@ -74,7 +76,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/04.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom">
                             <div>枕木露營區2</div>
                             <div class="set-show-768">7set</div>
@@ -89,7 +91,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/05.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom">
                             <!-- data-aos="fade-down" data-aos-delay:3000; -->
                             <div> 針葉林露營區</div>
@@ -105,7 +107,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/06.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom">
                             <!-- data-aos="fade-down" data-aos-delay:3000; -->
                             <div> 星光露營區</div>
@@ -122,7 +124,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/07.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
                             data-aos-anchor-placement="bottom-bottom">
                             <!-- data-aos="fade-down" data-aos-delay:3000; -->
                             <div>松樹林露營區</div>
@@ -138,9 +140,8 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/08.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="fade-up" data-aos-delay="1000"
-                            data-aos-anchor-placement="bottom-bottom">
-                            <!-- data-aos="fade-down" data-aos-delay:3000; -->
+                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
+                        data-aos-anchor-placement="bottom-bottom">
                             <div>空中帳篷區</div>
                             <div class="set-show-768">致電預約</div>
                         </div>
@@ -231,31 +232,38 @@
         var fade_img = $('.fade-effect');
       
         //偵測畫面寬度
+       
         $(window).resize(function () {
             if ($(window).width() < 541) {
-                fade_img.attr('data-aos', 'fade-up');
-                fade_img.attr('data-aos-delay', '1000');
-                
+                fade_img.attr('data-aos', 'flip-down');
+                fade_img.attr('data-aos-delay', '1500');
+                fade_img.attr('data-aos-anchor-placement', 'bottom-bottom');
+                // fade_img.attr('data-aos-offset','50');
             } else {
                 fade_img.removeAttr('data-aos');
                 fade_img.removeAttr('data-aos-delay');
+                fade_img.removeAttr('data-aos-anchor-placement');
+                // fade_img.removeAttr('data-aos-offset');
           
             }
         });
-        // 一開始的畫面也要設置條件
-        $(document).ready(function () {
-            if ($(window).width() < 541) {
-                fade_img.attr('data-aos', 'fade-up');
-                fade_img.attr('data-aos-delay', '1000');
 
-                // fade_img.attr('data-aos-anchor-placement', 'center-bottom');
+         // 一開始的畫面也要設置條件
+         $(document).ready(function () {
+            if ($(window).width() < 541) {
+                console.log('123');
+                fade_img.attr('data-aos', 'flip-down');
+                fade_img.attr('data-aos-delay', '1500');
+                fade_img.attr('data-aos-anchor-placement', 'bottom-bottom');
+                // fade_img.attr('data-aos-offset','50');
             } else {
                 fade_img.removeAttr('data-aos');
                 fade_img.removeAttr('data-aos-delay');
-
-                // fade_img.removeAttr('data-aos-anchor-placement', 'center-bottom');
+                fade_img.removeAttr('data-aos-anchor-placement');
+                // fade_img.removeAttr('data-aos-offset');
             }
         });
+        
         
 
     </script>
