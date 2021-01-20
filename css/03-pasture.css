@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -31,7 +30,7 @@ body nav {
 }
 
 body .all {
-  width: calc(100% - 175px);
+  width: calc(100vw - 175px);
   max-width: 1745px;
 }
 
@@ -86,6 +85,12 @@ body .all .page_title .title_underline {
   }
 }
 
+@media (max-width: 768px) {
+  body .all .camp_area {
+    margin-top: -2%;
+  }
+}
+
 body .all .camp_area .camp_area_grass {
   width: 100%;
   height: auto;
@@ -135,7 +140,7 @@ body .all .camp_area .camp_area_grass .grass_text_box {
   body .all .camp_area .camp_area_grass .grass_text_box {
     width: 100%;
     text-align: center;
-    margin-top: -30px;
+    margin-top: -33px;
   }
 }
 
@@ -170,6 +175,7 @@ body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underlin
 @media (max-width: 768px) {
   body .all .camp_area .camp_area_grass .grass_text_box .grass_text_title_underline {
     width: 170px;
+    margin-top: -45px;
     margin-left: 0;
   }
 }
@@ -191,6 +197,13 @@ body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
     font-size: 18px;
     margin-top: -24px;
     padding-bottom: 2%;
+  }
+}
+
+@media (max-width: 360px) {
+  body .all .camp_area .camp_area_grass .grass_text_box .grass_text_content {
+    font-size: 14px;
+    margin-top: -18px;
   }
 }
 
@@ -297,7 +310,7 @@ body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
 @media (max-width: 768px) {
   body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
     font-size: 18px;
-    padding-bottom: 2ㄓ;
+    padding-bottom: 2%;
   }
 }
 
@@ -387,6 +400,12 @@ body .all .camp_area_tent .tent_text_box .tent_text_box_bgcolor {
   margin: auto;
 }
 
+@media (max-width: 886px) {
+  body .all .camp_area_tent .tent_text_box .tent_text_box_bgcolor {
+    width: 60%;
+  }
+}
+
 @media (max-width: 768px) {
   body .all .camp_area_tent .tent_text_box .tent_text_box_bgcolor {
     padding: 0px;
@@ -428,7 +447,8 @@ body .all .camp_area_tent .tent_text_box .tent_text_box_bgcolor span {
 body .all .coffee_area {
   width: 100%;
   height: auto;
-  margin-top: 10vh;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 @media (max-width: 768px) {
@@ -440,16 +460,24 @@ body .all .coffee_area {
 body .all .coffee_area .coffee_area_background_color {
   width: 50%;
   max-width: 870px;
-  height: 30vw;
+  height: 570px;
   background-color: #f8f6e9;
   position: absolute;
   right: 0;
 }
 
+@media (max-width: 1650px) {
+  body .all .coffee_area .coffee_area_background_color {
+    height: 37vw;
+  }
+}
+
 @media (max-width: 768px) {
   body .all .coffee_area .coffee_area_background_color {
-    width: 80%;
-    height: 45vw;
+    position: absolute;
+    right: 7.5%;
+    width: 70%;
+    height: 43vw;
   }
 }
 
@@ -471,42 +499,48 @@ body .all .coffee_area .coffee_area_background_color span {
 }
 
 body .all .coffee_area img {
-  width: 65%;
-  max-width: 870px;
-  margin-top: 5vh;
-  margin-left: 31.5vw;
+  width: 870px;
+  margin-top: 50px;
+  margin-left: 605px;
   position: relative;
 }
 
-@media (max-width: 1475px) {
+@media (max-width: 1649px) {
   body .all .coffee_area img {
-    margin-left: 35%;
+    width: 65%;
+    margin-left: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  body .all .coffee_area img {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 35px;
   }
 }
 
 body .all .coffee_area .coffee_area_background_img {
-  width: 30%;
-  height: 70%;
-  background-image: url("/img/03/tree.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: -59.75vh;
-  position: absolute;
-  left: 175px;
-  z-index: -1;
+  width: 20vw;
+  margin-top: -34vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   body .all .coffee_area .coffee_area_background_img {
     display: none;
   }
 }
 
+body .all .coffee_area .coffee_area_background_img img {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: -5.5vw;
+}
+
 body .all .segmentation {
   width: 50%;
   border: 2px solid #898989;
-  margin: 10vh 0 0 0;
+  margin: 0;
 }
 
 body .all .swiper-container {
@@ -518,6 +552,13 @@ body .all .swiper-container {
 @media (max-width: 768px) {
   body .all .swiper-container {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  body .all .swiper-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
