@@ -4,66 +4,65 @@
     margin: 0;
 }
 
-//畫面最上方
-// .box{
-//     height: 1000px;
-//     width: 100%;
-//     display:none;
-//     @media screen and (max-width:768px) {
-//         display:block;
-//     }
-// }
+body {
+    // body請幫我下一個overflow-x
+    overflow-x: hidden;
+}
 
 section {
     width: 100%;
-    // 之後用模板要取消
-    // border: 1px black solid;
     margin: auto;
-
     // 大標題 CAMPING
     .camping-title {
         text-align: center;
         margin: auto;
+        // span裡面的CAMPING
         span {
             font-size: $h1;
-
             font-family: $font-family;
-
             color: $text-title-color;
             letter-spacing: 5px;
+
             border-bottom: 1px $text-line-color solid;
+
             padding-bottom: 5px;
             margin: auto;
-            // @media screen and (max-width: 768px) {
-            //    font-size:$h2;
-            // }
+            @media screen and (max-width: 540px) {
+                font-size: $h2;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: $h9;
+            }
         }
     }
-
     // 露營照片區
     .camping-photo-card {
         width: 85%;
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         border: 1px black solid;
+
         margin: auto;
         margin-top: 30px;
-
-        // 每一個照片加文字
+        // 每一個照片加文字(都是一樣的)
         .pt-box {
             width: 30%;
             padding-bottom: 40px;
             margin-bottom: -25px;
-            // @media screen and (max-width: 1400px) {
-            //     width: 35%;
-            // }
-            // @media screen and (max-width: 1000px) {
-            //     width: 40%;
-            // }
             @media screen and (max-width: 768px) {
+                margin-bottom: -20px;
                 width: 47%;
             }
+            @media screen and (max-width: 540px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 360px) {
+                margin-top:-15px;
+            }
+            // 圖片hover過去有文字
             .img-hover {
                 width: 100%;
                 position: relative;
@@ -73,12 +72,13 @@ section {
                     --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                 }
+                // hover的文字樣式
                 .pt-box-img-text {
                     width: 100%;
                     height: 98%;
                     --webkit-clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 80% 0, 100% 27%, 100% 100%, 0% 100%);
-                    background-color: rgba(221, 209, 209, 0.4);
+                    background-color: rgba(221, 209, 209, 0.3);
 
                     color: white;
                     font-size: $h2;
@@ -92,48 +92,47 @@ section {
                     opacity: 0;
                     transition: all 200ms ease-in;
                     bottom: 4px;
-
-                    // @media screen and (max-width: 768px) {
-                    //     &.aos-animate{
+                    @media screen and (max-width: 768px) {
+                        opacity: 1;
+                    }
+                    // 540跳板做data-os效果
+                    // @media screen and (max-width: 541px) {
+                    //     &.aos-animate {
                     //         font-size: $h2;
                     //         opacity: 1;
                     //         // backface-visibility: visible;
+                            
                     //         width: 100%;
                     //         height: 98%;
                     //     }
                     // }
-                    // @media screen and (max-width: 360px) {
-                    //     &.aos-animate{
-                    //         font-size: $h7;
-                    //         opacity: 1;
-                    //         // backface-visibility: visible;
-                    //         width: 100%;
-                    //         height: 98%;
-                    //     }
-                    // }
-
+                    .set-show-768 {
+                        display: none;
+                        @media screen and (max-width: 768px) {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            font-size: $h4;
+                            font-family: $font-family;
+                            margin: auto;
+                            margin-top: 5px;
+                        }
+                    }
                     div {
                         margin-top: 25%;
-                        @media screen and (max-width: 768px) {
-                            // font-size:$h4;
-                            margin-top: 3%;
+                        @media screen and (max-width: 1051px) {
+                            font-size: $h3;
                         }
-                        // @media screen and (max-width: 674px) {
-                        //     font-size:$h4;
-                        // }
-                        // @media screen and (max-width: 572px) {
-                        //     font-size:$h5;
-                        // }
-                        // @media screen and (max-width: 487px) {
-                        //     font-size:$h6;
-                        // }
-                        // @media screen and (max-width: 414px) {
-                        //     font-size:$h7;
-                        // }
-                    }
-                    // hover文字
-                    @media screen and (max-width: 768px) {
-                        line-height: 330.36px;
+                        @media screen and (max-width: 900px) {
+                            font-size: $h4;
+                        }
+                        @media screen and (max-width: 768px) {
+                            margin-top: 20%;
+                            font-size: $h3;
+                        }
+                        @media screen and (max-width: 360px) {
+                            font-size: $h4;
+                        }
                     }
                 }
                 // 要直接用hover必須前面加一個 &
@@ -141,7 +140,6 @@ section {
                 // 我在對img-hover做hover的同時，
                 // pt-box-img-text會被我顯示出來
                 &:hover .pt-box-img-text {
-                    // display: block;
                     opacity: 0.8;
                     @media screen and (max-width: 768px) {
                         opacity: 1;
@@ -152,116 +150,97 @@ section {
             .pt-box-text {
                 width: 100%;
                 height: 47px;
+
                 font-size: $h2;
+                font-family: $font-family;
                 color: $text-content-color;
-                // line-height: 65px;
                 text-align: right;
+
                 position: relative;
                 top: 0px;
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
+
                 z-index: 1;
-                // @media screen and (max-width: 768px) {
-                //     width: 43%;
-                //     text-align: center;
-                //     font-size: $h3;
-                //     position: relative;
-                //     left: 27%;
-                //     top: -25%;
-                //     z-index: 1;
-                // }
-                // @media screen and (max-width: 674px) {
-                //     font-size:$h4;
-                // }
-                // @media screen and (max-width: 487px) {
-                //     font-size:$h5;
-                //     position:relative;
-                //     top:-38%;
-                // }
-                // @media screen and (max-width: 373px) {
-                //     font-size:$h6;
-                // }
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
                 .text-line {
                     width: 92px;
-                    height: 20px;
+                    height: 15px;
                     position: relative;
                     z-index: -1;
                     top: 10px;
-                    // bottom:20px;
                     left: 88px;
+                    @media screen and (max-width: 995px) {
+                        width: 80px;
+                        position: relative;
+                        left: 80px;
+                    }
                     @media screen and (max-width: 768px) {
+                        width: 130px;
                         display: none;
                     }
                 }
-                
             }
-
-           
-
-            // .pt-box8 {
-            //     font-size: $h2;
-            //     @media screen and (max-width:522px){
-            //         font-size:$h7;
-            //     }
-            // }
         }
         .pt-box7 {
-            margin-left:20%;
+            margin-left: 20%;
+            @media screen and (max-width: 768px) {
+                margin-left: 0%;
+            }
         }
         .pt-box8 {
-            margin-right:15%;
+            margin-right: 15%;
+            @media screen and (max-width: 768px) {
+                margin-right: 0%;
+            }
             .pt-box-text {
-                font-size:$h3;
+                font-size: $h3;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
                 .text-line-8 {
                     width: 130px;
-                    height: 20px;
+                    height: 15px;
+
                     position: relative;
                     z-index: -1;
                     top: 10px;
-                    left: 130px;
+                    // left: 130px;
+
+                    @media screen and (max-width: 995px) {
+                        width: 115px;
+                    }
                     @media screen and (max-width: 768px) {
                         display: none;
                     }
                 }
             }
         }
-        // .pt-box8 {
-        //     .pt-box-text {
-        //         @media screen and (max-width:522px) {
-        //            width:100px;
-        //            position:relative;
-        //            left:20%;
-        //            font-size:$h4;
-        //         }
-        //         @media screen and (max-width:405px) {
-        //             position:relative;
-        //             left:15%;
-        //             font-size:$h5;
-        //          }
-        //          @media screen and (max-width:345px) {
-        //             position:relative;
-        //             left:10%;
-        //             font-size:$h6;
-        //          }
-        //     }
-        // }
     }
 
     // 露營文字區塊
     .camping-introduction-box {
-        width: 85%;
-
+        width: 100%;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         border: 1px black solid;
+        @media screen and (max-width: 768px) {
+            margin-top: 30px;
+        }
         // 露營注意事項
         .camping-notes-box {
             width: 49%;
+
             background-color: $camping-note;
             @media screen and (max-width: 768px) {
                 width: 100%;
@@ -278,50 +257,68 @@ section {
                 margin-top: 20px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
+                    line-height: 45px;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
-                    font-size: $h4;
+                    font-size: $h3;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: $h6;
                 }
             }
             // 標題線
             .line {
-                width: 28%;
+                width: 26%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
             }
             // 露營注意事項文字區塊
             .camping-notes-text {
-                width: 100%;
+                width: 80%;
                 font-size: $h3;
+                font-family: $font-family;
                 color: $text-content-color;
                 line-height: 60px;
                 margin: auto;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h4;
                 }
+                @media screen and (max-width: 565px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 545px) {
+                    width: 90%;
+                }
+                @media screen and (max-width: 530px) {
+                    width: 100%;
+                }
+
                 @media screen and (max-width: 768px) {
+                    width: 70%;
+                    // background-color:green;
                     font-size: $h5;
+                    line-height: 40px;
+                    margin: auto;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: $h8;
                 }
                 p {
-                    margin-left: 12.5%;
+                    width: 100%;
+                    // 文字直接貼邊
+                    // background-color: yellow;
+                    // margin-left: 12.5%;
                     margin-top: 20px;
-                    @media screen and (max-width: 1060px) {
-                        margin-left: 4%;
-                    }
-                    @media screen and (max-width: 768px) {
-                        margin-left: 15%;
-                    }
-                    @media screen and (max-width: 689px) {
-                        margin-left: 10%;
-                    }
-                    @media screen and (max-width: 615px) {
-                        margin-left: 5%;
+                    @media screen and (max-width: 360px) {
+                        margin: auto;
                     }
                 }
             }
         }
+
         // 露營收費區塊
         .camping-price {
             width: 49%;
@@ -343,61 +340,84 @@ section {
                 margin-top: 20px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
+                    line-height: 45px;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
-                    font-size: $h4;
+                    font-size: $h3;
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: $h6;
                 }
             }
             .line {
-                width: 20%;
+                width: 18%;
                 height: 1px;
                 background: $text-line-color;
                 margin: auto;
             }
-            // 露營收費文字區塊
             .camping-price-text {
-                width: 100%;
+                width: 80%;
                 font-size: $h3;
                 color: $text-content-color;
                 line-height: 50px;
-                margin: auto;
+                // margin: auto;
+                // background-color:yellow;
                 margin-top: 25px;
-                @media screen and (max-width: 1271px) {
-                    font-size: $h4;
+                margin-left:13%;
+                @media screen and (max-width:1592px) {
+                    margin-left:5%;
                 }
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width:1014px) {
+                    width:100%;
+                    margin-left:0;
+                    word-wrap:break-word;
+                }
+                @media screen and (max-width: 1285px) {
+                    font-size: $h4;
+                    
+                }
+                @media screen and (max-width: 816px) {
+                    
                     font-size: $h5;
+                    line-height: 40px;
+                    
+                }
+               
+                @media screen and (max-width: 360px) {
+                    font-size:$h8;
                 }
                 p {
-                    margin-left: 30%;
-                    @media screen and (max-width: 1415px) {
-                        margin-left: 20%;
+                    width:70%;
+                    // background-color:green;
+                    margin-left:25%;
+                    @media screen and (max-width:1098px) {
+                        margin-left:15%;
+                        line-height:40px;
                     }
-                    @media screen and (max-width: 820px) {
-                        margin-left: 10%;
+                    @media screen and (max-width:768px) {
+                        width:45%;
+                        margin:auto;
+                        line-height:40px;
                     }
-                    @media screen and (max-width: 768px) {
-                        margin-left: 30%;
+                    @media screen and (max-width:572px) {
+                        width:100%;
+                        margin-left:20%;
                     }
-                    @media screen and (max-width: 595px) {
-                        margin-left: 25%;
-                    }
-                    @media screen and (max-width: 689px) {
-                        margin-left: 20%;
-                    }
-                    @media screen and (max-width: 441px) {
-                        margin-left: 15%;
-                    }
+                    @media screen and (max-width: 360px) {
+                        width:70%;
+                        margin:auto;
+                     }
                 }
             }
         }
         // 露營預約區塊
         .camping-reservation {
             width: 100%;
-            height: auto;
             background-color: $camping-reservation;
             margin-top: 35px;
             padding-bottom: 50px;
+            margin-bottom:80px;
             // 露營預約標題
             .camping-reservation-title {
                 width: 100%;
@@ -409,28 +429,14 @@ section {
                 margin-top: 30px;
                 @media screen and (max-width: 1271px) {
                     font-size: $h3;
+                    margin-top: 10px;
                 }
                 @media screen and (max-width: 768px) {
-                    font-size: $h4;
+                    font-size: $h3;
                 }
-                // padding-top: 10px;
-                // @media screen and (max-width: 1189px) {
-                //     font-size: $h3;
-                // }
-                // @media screen and (max-width: 956px) {
-                //     width: 20%;
-                //     font-size: $h4;
-                // }
-                // @media screen and (max-width: 768px) {
-                //     font-size: $h3;
-                // }
-                // @media screen and (max-width: 592px) {
-                //     width: 30%;
-                //     font-size: $h4;
-                // }
-                // @media screen and (max-width: 592px) {
-                //     width: 30%;
-                // }
+                @media screen and (max-width: 360px) {
+                    font-size: $h6;
+                }
             }
             .line {
                 width: 10%;
@@ -438,6 +444,12 @@ section {
                 background: $text-line-color;
                 margin: auto;
                 margin-top: 5px;
+                @media screen and (max-width: 1271px) {
+                    width: 18%;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 18%;
+                }
             }
             // 露營預約文字區塊
             .camping-reservation-text {
@@ -447,6 +459,7 @@ section {
                 color: $text-content-color;
                 line-height: 50px;
                 letter-spacing: 3px;
+                padding-bottom:20px;
                 margin: auto;
                 margin-top: 30px;
                 @media screen and (max-width: 1271px) {
@@ -454,50 +467,36 @@ section {
                 }
                 @media screen and (max-width: 768px) {
                     font-size: $h5;
+                    line-height: 40px;
                 }
-                // @media screen and (max-width: 1189px) {
-                //   font-size: $h4;
-                // }
-                // @media screen and (max-width: 956px) {
-                //   font-size: $h5;
-                // }
-                // @media screen and (max-width: 768px) {
-                //   font-size: $h4;
-                // }
-                // @media screen and (max-width: 592px) {
-                //   font-size: $h5;
-                // }
+                @media screen and (max-width: 360px) {
+                    font-size: $h8;
+                }
                 p {
                     width: 80%;
                     margin: auto;
                 }
             }
-            // @media screen and (max-width:1346px){
-            //     width:900px;
-            //     font-size:$h4;
-            // }
-            // @media screen and (max-width:1176px){
-            //     width:800px;
-            //     height:380px;
-            // }
-            // @media screen and (max-width:1048px){
-            //     width:750px;
-            // }
-            // @media screen and (max-width:963px){
-            //     width:700px;
-            // }
-            // @media screen and (max-width:894px){
-            //     width:650px;
-            // }
-            // @media screen and (max-width:851px){
-            //     width:600px;
-            // }
-            // @media screen and (max-width:768px){
-            //     width:550px;
-            // }
-            // p {
-            //     margin-top: 30px;
-            // }
+            
+               
+                .reservation-btn {
+                    a {
+                        text-decoration: none;
+                        color:white;
+                    }
+                    width:170px;
+                    font-size:$h3;
+                    font-family:$font-family;
+                    text-align:center;
+                    // margin-top:60px;
+                    padding:5px 20px;
+                    border:1px $reservation-btn-color solid;
+                    border-radius: 10px;
+                    background-color:$reservation-btn-color;
+                    margin:auto;
+                }
+            
+            
         }
     }
 }

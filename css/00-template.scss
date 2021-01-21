@@ -7,6 +7,7 @@ body {
   margin: 0;
 
   height: auto;
+  font-family: 'Microsoft JhengHei';
 
   .nav01 {
     margin-top: 0;
@@ -332,6 +333,44 @@ body {
       // background-color: lightsalmon;
     }
   }
+  .footer_decoration{
+    width: calc(100% - 175px);
+    height: auto;
+    border-left: 3px solid $text-title-color;
+    margin-left: 175px;
+    @media (max-width: 768px) {
+      width: 100%;
+      border-left:initial;
+      margin-left:0;
+      
+    }
+    img{
+      // marg
+      position: absolute;
+      bottom: 0vh;
+      @media (max-width: 768px) {
+        bottom: calc(0vh - 80px);
+      }
+    }
+    .decoration_01{
+      left: 25%;
+      @media (max-width: 768px) {
+        left: 5%;
+      }
+    }
+    .decoration_02{
+      left: 50%;
+      @media (max-width: 768px) {
+        left: 40%;
+      }
+    }
+    .decoration_03{
+      left: 70%;
+      @media (max-width: 768px) {
+        left: 70%;
+      }
+    }
+  }
 
   footer {
     width: calc(100% - 175px);
@@ -369,6 +408,12 @@ body {
     }
     .footer_left {
       width: auto;
+      @media (max-width: 768px) {
+        padding-left: 8vw;
+      }
+      @media (max-width: 712px) {
+        padding-left: 0;
+      }
       li:first-child {
         font-size: $h1;
         display: flex;
