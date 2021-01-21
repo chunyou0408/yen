@@ -369,6 +369,30 @@ body .all .camp_area_tent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: arrow 1s linear 1 both;
+          animation: arrow 1s linear 1 both;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -525,7 +549,7 @@ body .all .coffee_area .coffee_area_background_img {
   margin-top: -34vw;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   body .all .coffee_area .coffee_area_background_img {
     display: none;
   }
