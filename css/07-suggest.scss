@@ -7,7 +7,6 @@
 section {
     width: 100%;
     margin: auto;
-    border: 1px black solid;
     .suggest-title {
         text-align: center;
         margin: auto;
@@ -22,22 +21,24 @@ section {
 
             padding-bottom: 5px;
             margin: auto;
+            @media screen and (max-width:538px) {
+                font-size:$h6;
+            }
         }
     }
+    // 意見表區塊(整體)
     .suggest-box {
         width: 90%;
         height: auto;
-        border: 1px black solid;
         margin: auto;
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .picture {
-            max-width: 53%;
+            max-width: 57%;
             height: auto;
-            background-color: gray;
-
+            // background-color: gray;
             background-image: url(/img/07/74.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -45,28 +46,40 @@ section {
             @media screen and (max-width:1320px) {
                 max-width:100%;
             }
+            
             img {
                 width: 100%;
                 opacity: 0;
             }
         }
         .text-box {
-            width: 45%;
-            height: 100%;
-            border:1px red solid;
+            width: 40%;
+            // height: 100%;
+            // margin-top:5%;
             @media screen and (max-width:1320px) {
                 width:100%;
             }
             .text-top {
                 width: 100%;
+                @media screen and (max-width:1321px) {
+                    margin-top:2%;
+                }
                 .text-top-text {
                     font-size: $h3;
+                    color:$text-content-color;
+                    font-family: $font-family;
                     line-height:50px;
+                    @media screen and (max-width:768px) {
+                        font-size:$h4;
+                        line-height:30px;
+                    }
+                    @media screen and (max-width:538px) {
+                        font-size:$h6;
+                    }
                     .line {
                         width: 95%;
                         height: 1px;
                         background: $text-line-color;
-                        
                         margin: auto;
                         margin-top: 2%;
                     }
@@ -74,13 +87,11 @@ section {
             }
             .text-bottom {
                 width: 100%;
-                background-color: cornflowerblue;
                 padding-bottom:50px;
                 display: flex;
                 justify-content: space-between;
                 .contact-information {
                     width: 40%;
-                    background-color: rgb(100, 237, 123);
                     padding-bottom:50px;
                     display: flex;
                     flex-wrap: wrap;
@@ -90,51 +101,94 @@ section {
                         margin-top:15%;
                         li {
                             font-size: $h3;
+                            color:$text-content-color;
+                            font-family: $font-family;
                             list-style-type: square;
+                            @media screen and (max-width:768px) {
+                                font-size:$h4;
+                            }
+                            @media screen and (max-width:538px) {
+                                font-size:$h6;
+                            }
                         }
                         .input-box {
-                            width: 60%;
+                            width: 80%;
+                            color:$text-content-color;
                             font-size: $h3;
+                            font-family: $font-family;
                             margin-left: 10%;
-                            margin-top: 2%;
+                            margin-top: 3%;
+                            @media screen and (max-width:768px) {
+                                font-size:$h4;
+                            }
+                            @media screen and (max-width:538px) {
+                                font-size:$h6;
+                            }
                         }
                     }
                 }
                 .suggest_and_button {
                     width: 50%;
+                     @media screen and (max-width:1321px) {
+                        width: 45%;
+                        
+                    }
                     .suggest {
                         width: 100%;
-                        margin-top:12%;
-                        background-color: darkgreen;
-                        padding-bottom:100px;
+                        padding-bottom:30px;
                         display: flex;
                         flex-wrap: wrap;
                         li {
+                            margin-top:12%;
+                            color:$text-content-color;
                             font-size: $h3;
+                            font-family: $font-family;
                             list-style-type: square;
+                            @media screen and (max-width:768px) {
+                                font-size:$h4;
+                            }
+                            @media screen and (max-width:538px) {
+                                font-size:$h6;
+                            }
                         }
-                        .suggest-text {
-                            max-width: 60%;
-                            height:300px;
+                        textarea {
+                            max-width: 80%;
+                            color:$text-content-color;
                             font-size: $h3;
-                            margin-left: 10%;
+                            font-family: $font-family;
+                            margin-left: 15%;
                             margin-top:5%;
+                            resize : none;
+                            @media screen and (max-width:768px) {
+                                font-size:$h4;
+                            }
+                            @media screen and (max-width:538px) {
+                                font-size:$h6;
+                            }
                         }
                     }
                     .button {
                         width: 100%;
-                        margin-top:15%;
-                        background-color: yellow;
                         .post-button {
-                            width: 120px;
-                            height: 50px;
+                            width: 40%;
+                            height: 13%;
+                            color:white;
                             font-size: $h3;
+                            font-family: $font-family;
                             border: 1px $reservation-btn-color solid;
                             border-radius: 7px;
                             background-color: $reservation-btn-color;
                             margin: auto;
-                            margin-left: 10%;
-                            margin-top:3%;
+                            margin-left: 14%;
+                            padding:10px 0;
+                            @media screen and (max-width:768px) {
+                                font-size:$h4;
+                            }
+                            @media screen and (max-width:538px) {
+                                width: 45%;
+                                font-size:$h6;
+                            }
+                           
                         }
                     }
                 }

@@ -7,7 +7,6 @@
 section {
   width: 100%;
   margin: auto;
-  border: 1px black solid;
 }
 
 section .suggest-title {
@@ -25,10 +24,15 @@ section .suggest-title span {
   margin: auto;
 }
 
+@media screen and (max-width: 538px) {
+  section .suggest-title span {
+    font-size: 18px;
+  }
+}
+
 section .suggest-box {
   width: 90%;
   height: auto;
-  border: 1px black solid;
   margin: auto;
   margin-top: 40px;
   display: -webkit-box;
@@ -42,9 +46,8 @@ section .suggest-box {
 }
 
 section .suggest-box .picture {
-  max-width: 53%;
+  max-width: 57%;
   height: auto;
-  background-color: gray;
   background-image: url(/img/07/74.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,9 +66,7 @@ section .suggest-box .picture img {
 }
 
 section .suggest-box .text-box {
-  width: 45%;
-  height: 100%;
-  border: 1px red solid;
+  width: 40%;
 }
 
 @media screen and (max-width: 1320px) {
@@ -78,9 +79,30 @@ section .suggest-box .text-box .text-top {
   width: 100%;
 }
 
+@media screen and (max-width: 1321px) {
+  section .suggest-box .text-box .text-top {
+    margin-top: 2%;
+  }
+}
+
 section .suggest-box .text-box .text-top .text-top-text {
   font-size: 28px;
+  color: #898989;
+  font-family: Microsoft JhengHei;
   line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-top .text-top-text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-top .text-top-text {
+    font-size: 18px;
+  }
 }
 
 section .suggest-box .text-box .text-top .text-top-text .line {
@@ -93,7 +115,6 @@ section .suggest-box .text-box .text-top .text-top-text .line {
 
 section .suggest-box .text-box .text-bottom {
   width: 100%;
-  background-color: cornflowerblue;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +126,6 @@ section .suggest-box .text-box .text-bottom {
 
 section .suggest-box .text-box .text-bottom .contact-information {
   width: 40%;
-  background-color: #64ed7b;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,25 +143,57 @@ section .suggest-box .text-box .text-bottom .contact-information .contact-box {
 
 section .suggest-box .text-box .text-bottom .contact-information .contact-box li {
   font-size: 28px;
+  color: #898989;
+  font-family: Microsoft JhengHei;
   list-style-type: square;
 }
 
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-bottom .contact-information .contact-box li {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-bottom .contact-information .contact-box li {
+    font-size: 18px;
+  }
+}
+
 section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
-  width: 60%;
+  width: 80%;
+  color: #898989;
   font-size: 28px;
+  font-family: Microsoft JhengHei;
   margin-left: 10%;
-  margin-top: 2%;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
+    font-size: 18px;
+  }
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button {
   width: 50%;
 }
 
+@media screen and (max-width: 1321px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button {
+    width: 45%;
+  }
+}
+
 section .suggest-box .text-box .text-bottom .suggest_and_button .suggest {
   width: 100%;
-  margin-top: 12%;
-  background-color: darkgreen;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,33 +202,75 @@ section .suggest-box .text-box .text-bottom .suggest_and_button .suggest {
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
+  margin-top: 12%;
+  color: #898989;
   font-size: 28px;
+  font-family: Microsoft JhengHei;
   list-style-type: square;
 }
 
-section .suggest-box .text-box .text-bottom .suggest_and_button .suggest .suggest-text {
-  max-width: 60%;
-  height: 300px;
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
+    font-size: 18px;
+  }
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+  max-width: 80%;
+  color: #898989;
   font-size: 28px;
-  margin-left: 10%;
+  font-family: Microsoft JhengHei;
+  margin-left: 15%;
   margin-top: 5%;
+  resize: none;
+}
+
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+    font-size: 18px;
+  }
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button {
   width: 100%;
-  margin-top: 15%;
-  background-color: yellow;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
-  width: 120px;
-  height: 50px;
+  width: 40%;
+  height: 13%;
+  color: white;
   font-size: 28px;
+  font-family: Microsoft JhengHei;
   border: 1px #c9bc9c solid;
   border-radius: 7px;
   background-color: #c9bc9c;
   margin: auto;
-  margin-left: 10%;
-  margin-top: 3%;
+  margin-left: 14%;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
+    width: 45%;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=07-suggest.css.map */
