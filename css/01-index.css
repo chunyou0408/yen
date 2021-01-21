@@ -122,9 +122,27 @@ header .above .text {
   transition: 1s;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1080px) {
+  header .above .text {
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 770px) {
+  header .above .text {
+    font-size: 14px;
+    bottom: 1%;
+  }
+}
+
+@media (max-width: 630px) {
   header .above .text {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  header .above .text {
     bottom: 0%;
   }
 }
@@ -155,6 +173,12 @@ header .above .text i {
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 770px) {
+  header .above .text i {
+    font-size: 22px;
   }
 }
 

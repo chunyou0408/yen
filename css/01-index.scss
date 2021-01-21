@@ -33,7 +33,6 @@ header{
 
             }
             
-            
             img{
                 width: 100%;
                 filter:brightness(50%);
@@ -80,7 +79,6 @@ header{
 
         }
         .text{
-            
             position: absolute;
             bottom: 5%;
             left: 50%;
@@ -92,10 +90,21 @@ header{
             align-items: center;
             transition: 1s;
 
-            @media (max-width: 375px){
+            @media (max-width: 1080px){
+                bottom: 3%;
+    
+            }
+            @media (max-width: 770px){
+                font-size: 14px;
+                bottom: 1%;
+              
+            }
+            @media (max-width: 630px){
                 font-size: 12px;
-                bottom: 0%;
-                
+            }
+
+            @media (max-width: 375px){
+                bottom: 0%;   
             }
             i{
                 font-size: 30px;
@@ -111,17 +120,18 @@ header{
                     }
 
                 }
-            
 
+                @media (max-width: 770px){
+                    font-size: 22px;
+                   
+                }
                 @media (max-width: 375px){
                     font-size: 12px;
-                    
                     
                 }
 
             }
-
-            
+ 
         }
         
     }
@@ -147,6 +157,7 @@ main{
             .swiper-wrapper{
                 width: 100%;
                 margin-bottom: 50px;
+               
               
                 .swiper-slide {
                     max-width: 100%;
