@@ -36,6 +36,13 @@ body .container .shop_title {
   text-align: center;
 }
 
+body .container .shop_title hover {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 body .container .shop_title samp {
   border-bottom: 1px #898989 solid;
   padding-bottom: 5px;
@@ -171,6 +178,72 @@ body .container .content_top .commodity_top_card .text_box p {
   margin: 0;
 }
 
+body .container .content_top .commodity_top_card .button_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+@media (max-width: 924px) {
+  body .container .content_top .commodity_top_card .button_content {
+    margin-left: 40px;
+  }
+}
+
+body .container .content_top .commodity_top_card .button_content .confirm {
+  margin-left: 10px;
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  border-radius: 6px;
+  border: 2px #898989 solid;
+  color: #898989;
+  font-size: 16px;
+}
+
+body .container .content_top .commodity_top_card .button_content .confirm:focus {
+  outline: initial;
+}
+
+@media (max-width: 1300px) {
+  body .container .content_top .commodity_top_card .button_content .confirm {
+    width: 36px;
+    height: 26px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 924px) {
+  body .container .content_top .commodity_top_card .button_content .confirm {
+    width: 34px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 828px) {
+  body .container .content_top .commodity_top_card .button_content .confirm {
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  body .container .content_top .commodity_top_card .button_content .confirm {
+    width: 32px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 body .container .content_top .commodity_top_card .buy_button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,7 +252,7 @@ body .container .content_top .commodity_top_card .buy_button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 2%;
-  margin-bottom: 6%;
+  margin-bottom: 2%;
 }
 
 body .container .content_top .commodity_top_card .buy_button .buy_button_left {
@@ -448,6 +521,72 @@ body .container .content_bottom .commodity_bottom_card .text_box p {
   margin: 0;
 }
 
+body .container .content_bottom .commodity_bottom_card .button_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+@media (max-width: 924px) {
+  body .container .content_bottom .commodity_bottom_card .button_content {
+    margin-left: 40px;
+  }
+}
+
+body .container .content_bottom .commodity_bottom_card .button_content .confirm {
+  margin-left: 10px;
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  border: 2px #898989 solid;
+  border-radius: 6px;
+  color: #898989;
+  font-size: 16px;
+}
+
+body .container .content_bottom .commodity_bottom_card .button_content .confirm:focus {
+  outline: initial;
+}
+
+@media (max-width: 1300px) {
+  body .container .content_bottom .commodity_bottom_card .button_content .confirm {
+    width: 36px;
+    height: 26px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 924px) {
+  body .container .content_bottom .commodity_bottom_card .button_content .confirm {
+    width: 34px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 828px) {
+  body .container .content_bottom .commodity_bottom_card .button_content .confirm {
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  body .container .content_bottom .commodity_bottom_card .button_content .confirm {
+    width: 32px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 body .container .content_bottom .commodity_bottom_card .buy_button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,7 +595,7 @@ body .container .content_bottom .commodity_bottom_card .buy_button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 2%;
-  margin-bottom: 6%;
+  margin-bottom: 2%;
 }
 
 body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_left {
