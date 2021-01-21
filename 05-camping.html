@@ -230,11 +230,14 @@
     <script>
         AOS.init();
         var fade_img = $('.fade-effect');
+
+        
       
         //偵測畫面寬度
        
         $(window).resize(function () {
             if ($(window).width() < 541) {
+                console.log('321');
                 fade_img.attr('data-aos', 'flip-down');
                 fade_img.attr('data-aos-delay', '1500');
                 fade_img.attr('data-aos-anchor-placement', 'bottom-bottom');
