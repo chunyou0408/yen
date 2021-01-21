@@ -1,0 +1,159 @@
+@import "variable";
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    
+    border: 1px black solid;
+    .suggest-title {
+        text-align: center;
+        margin: auto;
+        // span裡面的SUGGEST
+        span {
+            font-size: $h1;
+            font-family: $font-family;
+            color: $text-title-color;
+            letter-spacing: 5px;
+
+            border-bottom: 1px $text-line-color solid;
+
+            padding-bottom: 5px;
+            margin: auto;
+        }
+    }
+    .suggest-box {
+        width: 90%;
+        height: auto;
+        // background-color: yellow;
+        border: 1px black solid;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        
+        .picture {
+            width: 53%;
+            height: auto;
+           
+            @media screen and (max-width:1802px) {
+                width:45%;
+            }
+            // background-color: green;
+            img {
+                max-width: 100%;
+                height: auto;
+
+            }
+        }
+        .text-box {
+            width: 45%;
+            height: auto;
+            @media screen and (max-width:1802px) {
+                width:54%;
+                
+            }
+            // background-color: burlywood;
+            .text-top {
+                width: 100%;
+                height: 30%;
+                background-color: blueviolet;
+                @media screen and (max-width:1802px) {
+                    height:40%;
+                }
+                span {
+                    font-size: $h3;
+                    // @media screen and (max-width:15) {
+                        
+                    // }
+                }
+                .line {
+                    width: 95%;
+                    height: 1px;
+                    background: $text-line-color;
+                    margin: auto;
+                    margin-top: 2%;
+                }
+            }
+            .text-bottom {
+                width: 100%;
+                height: 70%;
+                background-color: cornflowerblue;
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width:1802px) {
+                    height:60%;
+                    // padding-bottom:100px;
+                }
+               
+                .contact-information {
+                    width: 40%;
+                    height: 100%;
+                    // background-color: rgb(100, 237, 123);
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    .contact-box {
+                        width: 100%;
+                        height: 32%;
+                        li {
+                            font-size: $h3;
+                            list-style-type: square;
+                        }
+                        textarea {
+                            width: 60%;
+                            height: 30%;
+                            font-size: $h3;
+                            margin-left: 10%;
+                            margin-top: 2%;
+                        }
+                    }
+                }
+                .suggest_and_button {
+                    width: 50%;
+                    height: 100%;
+                    // background-color: red;
+                    // display: flex;
+                    .suggest {
+                        width: 100%;
+                        height: 90%;
+                        // background-color: darkgreen;
+                        display: flex;
+                        flex-wrap: wrap;
+                        li {
+                            font-size: $h3;
+                            list-style-type: square;
+                        }
+                        .input-box, .suggest-text {
+                            width: 60%;
+                            height: 85%;
+                            font-size: $h3;
+                            margin-left: 10%;
+                            // margin-bottom: 15%;
+                        }
+                    }
+                    .button {
+                        width: 100%;
+                        height: 10%;
+                        // background-color: yellow;
+                        .post-button {
+                            width:27%;
+                            height:95%;
+                            font-size:$h3;
+                            border:1px $reservation-btn-color solid;
+                            border-radius:7px;
+                            background-color:$reservation-btn-color;
+                            color:white;
+                            margin-left:10%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
