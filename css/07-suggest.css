@@ -42,49 +42,48 @@ section .suggest-box {
 }
 
 section .suggest-box .picture {
-  width: 53%;
+  max-width: 53%;
   height: auto;
+  background-color: gray;
+  background-image: url(/img/07/74.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 50%;
 }
 
-@media screen and (max-width: 1802px) {
+@media screen and (max-width: 1320px) {
   section .suggest-box .picture {
-    width: 45%;
+    max-width: 100%;
   }
 }
 
 section .suggest-box .picture img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  opacity: 0;
 }
 
 section .suggest-box .text-box {
   width: 45%;
-  height: auto;
+  height: 100%;
+  border: 1px red solid;
 }
 
-@media screen and (max-width: 1802px) {
+@media screen and (max-width: 1320px) {
   section .suggest-box .text-box {
-    width: 54%;
+    width: 100%;
   }
 }
 
 section .suggest-box .text-box .text-top {
-  max-width: 100%;
-  height: 30%;
-  background-color: blueviolet;
+  width: 100%;
 }
 
-@media screen and (max-width: 1802px) {
-  section .suggest-box .text-box .text-top {
-    height: 40%;
-  }
-}
-
-section .suggest-box .text-box .text-top span {
+section .suggest-box .text-box .text-top .text-top-text {
   font-size: 28px;
+  line-height: 50px;
 }
 
-section .suggest-box .text-box .text-top .line {
+section .suggest-box .text-box .text-top .text-top-text .line {
   width: 95%;
   height: 1px;
   background: #898989;
@@ -94,8 +93,8 @@ section .suggest-box .text-box .text-top .line {
 
 section .suggest-box .text-box .text-bottom {
   width: 100%;
-  height: 70%;
   background-color: cornflowerblue;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,15 +103,10 @@ section .suggest-box .text-box .text-bottom {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1802px) {
-  section .suggest-box .text-box .text-bottom {
-    height: 60%;
-  }
-}
-
 section .suggest-box .text-box .text-bottom .contact-information {
   width: 40%;
-  height: 100%;
+  background-color: #64ed7b;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +118,7 @@ section .suggest-box .text-box .text-bottom .contact-information {
 
 section .suggest-box .text-box .text-bottom .contact-information .contact-box {
   width: 100%;
-  height: 32%;
+  margin-top: 15%;
 }
 
 section .suggest-box .text-box .text-bottom .contact-information .contact-box li {
@@ -134,20 +128,20 @@ section .suggest-box .text-box .text-bottom .contact-information .contact-box li
 
 section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
   width: 60%;
-  height: 30%;
   font-size: 28px;
   margin-left: 10%;
   margin-top: 2%;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button {
-  max-width: 50%;
-  height: 100%;
+  width: 50%;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .suggest {
-  max-width: 100%;
-  height: 80%;
+  width: 100%;
+  margin-top: 12%;
+  background-color: darkgreen;
+  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,26 +154,29 @@ section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
   list-style-type: square;
 }
 
-section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest .suggest-text {
   max-width: 60%;
-  max-height: 85%;
+  height: 300px;
   font-size: 28px;
   margin-left: 10%;
+  margin-top: 5%;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button {
   width: 100%;
-  height: 20%;
+  margin-top: 15%;
   background-color: yellow;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
-  max-width: 120px;
+  width: 120px;
   height: 50px;
-  font-size: 22px;
+  font-size: 28px;
   border: 1px #c9bc9c solid;
   border-radius: 7px;
   background-color: #c9bc9c;
-  color: white;
+  margin: auto;
+  margin-left: 10%;
+  margin-top: 3%;
 }
 /*# sourceMappingURL=07-suggest.css.map */
