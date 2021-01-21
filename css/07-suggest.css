@@ -69,7 +69,7 @@ section .suggest-box .text-box {
 }
 
 section .suggest-box .text-box .text-top {
-  width: 100%;
+  max-width: 100%;
   height: 30%;
   background-color: blueviolet;
 }
@@ -132,7 +132,7 @@ section .suggest-box .text-box .text-bottom .contact-information .contact-box li
   list-style-type: square;
 }
 
-section .suggest-box .text-box .text-bottom .contact-information .contact-box textarea {
+section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
   width: 60%;
   height: 30%;
   font-size: 28px;
@@ -141,13 +141,13 @@ section .suggest-box .text-box .text-bottom .contact-information .contact-box te
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button {
-  width: 50%;
+  max-width: 50%;
   height: 100%;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .suggest {
-  width: 100%;
-  height: 90%;
+  max-width: 100%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,26 +160,26 @@ section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
   list-style-type: square;
 }
 
-section .suggest-box .text-box .text-bottom .suggest_and_button .suggest .input-box, section .suggest-box .text-box .text-bottom .suggest_and_button .suggest .suggest-text {
-  width: 60%;
-  height: 85%;
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+  max-width: 60%;
+  max-height: 85%;
   font-size: 28px;
   margin-left: 10%;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button {
   width: 100%;
-  height: 10%;
+  height: 20%;
+  background-color: yellow;
 }
 
 section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
-  width: 27%;
-  height: 95%;
-  font-size: 28px;
+  max-width: 120px;
+  height: 50px;
+  font-size: 22px;
   border: 1px #c9bc9c solid;
   border-radius: 7px;
   background-color: #c9bc9c;
   color: white;
-  margin-left: 10%;
 }
 /*# sourceMappingURL=07-suggest.css.map */

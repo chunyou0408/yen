@@ -59,7 +59,7 @@ section {
             }
             // background-color: burlywood;
             .text-top {
-                width: 100%;
+                max-width: 100%;
                 height: 30%;
                 background-color: blueviolet;
                 @media screen and (max-width:1802px) {
@@ -89,7 +89,6 @@ section {
                     height:60%;
                     // padding-bottom:100px;
                 }
-               
                 .contact-information {
                     width: 40%;
                     height: 100%;
@@ -104,7 +103,7 @@ section {
                             font-size: $h3;
                             list-style-type: square;
                         }
-                        textarea {
+                        .input-box {
                             width: 60%;
                             height: 30%;
                             font-size: $h3;
@@ -114,13 +113,13 @@ section {
                     }
                 }
                 .suggest_and_button {
-                    width: 50%;
+                    max-width: 50%;
                     height: 100%;
                     // background-color: red;
                     // display: flex;
                     .suggest {
-                        width: 100%;
-                        height: 90%;
+                        max-width: 100%;
+                        height: 80%;
                         // background-color: darkgreen;
                         display: flex;
                         flex-wrap: wrap;
@@ -128,27 +127,29 @@ section {
                             font-size: $h3;
                             list-style-type: square;
                         }
-                        .input-box, .suggest-text {
-                            width: 60%;
-                            height: 85%;
+                        textarea {
+                            max-width: 60%;
+                            max-height: 85%;
                             font-size: $h3;
                             margin-left: 10%;
-                            // margin-bottom: 15%;
+                            // margin-bottom:10%;
                         }
                     }
                     .button {
                         width: 100%;
-                        height: 10%;
-                        // background-color: yellow;
+                        height: 20%;
+                        // width: 100px;
+                        // height: 60px;
+                        background-color: yellow;
                         .post-button {
-                            width:27%;
-                            height:95%;
-                            font-size:$h3;
+                            max-width:120px;
+                            height:50px;
+                            font-size:$h4;
                             border:1px $reservation-btn-color solid;
                             border-radius:7px;
                             background-color:$reservation-btn-color;
                             color:white;
-                            margin-left:10%;
+                            // margin-left:10%;
                             
                         }
                     }
