@@ -57,6 +57,7 @@ body{
             }
         }
         .camp_area{
+            
             @media (max-width: 768px){
                 margin-top: -2%;
             }
@@ -67,6 +68,9 @@ body{
                 margin-top: -10px;
                 position: relative;
                 z-index: -1;
+
+                
+
                 @media (max-width: 768px){
                     width: 85%;
                     margin: auto;
@@ -255,6 +259,18 @@ body{
             height: auto;
             margin-top: 10vh;
             display: flex;
+
+            animation: arrow 1s linear 1 both;
+                @keyframes arrow {
+                    0% {
+                        transform:translate(0px,100px)
+                    }
+                    100% {
+                        transform:translate(0px,0px)
+                    }
+
+                }
+
             @media (max-width: 768px){
                 margin-top: 0;
             }
@@ -359,7 +375,7 @@ body{
             .coffee_area_background_img{
                 width: 20vw;
                 margin-top: -34vw;
-                @media (max-width: 360px){
+                @media (max-width: 768px){
                     display:none ;
                 }
                 img{
