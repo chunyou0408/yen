@@ -1,1 +1,185 @@
-/* No CSS *//*# sourceMappingURL=07-suggest.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  margin: auto;
+  border: 1px black solid;
+}
+
+section .suggest-title {
+  text-align: center;
+  margin: auto;
+}
+
+section .suggest-title span {
+  font-size: 40px;
+  font-family: Microsoft JhengHei;
+  color: #727171;
+  letter-spacing: 5px;
+  border-bottom: 1px #898989 solid;
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+section .suggest-box {
+  width: 90%;
+  height: auto;
+  border: 1px black solid;
+  margin: auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .suggest-box .picture {
+  width: 53%;
+  height: auto;
+}
+
+@media screen and (max-width: 1802px) {
+  section .suggest-box .picture {
+    width: 45%;
+  }
+}
+
+section .suggest-box .picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+section .suggest-box .text-box {
+  width: 45%;
+  height: auto;
+}
+
+@media screen and (max-width: 1802px) {
+  section .suggest-box .text-box {
+    width: 54%;
+  }
+}
+
+section .suggest-box .text-box .text-top {
+  max-width: 100%;
+  height: 30%;
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 1802px) {
+  section .suggest-box .text-box .text-top {
+    height: 40%;
+  }
+}
+
+section .suggest-box .text-box .text-top span {
+  font-size: 28px;
+}
+
+section .suggest-box .text-box .text-top .line {
+  width: 95%;
+  height: 1px;
+  background: #898989;
+  margin: auto;
+  margin-top: 2%;
+}
+
+section .suggest-box .text-box .text-bottom {
+  width: 100%;
+  height: 70%;
+  background-color: cornflowerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1802px) {
+  section .suggest-box .text-box .text-bottom {
+    height: 60%;
+  }
+}
+
+section .suggest-box .text-box .text-bottom .contact-information {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+section .suggest-box .text-box .text-bottom .contact-information .contact-box {
+  width: 100%;
+  height: 32%;
+}
+
+section .suggest-box .text-box .text-bottom .contact-information .contact-box li {
+  font-size: 28px;
+  list-style-type: square;
+}
+
+section .suggest-box .text-box .text-bottom .contact-information .contact-box .input-box {
+  width: 60%;
+  height: 30%;
+  font-size: 28px;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button {
+  max-width: 50%;
+  height: 100%;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest {
+  max-width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest li {
+  font-size: 28px;
+  list-style-type: square;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .suggest textarea {
+  max-width: 60%;
+  max-height: 85%;
+  font-size: 28px;
+  margin-left: 10%;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .button {
+  width: 100%;
+  height: 20%;
+  background-color: yellow;
+}
+
+section .suggest-box .text-box .text-bottom .suggest_and_button .button .post-button {
+  max-width: 120px;
+  height: 50px;
+  font-size: 22px;
+  border: 1px #c9bc9c solid;
+  border-radius: 7px;
+  background-color: #c9bc9c;
+  color: white;
+}
+/*# sourceMappingURL=07-suggest.css.map */
