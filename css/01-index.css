@@ -56,7 +56,7 @@ header .above .index_photo img {
 }
 
 header .above .logo {
-  width: 10%;
+  width: 8%;
   position: absolute;
   top: 35%;
   left: 50%;
@@ -71,9 +71,9 @@ header .above .logo {
 }
 
 header .above .logo_horizontal {
-  width: 25%;
+  width: 22%;
   position: absolute;
-  top: 51%;
+  top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -86,9 +86,9 @@ header .above .logo_horizontal {
 }
 
 header .above .logo_horizontal_en {
-  width: 24%;
+  width: 21%;
   position: absolute;
-  top: 59%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

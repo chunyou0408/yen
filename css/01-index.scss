@@ -44,7 +44,7 @@ header{
             }
         }
         .logo{
-            width: 10%; 
+            width: 8%; 
             position: absolute;
             top:35%;
             left: 50%;
@@ -56,9 +56,9 @@ header{
 
         }
         .logo_horizontal{
-            width: 25%;
+            width: 22%;
             position: absolute;
-            top:51%;
+            top:48%;
             left: 50%;
             transform: translate(-50%, -50%);
             @media (max-width: 375px){
@@ -67,9 +67,9 @@ header{
            
         }
         .logo_horizontal_en{
-            width: 24%;
+            width: 21%;
             position: absolute;
-            top:59%;
+            top:55%;
             left: 50%;
             transform: translate(-50%, -50%);
             @media (max-width: 375px){

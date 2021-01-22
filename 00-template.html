@@ -78,7 +78,7 @@
         </ul>
 
     </nav>
-    <main>
+    <main class="main">
         <section>
             <div class="icon_area">
                 <ul class="icon_">
@@ -101,8 +101,8 @@
         <img src="./img/00/footer_decoration_02.png" style="height:70px;" alt="" class="decoration_02">
         <img src="./img/00/footer_decoration_03.png" style="height:80px;" alt="" class="decoration_03">
     </div>
-    <footer>
-        <div class="footer">
+    <footer class="footer">
+        <div class="footer_container">
             <div class="footer_left">
                 <ul>
                     <li>牧場/咖啡屋 週六08:00-週日18:00</li>
@@ -150,6 +150,12 @@
 
     <!-- js -->
     <script>
+        var main =document.querySelector('.main');
+        var footer_decoration =document.querySelector('.footer_decoration');
+        var footer =document.querySelector('.footer');
+
+
+
         var booking_icon = document.querySelector('.booking_icon');
         var shopping_icon = document.querySelector('.shopping_icon');
         var user_icon = document.querySelector('.user_icon');
@@ -163,9 +169,16 @@
             if (!fold_area.classList.contains('active')) {
                 fold_area.classList.add('active')
                 nav02_box.classList.add('active')
+                main.classList.add('active')
+                footer_decoration.classList.add('active')
+                footer.classList.add('active')
+
             } else {
                 fold_area.classList.remove('active')
                 nav02_box.classList.remove('active')
+                main.classList.remove('active')
+                footer_decoration.classList.remove('active')
+                footer.classList.remove('active')
             }
         }
 
