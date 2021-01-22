@@ -550,8 +550,19 @@ body .all .coffee_area .coffee_img img {
   }
 }
 
+@media (max-width: 768px) {
+  body .all .coffee_area .coffee_img img {
+    width: 70%;
+    height: 43vw;
+    margin-top: -38vw;
+    margin-right: 30%;
+  }
+}
+
 body .all .coffee_area .coffee_area_background_img {
   width: 20vw;
+  margin-top: -30vw;
+  margin-right: 78%;
 }
 
 @media (max-width: 768px) {

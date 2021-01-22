@@ -398,17 +398,25 @@ body{
                         height: 31.5vw;
                         margin-top: -27.5vw;
                     }  
+                    @media (max-width: 768px){
+                        width: 70% ;
+                        height:43vw;
+                        margin-top: -38vw;
+                        margin-right: 30%; 
+                    }
                 }
             }
             .coffee_area_background_img{
                 width: 20vw;
-                // margin-top: -34vw;
+                margin-top: -30vw;
+                margin-right: 78%;
                 @media (max-width: 768px){
                     display:none ;
                 }
                 img{
                     width: 100%;
                     margin-bottom: -5.5vw; 
+                    
                 }
             }
         }   
