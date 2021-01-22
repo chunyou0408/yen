@@ -114,7 +114,7 @@ body {
           }
           .confirm{
             margin-left: 10px;
-            width: 40px;
+            width: 50px;
             height: 30px;
             padding: 0;
             border-radius: 6px;
@@ -160,8 +160,8 @@ body {
             font-size: 18px;
             color: #898989;
             border-right: none;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             cursor: pointer;
             background-color: white;
             &:hover {
@@ -236,8 +236,8 @@ body {
             font-size: 18px;
             color: #898989;
             border-left: none;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             cursor: pointer;
             background-color: white;
             &:hover {
@@ -343,7 +343,7 @@ body {
             height: 30px;
             padding: 0;
             border: 2px #898989 solid;
-            border-radius: 6px;
+            border-radius: 2px;
             color: #898989;
             font-size: 16px;
             &:focus {
@@ -385,8 +385,8 @@ body {
             font-size: 18px;
             color: #898989;
             border-right: none;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
             cursor: pointer;
             background-color: white;
             &:hover {
@@ -461,8 +461,8 @@ body {
             font-size: 18px;
             color: #898989;
             border-left: none;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             cursor: pointer;
             background-color: white;
             &:hover {

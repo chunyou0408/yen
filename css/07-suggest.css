@@ -46,7 +46,7 @@ section .suggest-box {
 }
 
 section .suggest-box .picture {
-  max-width: 57%;
+  max-width: 55%;
   height: auto;
   background-image: url(/img/07/74.jpg);
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ section .suggest-box .picture img {
 }
 
 section .suggest-box .text-box {
-  width: 40%;
+  width: 42%;
 }
 
 @media screen and (max-width: 1320px) {
@@ -106,7 +106,7 @@ section .suggest-box .text-box .text-top .text-top-text {
 }
 
 section .suggest-box .text-box .text-top .text-top-text .line {
-  width: 95%;
+  width: 100%;
   height: 1px;
   background: #898989;
   margin: auto;

@@ -193,7 +193,7 @@ body .container .content_top .commodity_top_card .button_content {
 
 body .container .content_top .commodity_top_card .button_content .confirm {
   margin-left: 10px;
-  width: 40px;
+  width: 50px;
   height: 30px;
   padding: 0;
   border-radius: 6px;
@@ -258,8 +258,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_left {
   font-size: 18px;
   color: #898989;
   border-right: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   cursor: pointer;
   background-color: white;
 }
@@ -364,8 +364,8 @@ body .container .content_top .commodity_top_card .buy_button .buy_button_right {
   font-size: 18px;
   color: #898989;
   border-left: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   cursor: pointer;
   background-color: white;
 }
@@ -540,7 +540,7 @@ body .container .content_bottom .commodity_bottom_card .button_content .confirm 
   height: 30px;
   padding: 0;
   border: 2px #898989 solid;
-  border-radius: 6px;
+  border-radius: 2px;
   color: #898989;
   font-size: 16px;
 }
@@ -601,8 +601,8 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_l
   font-size: 18px;
   color: #898989;
   border-right: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   cursor: pointer;
   background-color: white;
 }
@@ -707,8 +707,8 @@ body .container .content_bottom .commodity_bottom_card .buy_button .buy_button_r
   font-size: 18px;
   color: #898989;
   border-left: none;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   cursor: pointer;
   background-color: white;
 }
