@@ -13,7 +13,7 @@
     <!-- import Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,8 +26,8 @@
         </div>
         <!-- Content-->
         <section class="camp_area">
-            <div class="camp_area_grass">
-                <img src="./img/03/grass_area.jpg" alt="">
+            <div class="camp_area_grass" data-aos="fade-right">
+                <div></div><img src="./img/03/grass_area.jpg" alt="">
                 <div class="grass_text_box">
                     <div class="grass_text_title">草地營位</div>
                     <img class="grass_text_title_underline" src="/img/03/underline(s).png" alt="">
@@ -37,9 +37,9 @@
                 </div>
                 </div>   
             </div>
-            <div class="camp_area_wooden">
+            <div class="camp_area_wooden lax">
                 <img src="./img/03/wooden_area.jpg" alt="">
-                <div class="wooden_text_box">
+                <div class="wooden_text_box lax">
                     <div class="wooden_text_title">木板營位</div>
                     <img class="wooden_text_title_underline" src="/img/03/underline(s).png" alt="">   
                     <div class="wooden_text_content">
@@ -57,8 +57,8 @@
             </div>
         </section>
         <section class="camp_area_tent">
-            <div class="tent_text_box">
-                <div class="tent_text_box_bgcolor">
+            <div class="tent_text_box lax">
+                <div class="tent_text_box_bgcolor lax">
                     <div class="tent_text_title">空中帳篷區</div>
                     <span>鋁高架底座帆布帳篷，</span><br>
                     <span>可宿兩大兩小睡袋需自備。</span>
@@ -67,7 +67,7 @@
             <div class="tent_text_block"></div>
 
         </section>
-        <section class="coffee_area">
+        <section class="coffee_area lax">
             <div class="coffee_area_background_color">
                 <span>咖啡吧檯</span>
             </div>
@@ -123,9 +123,104 @@
             },
             
 
+
+            
+
+
         });
     </script>
 
+<!-- 草地營位 -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<!-- 卷軸 -->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        window.onload = function () {
+            lax.init()
+
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+            lax.addElements('.wooden_text_box', {
+                scrollY: {
+                    translateX: [
+                        [0, 300,600,700,900 ],
+                        [-1250, 10,300,800,1500],
+                    ],
+                    
+                }
+            })
+
+            lax.addElements('.tent_text_box', {
+                scrollY: {
+                    translateY: [
+                        [500,800],
+                        [500,0],
+                    ],
+                    
+                }
+            })
+            lax.addElements('.tent_text_box_bgcolor', {
+                scrollY: {
+                    translateX: [
+                        [600,1000],
+                        [1200,0],
+                    ],
+                    
+                }
+            })
+            lax.addElements('.coffee_area', {
+                scrollY: {
+                    opacity: [
+                        [1300, 1500],
+                        [0, 1]
+                    ],
+                    
+                }
+            })
+        }
+    </script>
+
+<!-- 木板營位 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        window.onload = function () {
+            lax.init()
+
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+
+            // Add animation bindings to elements
+            lax.addElements('.wooden_text_box', {
+                scrollY: {
+                    translateX: [
+                        [0, 800, 1000, 1500],
+                        [-1300, 100, 100, 800],
+                    ],
+                    rotate: [
+                        [200, 500],
+                        [0, 360],
+                    ],
+                    scale: [
+                        [1500, 2000],
+                        [1, 10]
+                    ],
+                    opacity: [
+                        [1800, 2000],
+                        [1, 0]
+                    ]
+                }
+            })
+        }
+    </script> -->
 </body>
 
 </html>

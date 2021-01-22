@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -34,13 +35,6 @@ body .container .shop_title {
   color: #727171;
   margin: 1% 0;
   text-align: center;
-}
-
-body .container .shop_title hover {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 body .container .shop_title samp {
