@@ -460,6 +460,14 @@ body .all .coffee_area {
   height: auto;
   margin-top: 6%;
   margin-bottom: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
@@ -473,77 +481,77 @@ body .all .coffee_area .coffee_area_background_color {
   max-width: 870px;
   height: 570px;
   background-color: #f8f6e9;
-  position: absolute;
-  right: 0;
 }
 
 @media (max-width: 1650px) {
   body .all .coffee_area .coffee_area_background_color {
-    height: 37vw;
+    width: 45vw;
+    height: 30vw;
   }
 }
 
 @media (max-width: 768px) {
   body .all .coffee_area .coffee_area_background_color {
-    position: absolute;
     width: 70%;
     height: 43vw;
   }
 }
 
-body .all .coffee_area .coffee_area_background_color span {
+body .all .coffee_area .coffee_area_background_color .coffee_area_title {
   font-size: 32px;
-  padding: 10px;
-  position: absolute;
-  top: 20px;
+  padding: 10px 15px;
+  position: relative;
   z-index: 2;
 }
 
 @media (max-width: 768px) {
-  body .all .coffee_area .coffee_area_background_color span {
+  body .all .coffee_area .coffee_area_background_color .coffee_area_title {
     font-size: 22px;
   }
 }
 
 @media (max-width: 360px) {
-  body .all .coffee_area .coffee_area_background_color span {
+  body .all .coffee_area .coffee_area_background_color .coffee_area_title {
     font-size: 18px;
   }
 }
 
 body .all .coffee_area .coffee_area_background_color .coffee_area_title_underline {
   width: 180px;
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  right: 710px;
-}
-
-body .all .coffee_area img {
-  width: 870px;
-  margin-top: 65px;
-  margin-left: 605px;
+  margin-top: -70px;
+  margin-left: -15px;
   position: relative;
+  z-index: 1;
 }
 
-@media (max-width: 1649px) {
-  body .all .coffee_area img {
-    width: 65%;
-    margin-left: 32%;
-  }
+body .all .coffee_area .coffee_img {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
-  body .all .coffee_area img {
-    width: 80%;
-    margin-left: 0;
-    margin-top: 35px;
+body .all .coffee_area .coffee_img img {
+  width: 870px;
+  height: auto;
+  margin-top: -520px;
+  margin-right: 14vw;
+}
+
+@media (max-width: 1650px) {
+  body .all .coffee_area .coffee_img img {
+    width: 55%;
+    height: 31.5vw;
+    margin-top: -27.5vw;
   }
 }
 
 body .all .coffee_area .coffee_area_background_img {
   width: 20vw;
-  margin-top: -34vw;
 }
 
 @media (max-width: 768px) {
@@ -554,7 +562,6 @@ body .all .coffee_area .coffee_area_background_img {
 
 body .all .coffee_area .coffee_area_background_img img {
   width: 100%;
-  margin-left: 0;
   margin-bottom: -5.5vw;
 }
 
