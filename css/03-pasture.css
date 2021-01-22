@@ -46,6 +46,13 @@ body .all .page_title {
   height: auto;
 }
 
+body .all .page_title hover {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 @media (max-width: 768px) {
   body .all .page_title {
     text-align: center;
@@ -369,30 +376,6 @@ body .all .camp_area_tent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: arrow 1s linear 1 both;
-          animation: arrow 1s linear 1 both;
-}
-
-@-webkit-keyframes arrow {
-  0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-}
-
-@keyframes arrow {
-  0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
 }
 
 @media (max-width: 768px) {

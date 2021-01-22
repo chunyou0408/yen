@@ -1,6 +1,7 @@
 @import "variable";
 
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -24,11 +25,6 @@ body {
       color: #727171;
       margin: 1% 0;
       text-align: center;
-      & hover{
-        animation-name: bounce;
-            animation-duration: 1s;
-      }
-
       samp {
         border-bottom: 1px #898989 solid;
         padding-bottom: 5px;
