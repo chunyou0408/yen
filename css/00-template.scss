@@ -132,6 +132,7 @@ body {
 
         .dd {
           background-color: green;
+
         }
       }
       li:last-child {
@@ -345,7 +346,7 @@ body {
       
     }
     img{
-      // marg
+      
       position: absolute;
       bottom: 0vh;
       @media (max-width: 768px) {
@@ -372,7 +373,7 @@ body {
     }
   }
 
-  footer {
+  .footer {
     width: calc(100% - 175px);
     height: auto;
 
@@ -388,44 +389,56 @@ body {
 
     font-size: $h4;
     color: $footer-text-color;
-
+    
     @media (max-width: 768px) {
       width: 100%;
     }
+ 
 
     ul {
       display: inline-block;
-
       padding: 0;
       margin: 0;
 
       li {
         // display: inline-block;
-        height: 50px;
+        height: 40px;
         line-height: 50px;
         list-style: none;
+
+        i{
+          font-size: 30px;
+        }
       }
     }
     .footer_left {
-      width: auto;
+      width: 339px;
+      padding-left:2px;
+      @media (max-width: 950px) {
+        width:55%;
+        padding-top: 5%;
+        padding-left:0;
+      }
       @media (max-width: 768px) {
+        width: auto;
         padding-left: 8vw;
       }
       @media (max-width: 712px) {
         padding-left: 0;
       }
-      li:first-child {
-        font-size: $h1;
-        display: flex;
-
-        div:nth-child(2) {
-          padding-left: 22px;
-        }
-      }
+  
     }
-    .footer_right {
-      width: auto;
-
+    .footer_middle {
+      width: 372px;
+      padding-left:2px;
+      @media (max-width: 950px) {
+        width:55%;
+        padding-top: 5%;
+        padding-left:0;
+      }
+      @media (max-width: 768px) {
+        width: auto;
+      }
       ul {
         li {
           display: flex;
@@ -437,6 +450,39 @@ body {
         }
       }
     }
+    .footer_right{
+      width: 263px;
+      padding-left:2px;
+      @media (max-width: 1170px) {
+        width:88%;
+        padding-top: 5%;
+        padding-left:0;
+      }
+      @media (max-width: 950px) {
+        width:55%;
+      }
+      @media (max-width: 768px) {
+        width:50%;
+      }
+      ul{
+        li{
+          display: flex;
+
+          i{
+            padding-top: 20px;
+          }
+          .fa-instagram{
+            padding-left: 20px;
+          }
+          .fa-comment-dots{
+            padding-left: 20px;
+          }
+        }
+
+      }
+
+    }
+
   }
 }
 

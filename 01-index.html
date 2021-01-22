@@ -10,6 +10,7 @@
     <!-- import font awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+
     <!-- import Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
@@ -34,7 +35,7 @@
             <div class="logo_horizontal_en">
                 <img src="./img/01/logo_horizontal_en.png" alt="" width="100%">
             </div>
-            <div class="text" >SCROLL DOWN<i class="fas fa-chevron-down"></i></div>
+            <div class="text">SCROLL DOWN<i class="fas fa-chevron-down"></i></div>
             
         </div>
   </header>
@@ -42,10 +43,10 @@
     <div class="below">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/01/grassland.jpg" alt="" width="100%"></div>
-          <div class="swiper-slide"><img src="./img/01/tent.jpg" alt="" width="100%"></div>
-          <div class="swiper-slide"><img src="./img/01/coffee_shop.jpg" alt="" width="100%"></div>
-          <div class="swiper-slide"><img src="./img/01/night.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide" ><img src="./img/01/grassland.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide" ><img src="./img/01/tent.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide" ><img src="./img/01/coffee_shop.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide" ><img src="./img/01/night.jpg" alt="" width="100%"></div>
           
         </div>
         <!-- Add Pagination -->
@@ -63,6 +64,17 @@
       var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         centeredSlides: true,
+        effect: 'fade',
+        speed:2000,
+        
+        fadeEffect: {
+        crossFade: true,
+        },
+        
+        fade:{
+          crossFade:true,
+        },
+        
         autoplay: {
           delay: 3500,
           disableOnInteraction: false,
