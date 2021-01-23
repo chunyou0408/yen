@@ -139,6 +139,55 @@
 <!-- 卷軸 -->
 <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script>
+        var tent_text_box = document.querySelector('.tent_text_box');
+        var coffee_area = document.querySelector('.coffee_area');
+        var scrollheight,a1y,a2y;
+
+        var a1=0,a2=0.3370,b1=0.385,b2=0.50,tt;
+
+
+            $(window).scroll(function() {
+
+                // scrollheight=document.documentElement.scrollTop;
+                scrollheight=document.body.clientHeight;
+                tt=tent_text_box.offsetTop;
+                a1y=scrollheight*a1;
+                a2y=scrollheight*a2;
+
+                b1y=scrollheight*b1;
+                b2y=scrollheight*b2;
+
+
+
+                console.log(tt+"總長:"+scrollheight+"a1:"+a1y+" a2:"+a2y);
+                lax.init()
+
+                // Add a driver that we use to control our animations
+                lax.addDriver('scrollY', function () {
+                    return window.scrollY
+                })
+
+                lax.addElements('.tent_text_box', {
+                    scrollY: {
+                        opacity: [
+                            [a1y, a2y-100],
+                            [0, 1]
+                        ],
+                    }
+                })
+
+                lax.addElements('.coffee_area', {
+                    scrollY: {
+                        opacity: [
+                            [b1y, b2y-100],
+                            [0, 1]
+                        ],
+                    }
+                })
+
+                    
+            });
+
         window.onload = function () {
             lax.init()
 

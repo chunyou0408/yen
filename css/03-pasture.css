@@ -260,11 +260,18 @@ body .all .camp_area .camp_area_wooden .wooden_text_box {
 
 @media (max-width: 768px) {
   body .all .camp_area .camp_area_wooden .wooden_text_box {
-    width: 60%;
+    width: 100%;
     height: 150px;
     min-width: initial;
     margin: auto;
     margin-top: -35px;
+    background-color: initial;
+  }
+}
+
+@media (max-width: 360px) {
+  body .all .camp_area .camp_area_wooden .wooden_text_box {
+    margin-top: -28px;
   }
 }
 
@@ -314,17 +321,9 @@ body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
 
 @media (max-width: 768px) {
   body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
+    width: 100%;
     font-size: 18px;
     padding-bottom: 2%;
-  }
-}
-
-@media (max-width: 605px) {
-  body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -345,10 +344,11 @@ body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wo
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 768px) {
   body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_left {
-    width: 100%;
+    width: 48%;
     text-align: center;
+    padding-left: 0;
   }
 }
 
@@ -361,11 +361,11 @@ body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wo
   padding-left: 10%;
 }
 
-@media (max-width: 605px) {
+@media (max-width: 768px) {
   body .all .camp_area .camp_area_wooden .wooden_text_box .wooden_text_content .wooden_text_content_right {
-    width: 100%;
+    width: 48%;
     text-align: center;
-    padding-left: 8%;
+    padding-left: 0;
   }
 }
 
@@ -384,7 +384,13 @@ body .all .camp_area_tent {
 
 @media (max-width: 768px) {
   body .all .camp_area_tent {
-    margin-top: 5vh;
+    margin-top: -2vw;
+  }
+}
+
+@media (max-width: 360px) {
+  body .all .camp_area_tent {
+    margin-top: -13vw;
   }
 }
 
@@ -485,8 +491,8 @@ body .all .coffee_area .coffee_area_background_color {
 
 @media (max-width: 1650px) {
   body .all .coffee_area .coffee_area_background_color {
-    width: 45vw;
-    height: 30vw;
+    width: 50vw;
+    height: 32vw;
   }
 }
 
@@ -504,9 +510,16 @@ body .all .coffee_area .coffee_area_background_color .coffee_area_title {
   z-index: 2;
 }
 
+@media (max-width: 1650px) {
+  body .all .coffee_area .coffee_area_background_color .coffee_area_title {
+    padding: 0.5vw 1vw;
+  }
+}
+
 @media (max-width: 768px) {
   body .all .coffee_area .coffee_area_background_color .coffee_area_title {
     font-size: 22px;
+    padding: 1.5vw 2vw;
   }
 }
 
@@ -544,18 +557,18 @@ body .all .coffee_area .coffee_img img {
 
 @media (max-width: 1650px) {
   body .all .coffee_area .coffee_img img {
-    width: 55%;
-    height: 31.5vw;
-    margin-top: -27.5vw;
+    width: 50vw;
+    height: 32vw;
+    margin-top: -29vw;
   }
 }
 
 @media (max-width: 768px) {
   body .all .coffee_area .coffee_img img {
-    width: 70%;
+    width: 80%;
     height: 43vw;
     margin-top: -38vw;
-    margin-right: 30%;
+    margin-right: 19.5%;
   }
 }
 
@@ -563,6 +576,7 @@ body .all .coffee_area .coffee_area_background_img {
   width: 20vw;
   margin-top: -30vw;
   margin-right: 78%;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
