@@ -185,17 +185,16 @@ body{
                     z-index: 1;
                         
                     @media (max-width: 768px){
-                        width: 60%;
+                        width: 100%;
                         height: 150px;
                         min-width:initial;
                         margin: auto;
                         margin-top: -35px;
+                        background-color: initial;
                     }
-
-                    // @media (max-width: 680px){
-                    //     width: 60%;
-                       
-                    // }
+                    @media (max-width: 360px){
+                        margin-top: -28px;
+                    }
                     .wooden_text_title{
                         font-size: $h2;
                         color:$text-title-color ;
@@ -211,16 +210,17 @@ body{
                     }
                     .wooden_text_title_underline{
                         width: 180px;
+                        margin-left: 0;
+                        margin-top: -45px;
+                        position: relative;
+                        z-index:-1;
 
                         @media (max-width: 768px){
                             width: 140px;
                         }
                         
-                        margin-left: 0;
-                        margin-top: -45px;
-                        position: relative;
-                        z-index:-1;
                     }
+
                     .wooden_text_content{
                         display: flex;
                         text-align: left;
@@ -228,11 +228,9 @@ body{
                         font-size: $h3;
                         margin-top: -20px;
                         @media (max-width: 768px){
+                            width: 100%;
                             font-size:$h6;
                             padding-bottom: 2%;
-                        }
-                        @media (max-width: 605px){
-                            flex-direction:column;
                         }
                         @media (max-width: 360px){
                             font-size:$h8;
@@ -244,9 +242,10 @@ body{
                             @media (max-width: 1470px){
                                 padding-left: 8%;
                             }
-                            @media (max-width: 605px){
-                                width: 100%;
+                            @media (max-width: 768px){
+                                width: 48%;
                                 text-align: center;
+                                padding-left: 0;
                             }
                           
                             p{
@@ -257,10 +256,10 @@ body{
                             width: 50%;
                             padding-left: 10%;
                             
-                            @media (max-width: 605px){
-                                width: 100%;
+                            @media (max-width: 768px){
+                                width: 48%;
                                 text-align: center;
-                                padding-left: 8%;
+                                padding-left: 0;
                             }
                             p{  
                                 margin-bottom: 0;
@@ -290,7 +289,10 @@ body{
             //     }
 
             @media (max-width: 768px){
-                margin-top: 5vh;
+                margin-top: -2vw;
+            }
+            @media (max-width: 360px){
+                margin-top: -13vw;
             }
             
             .tent_text_box{
@@ -344,34 +346,36 @@ body{
             height: auto;
             margin-top: 6%;
             margin-bottom: 6%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
             @media (max-width: 768px){
-                width: 100%;
-                
+                width: 100%; 
             }
             .coffee_area_background_color{
                 width: 50%;
                 max-width: 870px;
                 height: 570px;
                 background-color: $camping-reservation;
-                position: absolute;
-                right: 0;
                 @media (max-width: 1650px){
-                    height: 37vw;
+                    width: 50vw ;
+                    height: 32vw;
                 }
                 @media (max-width: 768px){
-                    position:absolute;
-                    
                     width: 70% ;
                     height:43vw;
                 }
-                span{
+                .coffee_area_title{
                     font-size: $h2;
-                    padding: 10px;
-                    position: absolute;
-                    top:20px;
+                    padding:10px 15px;
+                    position: relative;
                     z-index: 2;
+                    @media (max-width: 1650px){
+                        padding:0.5vw 1vw;
+                    }
                     @media (max-width: 768px){
                         font-size: $h4;
+                        padding:1.5vw 2vw;
                     }
                     @media (max-width: 360px){
                         font-size: $h6;
@@ -379,38 +383,46 @@ body{
                 }
                 .coffee_area_title_underline{
                     width: 180px;
-                    position: absolute;
+                    margin-top: -70px;
+                    margin-left: -15px;
+                    position: relative;
                     z-index: 1;
-                    top:-10px;
-                    right:710px;
-                     
                 }
             }
-            img{
-                width: 870px;
-                margin-top: 65px;
-                margin-left: 605px;
-                position: relative;
-                @media (max-width: 1649px){
-                    width: 65%;
-                    margin-left: 32%;
-                }
-                @media (max-width: 768px){
-                    width: 80%;
-                    margin-left:0;
-                    margin-top: 35px;
+            .coffee_img{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    width: 870px;
+                    height: auto;
+                    margin-top: -520px;
+                    margin-right: 14vw; 
+                    @media (max-width: 1650px){
+                        width: 50vw ;
+                        height: 32vw;
+                        margin-top: -29vw;
+                    }  
+                    @media (max-width: 768px){
+                        width: 80% ;
+                        height:43vw;
+                        margin-top: -38vw;
+                        margin-right: 19.5%; 
+                    }
                 }
             }
             .coffee_area_background_img{
                 width: 20vw;
-                margin-top: -34vw;
+                margin-top: -30vw;
+                margin-right: 78%;
+                z-index: -1;
                 @media (max-width: 768px){
                     display:none ;
                 }
                 img{
                     width: 100%;
-                    margin-left: 0;
-                    margin-bottom: -5.5vw;
+                    margin-bottom: -5.5vw; 
                     
                 }
             }
