@@ -16,6 +16,10 @@ section {
 section .camping-title {
   text-align: center;
   margin: auto;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
 }
 
 section .camping-title span {
@@ -37,6 +41,28 @@ section .camping-title span {
 @media screen and (max-width: 360px) {
   section .camping-title span {
     font-size: 12px;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+  to {
+    padding-left: 0%;
+    width: 100%;
   }
 }
 
@@ -158,6 +184,26 @@ section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
 @media screen and (max-width: 360px) {
   section .camping-photo-card .pt-box .img-hover .pt-box-img-text div {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  section .camping-photo-card .pt-box .img-hover .fade-effect1 {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+  to {
+    padding-left: 0%;
+    width: 100%;
   }
 }
 

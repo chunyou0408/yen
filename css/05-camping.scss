@@ -16,6 +16,8 @@ section {
     .camping-title {
         text-align: center;
         margin: auto;
+        animation-duration: 3s;
+        animation-name: slidein;
         // span裡面的CAMPING
         span {
             font-size: $h1;
@@ -35,6 +37,17 @@ section {
             }
         }
     }
+    @keyframes slidein {
+        from {
+          padding-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          padding-left: 0%;
+          width: 100%;
+        }
+      }
     // 露營照片區
     .camping-photo-card {
         width: 85%;
@@ -95,17 +108,6 @@ section {
                     @media screen and (max-width: 768px) {
                         opacity: 1;
                     }
-                    // 540跳板做data-os效果
-                    // @media screen and (max-width: 541px) {
-                    //     &.aos-animate {
-                    //         font-size: $h2;
-                    //         opacity: 1;
-                    //         // backface-visibility: visible;
-                            
-                    //         width: 100%;
-                    //         height: 98%;
-                    //     }
-                    // }
                     .set-show-768 {
                         display: none;
                         @media screen and (max-width: 768px) {
@@ -134,6 +136,25 @@ section {
                             font-size: $h4;
                         }
                     }
+                }
+                // 因為dataos在第一張圖和第二張圖片無法data-os
+                // 所以改用css-animation替代
+                .fade-effect1 {
+                    @media screen and (max-width:541px) {
+                        animation-duration: 3s;
+                        animation-name: slidein;
+                    }
+                    @keyframes slidein {
+                        from {
+                          padding-left: 100%;
+                          width: 300%;
+                        }
+                      
+                        to {
+                          padding-left: 0%;
+                          width: 100%;
+                        }
+                      }
                 }
                 // 要直接用hover必須前面加一個 &
                 // 意思是對img-hover做hover效果

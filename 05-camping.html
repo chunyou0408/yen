@@ -27,10 +27,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/01.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
-                            data-aos-anchor-placement="bottom-bottom"
-                            data-aos-offset="50"
-                           >
+                        <div class="pt-box-img-text fade-effect1">
                             <div>草原露營區</div>
                             <div class="set-show-768">50set</div>
                         </div>
@@ -44,9 +41,7 @@
                     <!-- 圖片hover過去的效果 -->
                     <div class="img-hover">
                         <img src="./img/05/02.jpg" alt="">
-                        <div class="pt-box-img-text fade-effect" data-aos="flip-down" data-aos-delay="1500"
-                            data-aos-anchor-placement="bottom-bottom"
-                            data-aos-offset="50">
+                        <div class="pt-box-img-text fade-effect1">
                             <div>樟樹林露營區</div>
                             <div class="set-show-768">8set</div>
                         </div>
@@ -294,44 +289,33 @@
         AOS.init();
         var fade_img = $('.fade-effect');
 
-        
-      
         //偵測畫面寬度
-       
         $(window).resize(function () {
             if ($(window).width() < 541) {
-                console.log('321');
                 fade_img.attr('data-aos', 'flip-down');
                 fade_img.attr('data-aos-delay', '1500');
                 fade_img.attr('data-aos-anchor-placement', 'bottom-bottom');
-                // fade_img.attr('data-aos-offset','50');
+
             } else {
                 fade_img.removeAttr('data-aos');
                 fade_img.removeAttr('data-aos-delay');
                 fade_img.removeAttr('data-aos-anchor-placement');
-                // fade_img.removeAttr('data-aos-offset');
-          
             }
         });
 
          // 一開始的畫面也要設置條件
          $(document).ready(function () {
             if ($(window).width() < 541) {
-                console.log('123');
                 fade_img.attr('data-aos', 'flip-down');
                 fade_img.attr('data-aos-delay', '1500');
                 fade_img.attr('data-aos-anchor-placement', 'bottom-bottom');
-                // fade_img.attr('data-aos-offset','50');
             } else {
                 fade_img.removeAttr('data-aos');
                 fade_img.removeAttr('data-aos-delay');
                 fade_img.removeAttr('data-aos-anchor-placement');
-                // fade_img.removeAttr('data-aos-offset');
             }
         });
         
-        
-
     </script>
 </body>
 
